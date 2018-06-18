@@ -1,0 +1,5 @@
+<map id="SimpleWebSocketServerLibrary.WebSocketServer" name="SimpleWebSocketServerLibrary.WebSocketServer">
+<area shape="rect" id="node2" href="$class_simple_web_socket_server_library_1_1_web_socket_handler.html" title="Class contains handler for handeling multiple websocket clients and hubs. " alt="" coords="192,5,401,47"/>
+<area shape="rect" id="node3" href="$interface_simple_web_socket_server_library_1_1_i_web_socket_handler.html" title="Inteface for class: WebSocketHandler. " alt="" coords="5,13,143,39"/>
+<area shape="rect" id="node4" href="$class_simple_web_socket_server_library_1_1_web_socket_client_info.html" title="Provides information about a connected client. " alt="" coords="192,71,401,112"/>
+</map>

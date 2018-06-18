@@ -1,0 +1,4 @@
+<map id="SimpleWebSocketServerLibrary.IWebSocketHandler.StopClient" name="SimpleWebSocketServerLibrary.IWebSocketHandler.StopClient">
+<area shape="rect" id="node2" href="$class_simple_web_socket_server_library_1_1_simple_web_socket_server.html#ad0559ffe3b936e25e202b205fa2931a7" title="Stops a connection with a specific client asynchronous. Can provide reason. " alt="" coords="263,5,529,47"/>
+<area shape="rect" id="node3" href="$class_simple_web_socket_server_library_1_1_simple_web_socket_server.html#a15254218104e0b1a6af5363c7b0810a6" title="Stops a connection with a specific client synchronous. Can provide reason. " alt="" coords="281,71,511,112"/>
+</map>
