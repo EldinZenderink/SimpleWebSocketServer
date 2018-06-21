@@ -1,0 +1,5 @@
+var namespace_simple_web_socket_server_library_1_1_simple_web_socket_handler =
+[
+    [ "IWebSocketHandler", "interface_simple_web_socket_server_library_1_1_simple_web_socket_handler_1_1_i_web_socket_handler.html", "interface_simple_web_socket_server_library_1_1_simple_web_socket_handler_1_1_i_web_socket_handler" ],
+    [ "WebSocketHandler", "class_simple_web_socket_server_library_1_1_simple_web_socket_handler_1_1_web_socket_handler.html", "class_simple_web_socket_server_library_1_1_simple_web_socket_handler_1_1_web_socket_handler" ]
+];

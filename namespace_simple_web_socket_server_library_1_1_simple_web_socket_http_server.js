@@ -1,0 +1,5 @@
+var namespace_simple_web_socket_server_library_1_1_simple_web_socket_http_server =
+[
+    [ "IWebSocketHttpServer", "interface_simple_web_socket_server_library_1_1_simple_web_socket_http_server_1_1_i_web_socket_http_server.html", "interface_simple_web_socket_server_library_1_1_simple_web_socket_http_server_1_1_i_web_socket_http_server" ],
+    [ "WebSocketHttpServer", "class_simple_web_socket_server_library_1_1_simple_web_socket_http_server_1_1_web_socket_http_server.html", "class_simple_web_socket_server_library_1_1_simple_web_socket_http_server_1_1_web_socket_http_server" ]
+];
