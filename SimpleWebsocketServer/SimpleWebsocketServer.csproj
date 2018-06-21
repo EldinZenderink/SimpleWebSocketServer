@@ -9,8 +9,11 @@
     <RepositoryUrl>https://github.com/EldinZenderink/SimpleWebSocketServer</RepositoryUrl>
     <RepositoryType>GitHub, GIT</RepositoryType>
     <PackageTags>net45, net46, net47, netcoreapp20, netcoreapp21, websocket server, websocket, library</PackageTags>
-    <PackageReleaseNotes>First release.</PackageReleaseNotes>
+    <PackageReleaseNotes>-Fixed names
+-Removed some ugly cross calling between classes.
+-Added asynchronous and synchronous methods.</PackageReleaseNotes>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <Version>1.0.1</Version>
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(TargetFramework)|$(Platform)'=='Release|netcoreapp2.0|AnyCPU'">

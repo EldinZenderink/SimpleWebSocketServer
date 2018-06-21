@@ -1,0 +1,287 @@
+\hypertarget{class_simple_web_socket_server_library_1_1_simple_web_socket_http_server_1_1_web_socket_http_server}{}\section{Simple\+Web\+Socket\+Server\+Library.\+Simple\+Web\+Socket\+Http\+Server.\+Web\+Socket\+Http\+Server Class Reference}
+\label{class_simple_web_socket_server_library_1_1_simple_web_socket_http_server_1_1_web_socket_http_server}\index{Simple\+Web\+Socket\+Server\+Library.\+Simple\+Web\+Socket\+Http\+Server.\+Web\+Socket\+Http\+Server@{Simple\+Web\+Socket\+Server\+Library.\+Simple\+Web\+Socket\+Http\+Server.\+Web\+Socket\+Http\+Server}}
+
+
+Runs the http server where a client needs to connect to.  
+
+
+
+
+Inheritance diagram for Simple\+Web\+Socket\+Server\+Library.\+Simple\+Web\+Socket\+Http\+Server.\+Web\+Socket\+Http\+Server\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=277pt]{class_simple_web_socket_server_library_1_1_simple_web_socket_http_server_1_1_web_socket_http_server__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Simple\+Web\+Socket\+Server\+Library.\+Simple\+Web\+Socket\+Http\+Server.\+Web\+Socket\+Http\+Server\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_simple_web_socket_server_library_1_1_simple_web_socket_http_server_1_1_web_socket_http_server__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_simple_web_socket_server_library_1_1_simple_web_socket_http_server_1_1_web_socket_http_server_aa8e23540cfef48f5304591d1251f0f63}{Web\+Socket\+Http\+Server}} (\mbox{\hyperlink{interface_simple_web_socket_server_library_1_1_simple_web_socket_handler_1_1_i_web_socket_handler}{I\+Web\+Socket\+Handler}} websocket\+Handler, \mbox{\hyperlink{class_simple_web_socket_server_library_1_1_simple_web_socket_server_settings}{Simple\+Web\+Socket\+Server\+Settings}} settings)
+\begin{DoxyCompactList}\small\item\em Base constructor for setting up a Http\+Server to provide the endpoint to where a Web\+Socket can connect to. \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{class_simple_web_socket_server_library_1_1_simple_web_socket_http_server_1_1_web_socket_http_server_afc1c8b7fbec382f17e02bc5a6a1d0623}{Check\+If\+Base\+Url}} (string to\+Check)
+\begin{DoxyCompactList}\small\item\em Checks if given url path is one of the base paths, it ignores it otherwise. \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{class_simple_web_socket_server_library_1_1_simple_web_socket_http_server_1_1_web_socket_http_server_ad03927a5f521986b6fdbd1ee2c5d77ba}{Check\+If\+Custom\+Id\+Is\+Set}} (string base\+Url, string full\+Base\+Url)
+\begin{DoxyCompactList}\small\item\em Checks if the url used by the client contains more than the baseurl, which will be used as a customid. \end{DoxyCompactList}\item 
+byte \mbox{[}$\,$\mbox{]} \mbox{\hyperlink{class_simple_web_socket_server_library_1_1_simple_web_socket_http_server_1_1_web_socket_http_server_a069af261c2eea78d3c3b75a39f97ea15}{Generate\+Accept\+Response}} (string web\+Socket\+Key)
+\begin{DoxyCompactList}\small\item\em Generates the response header for a websocket upgrade. \end{DoxyCompactList}\item 
+async Task \mbox{\hyperlink{class_simple_web_socket_server_library_1_1_simple_web_socket_http_server_1_1_web_socket_http_server_a57b76afde46781493110c513b984417c}{Run\+Server}} ()
+\begin{DoxyCompactList}\small\item\em Runs the http server inside a async task. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_simple_web_socket_server_library_1_1_simple_web_socket_http_server_1_1_web_socket_http_server_af61f4c057d2af50ed5b8942424dbf3ad}{Stop}} ()
+\begin{DoxyCompactList}\small\item\em Stops the http server. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+string \mbox{\hyperlink{class_simple_web_socket_server_library_1_1_simple_web_socket_http_server_1_1_web_socket_http_server_a21e28d41ea86e21f91848fc50b6cea66}{Hash}} (string input)
+\begin{DoxyCompactList}\small\item\em Generates a hash used for generating the response header when accepting a websocket connection. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+readonly int \mbox{\hyperlink{class_simple_web_socket_server_library_1_1_simple_web_socket_http_server_1_1_web_socket_http_server_abe8db2f7583ba87d2731ca04a751ed28}{\+\_\+\+Port}}
+\begin{DoxyCompactList}\small\item\em Contains the port to listen to. \end{DoxyCompactList}\item 
+readonly \mbox{\hyperlink{interface_simple_web_socket_server_library_1_1_simple_web_socket_handler_1_1_i_web_socket_handler}{I\+Web\+Socket\+Handler}} \mbox{\hyperlink{class_simple_web_socket_server_library_1_1_simple_web_socket_http_server_1_1_web_socket_http_server_a4de0d450cb58e0ddabc5a270dd7806c8}{\+\_\+\+Websocket\+Handler}}
+\begin{DoxyCompactList}\small\item\em Contains the handler for websocket servers. \end{DoxyCompactList}\item 
+readonly List$<$ string $>$ \mbox{\hyperlink{class_simple_web_socket_server_library_1_1_simple_web_socket_http_server_1_1_web_socket_http_server_a70e5c60e525049aed662d4f174413f43}{\+\_\+\+Base\+Urls}}
+\begin{DoxyCompactList}\small\item\em Contains the list with baseurl paths to listen to. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_simple_web_socket_server_library_1_1_simple_web_socket_http_server_1_1_web_socket_http_server_ae945702bb623e9f65e14f23668c86cb1}{\+\_\+\+Stop}} = false
+\begin{DoxyCompactList}\small\item\em Tells the server task to stop and disconnect. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Runs the http server where a client needs to connect to. 
+
+
+
+Definition at line 34 of file Web\+Socket\+Http\+Server.\+cs.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_simple_web_socket_server_library_1_1_simple_web_socket_http_server_1_1_web_socket_http_server_aa8e23540cfef48f5304591d1251f0f63}\label{class_simple_web_socket_server_library_1_1_simple_web_socket_http_server_1_1_web_socket_http_server_aa8e23540cfef48f5304591d1251f0f63}} 
+\index{Simple\+Web\+Socket\+Server\+Library\+::\+Simple\+Web\+Socket\+Http\+Server\+::\+Web\+Socket\+Http\+Server@{Simple\+Web\+Socket\+Server\+Library\+::\+Simple\+Web\+Socket\+Http\+Server\+::\+Web\+Socket\+Http\+Server}!Web\+Socket\+Http\+Server@{Web\+Socket\+Http\+Server}}
+\index{Web\+Socket\+Http\+Server@{Web\+Socket\+Http\+Server}!Simple\+Web\+Socket\+Server\+Library\+::\+Simple\+Web\+Socket\+Http\+Server\+::\+Web\+Socket\+Http\+Server@{Simple\+Web\+Socket\+Server\+Library\+::\+Simple\+Web\+Socket\+Http\+Server\+::\+Web\+Socket\+Http\+Server}}
+\subsubsection{\texorpdfstring{Web\+Socket\+Http\+Server()}{WebSocketHttpServer()}}
+{\footnotesize\ttfamily Simple\+Web\+Socket\+Server\+Library.\+Simple\+Web\+Socket\+Http\+Server.\+Web\+Socket\+Http\+Server.\+Web\+Socket\+Http\+Server (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interface_simple_web_socket_server_library_1_1_simple_web_socket_handler_1_1_i_web_socket_handler}{I\+Web\+Socket\+Handler}}}]{websocket\+Handler,  }\item[{\mbox{\hyperlink{class_simple_web_socket_server_library_1_1_simple_web_socket_server_settings}{Simple\+Web\+Socket\+Server\+Settings}}}]{settings }\end{DoxyParamCaption})}
+
+
+
+Base constructor for setting up a Http\+Server to provide the endpoint to where a Web\+Socket can connect to. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em websocket\+Handler} & Web\+Socket Handler instance.\\
+\hline
+{\em settings} & Settings for the http server.\\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 59 of file Web\+Socket\+Http\+Server.\+cs.
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_simple_web_socket_server_library_1_1_simple_web_socket_http_server_1_1_web_socket_http_server_afc1c8b7fbec382f17e02bc5a6a1d0623}\label{class_simple_web_socket_server_library_1_1_simple_web_socket_http_server_1_1_web_socket_http_server_afc1c8b7fbec382f17e02bc5a6a1d0623}} 
+\index{Simple\+Web\+Socket\+Server\+Library\+::\+Simple\+Web\+Socket\+Http\+Server\+::\+Web\+Socket\+Http\+Server@{Simple\+Web\+Socket\+Server\+Library\+::\+Simple\+Web\+Socket\+Http\+Server\+::\+Web\+Socket\+Http\+Server}!Check\+If\+Base\+Url@{Check\+If\+Base\+Url}}
+\index{Check\+If\+Base\+Url@{Check\+If\+Base\+Url}!Simple\+Web\+Socket\+Server\+Library\+::\+Simple\+Web\+Socket\+Http\+Server\+::\+Web\+Socket\+Http\+Server@{Simple\+Web\+Socket\+Server\+Library\+::\+Simple\+Web\+Socket\+Http\+Server\+::\+Web\+Socket\+Http\+Server}}
+\subsubsection{\texorpdfstring{Check\+If\+Base\+Url()}{CheckIfBaseUrl()}}
+{\footnotesize\ttfamily string Simple\+Web\+Socket\+Server\+Library.\+Simple\+Web\+Socket\+Http\+Server.\+Web\+Socket\+Http\+Server.\+Check\+If\+Base\+Url (\begin{DoxyParamCaption}\item[{string}]{to\+Check }\end{DoxyParamCaption})}
+
+
+
+Checks if given url path is one of the base paths, it ignores it otherwise. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em to\+Check} & Path to check.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+String with the basepath if given string is the same, otherwise null.
+\end{DoxyReturn}
+
+
+Definition at line 71 of file Web\+Socket\+Http\+Server.\+cs.
+
+\mbox{\Hypertarget{class_simple_web_socket_server_library_1_1_simple_web_socket_http_server_1_1_web_socket_http_server_ad03927a5f521986b6fdbd1ee2c5d77ba}\label{class_simple_web_socket_server_library_1_1_simple_web_socket_http_server_1_1_web_socket_http_server_ad03927a5f521986b6fdbd1ee2c5d77ba}} 
+\index{Simple\+Web\+Socket\+Server\+Library\+::\+Simple\+Web\+Socket\+Http\+Server\+::\+Web\+Socket\+Http\+Server@{Simple\+Web\+Socket\+Server\+Library\+::\+Simple\+Web\+Socket\+Http\+Server\+::\+Web\+Socket\+Http\+Server}!Check\+If\+Custom\+Id\+Is\+Set@{Check\+If\+Custom\+Id\+Is\+Set}}
+\index{Check\+If\+Custom\+Id\+Is\+Set@{Check\+If\+Custom\+Id\+Is\+Set}!Simple\+Web\+Socket\+Server\+Library\+::\+Simple\+Web\+Socket\+Http\+Server\+::\+Web\+Socket\+Http\+Server@{Simple\+Web\+Socket\+Server\+Library\+::\+Simple\+Web\+Socket\+Http\+Server\+::\+Web\+Socket\+Http\+Server}}
+\subsubsection{\texorpdfstring{Check\+If\+Custom\+Id\+Is\+Set()}{CheckIfCustomIdIsSet()}}
+{\footnotesize\ttfamily string Simple\+Web\+Socket\+Server\+Library.\+Simple\+Web\+Socket\+Http\+Server.\+Web\+Socket\+Http\+Server.\+Check\+If\+Custom\+Id\+Is\+Set (\begin{DoxyParamCaption}\item[{string}]{base\+Url,  }\item[{string}]{full\+Base\+Url }\end{DoxyParamCaption})}
+
+
+
+Checks if the url used by the client contains more than the baseurl, which will be used as a customid. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em base\+Url} & \\
+\hline
+{\em full\+Base\+Url} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string with id if there is one, else null
+\end{DoxyReturn}
+
+
+Definition at line 89 of file Web\+Socket\+Http\+Server.\+cs.
+
+\mbox{\Hypertarget{class_simple_web_socket_server_library_1_1_simple_web_socket_http_server_1_1_web_socket_http_server_a069af261c2eea78d3c3b75a39f97ea15}\label{class_simple_web_socket_server_library_1_1_simple_web_socket_http_server_1_1_web_socket_http_server_a069af261c2eea78d3c3b75a39f97ea15}} 
+\index{Simple\+Web\+Socket\+Server\+Library\+::\+Simple\+Web\+Socket\+Http\+Server\+::\+Web\+Socket\+Http\+Server@{Simple\+Web\+Socket\+Server\+Library\+::\+Simple\+Web\+Socket\+Http\+Server\+::\+Web\+Socket\+Http\+Server}!Generate\+Accept\+Response@{Generate\+Accept\+Response}}
+\index{Generate\+Accept\+Response@{Generate\+Accept\+Response}!Simple\+Web\+Socket\+Server\+Library\+::\+Simple\+Web\+Socket\+Http\+Server\+::\+Web\+Socket\+Http\+Server@{Simple\+Web\+Socket\+Server\+Library\+::\+Simple\+Web\+Socket\+Http\+Server\+::\+Web\+Socket\+Http\+Server}}
+\subsubsection{\texorpdfstring{Generate\+Accept\+Response()}{GenerateAcceptResponse()}}
+{\footnotesize\ttfamily byte \mbox{[}$\,$\mbox{]} Simple\+Web\+Socket\+Server\+Library.\+Simple\+Web\+Socket\+Http\+Server.\+Web\+Socket\+Http\+Server.\+Generate\+Accept\+Response (\begin{DoxyParamCaption}\item[{string}]{web\+Socket\+Key }\end{DoxyParamCaption})}
+
+
+
+Generates the response header for a websocket upgrade. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em web\+Socket\+Key} & Key from client.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Byte array with response header.
+\end{DoxyReturn}
+
+
+Definition at line 125 of file Web\+Socket\+Http\+Server.\+cs.
+
+\mbox{\Hypertarget{class_simple_web_socket_server_library_1_1_simple_web_socket_http_server_1_1_web_socket_http_server_a21e28d41ea86e21f91848fc50b6cea66}\label{class_simple_web_socket_server_library_1_1_simple_web_socket_http_server_1_1_web_socket_http_server_a21e28d41ea86e21f91848fc50b6cea66}} 
+\index{Simple\+Web\+Socket\+Server\+Library\+::\+Simple\+Web\+Socket\+Http\+Server\+::\+Web\+Socket\+Http\+Server@{Simple\+Web\+Socket\+Server\+Library\+::\+Simple\+Web\+Socket\+Http\+Server\+::\+Web\+Socket\+Http\+Server}!Hash@{Hash}}
+\index{Hash@{Hash}!Simple\+Web\+Socket\+Server\+Library\+::\+Simple\+Web\+Socket\+Http\+Server\+::\+Web\+Socket\+Http\+Server@{Simple\+Web\+Socket\+Server\+Library\+::\+Simple\+Web\+Socket\+Http\+Server\+::\+Web\+Socket\+Http\+Server}}
+\subsubsection{\texorpdfstring{Hash()}{Hash()}}
+{\footnotesize\ttfamily string Simple\+Web\+Socket\+Server\+Library.\+Simple\+Web\+Socket\+Http\+Server.\+Web\+Socket\+Http\+Server.\+Hash (\begin{DoxyParamCaption}\item[{string}]{input }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Generates a hash used for generating the response header when accepting a websocket connection. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em input} & String to hash.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+S\+H\+A1 hashed string.
+\end{DoxyReturn}
+
+
+Definition at line 199 of file Web\+Socket\+Http\+Server.\+cs.
+
+\mbox{\Hypertarget{class_simple_web_socket_server_library_1_1_simple_web_socket_http_server_1_1_web_socket_http_server_a57b76afde46781493110c513b984417c}\label{class_simple_web_socket_server_library_1_1_simple_web_socket_http_server_1_1_web_socket_http_server_a57b76afde46781493110c513b984417c}} 
+\index{Simple\+Web\+Socket\+Server\+Library\+::\+Simple\+Web\+Socket\+Http\+Server\+::\+Web\+Socket\+Http\+Server@{Simple\+Web\+Socket\+Server\+Library\+::\+Simple\+Web\+Socket\+Http\+Server\+::\+Web\+Socket\+Http\+Server}!Run\+Server@{Run\+Server}}
+\index{Run\+Server@{Run\+Server}!Simple\+Web\+Socket\+Server\+Library\+::\+Simple\+Web\+Socket\+Http\+Server\+::\+Web\+Socket\+Http\+Server@{Simple\+Web\+Socket\+Server\+Library\+::\+Simple\+Web\+Socket\+Http\+Server\+::\+Web\+Socket\+Http\+Server}}
+\subsubsection{\texorpdfstring{Run\+Server()}{RunServer()}}
+{\footnotesize\ttfamily async Task Simple\+Web\+Socket\+Server\+Library.\+Simple\+Web\+Socket\+Http\+Server.\+Web\+Socket\+Http\+Server.\+Run\+Server (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Runs the http server inside a async task. 
+
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{interface_simple_web_socket_server_library_1_1_simple_web_socket_http_server_1_1_i_web_socket_http_server_ace7dda0ccffcbf99eb142e0b33ed3f54}{Simple\+Web\+Socket\+Server\+Library.\+Simple\+Web\+Socket\+Http\+Server.\+I\+Web\+Socket\+Http\+Server}}.
+
+
+
+Definition at line 141 of file Web\+Socket\+Http\+Server.\+cs.
+
+\mbox{\Hypertarget{class_simple_web_socket_server_library_1_1_simple_web_socket_http_server_1_1_web_socket_http_server_af61f4c057d2af50ed5b8942424dbf3ad}\label{class_simple_web_socket_server_library_1_1_simple_web_socket_http_server_1_1_web_socket_http_server_af61f4c057d2af50ed5b8942424dbf3ad}} 
+\index{Simple\+Web\+Socket\+Server\+Library\+::\+Simple\+Web\+Socket\+Http\+Server\+::\+Web\+Socket\+Http\+Server@{Simple\+Web\+Socket\+Server\+Library\+::\+Simple\+Web\+Socket\+Http\+Server\+::\+Web\+Socket\+Http\+Server}!Stop@{Stop}}
+\index{Stop@{Stop}!Simple\+Web\+Socket\+Server\+Library\+::\+Simple\+Web\+Socket\+Http\+Server\+::\+Web\+Socket\+Http\+Server@{Simple\+Web\+Socket\+Server\+Library\+::\+Simple\+Web\+Socket\+Http\+Server\+::\+Web\+Socket\+Http\+Server}}
+\subsubsection{\texorpdfstring{Stop()}{Stop()}}
+{\footnotesize\ttfamily void Simple\+Web\+Socket\+Server\+Library.\+Simple\+Web\+Socket\+Http\+Server.\+Web\+Socket\+Http\+Server.\+Stop (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Stops the http server. 
+
+
+
+Implements \mbox{\hyperlink{interface_simple_web_socket_server_library_1_1_simple_web_socket_http_server_1_1_i_web_socket_http_server_a73208116838cad69e1a7198ccfc89bbf}{Simple\+Web\+Socket\+Server\+Library.\+Simple\+Web\+Socket\+Http\+Server.\+I\+Web\+Socket\+Http\+Server}}.
+
+
+
+Definition at line 189 of file Web\+Socket\+Http\+Server.\+cs.
+
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{class_simple_web_socket_server_library_1_1_simple_web_socket_http_server_1_1_web_socket_http_server_a70e5c60e525049aed662d4f174413f43}\label{class_simple_web_socket_server_library_1_1_simple_web_socket_http_server_1_1_web_socket_http_server_a70e5c60e525049aed662d4f174413f43}} 
+\index{Simple\+Web\+Socket\+Server\+Library\+::\+Simple\+Web\+Socket\+Http\+Server\+::\+Web\+Socket\+Http\+Server@{Simple\+Web\+Socket\+Server\+Library\+::\+Simple\+Web\+Socket\+Http\+Server\+::\+Web\+Socket\+Http\+Server}!\+\_\+\+Base\+Urls@{\+\_\+\+Base\+Urls}}
+\index{\+\_\+\+Base\+Urls@{\+\_\+\+Base\+Urls}!Simple\+Web\+Socket\+Server\+Library\+::\+Simple\+Web\+Socket\+Http\+Server\+::\+Web\+Socket\+Http\+Server@{Simple\+Web\+Socket\+Server\+Library\+::\+Simple\+Web\+Socket\+Http\+Server\+::\+Web\+Socket\+Http\+Server}}
+\subsubsection{\texorpdfstring{\+\_\+\+Base\+Urls}{\_BaseUrls}}
+{\footnotesize\ttfamily readonly List$<$string$>$ Simple\+Web\+Socket\+Server\+Library.\+Simple\+Web\+Socket\+Http\+Server.\+Web\+Socket\+Http\+Server.\+\_\+\+Base\+Urls\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Contains the list with baseurl paths to listen to. 
+
+
+
+Definition at line 47 of file Web\+Socket\+Http\+Server.\+cs.
+
+\mbox{\Hypertarget{class_simple_web_socket_server_library_1_1_simple_web_socket_http_server_1_1_web_socket_http_server_abe8db2f7583ba87d2731ca04a751ed28}\label{class_simple_web_socket_server_library_1_1_simple_web_socket_http_server_1_1_web_socket_http_server_abe8db2f7583ba87d2731ca04a751ed28}} 
+\index{Simple\+Web\+Socket\+Server\+Library\+::\+Simple\+Web\+Socket\+Http\+Server\+::\+Web\+Socket\+Http\+Server@{Simple\+Web\+Socket\+Server\+Library\+::\+Simple\+Web\+Socket\+Http\+Server\+::\+Web\+Socket\+Http\+Server}!\+\_\+\+Port@{\+\_\+\+Port}}
+\index{\+\_\+\+Port@{\+\_\+\+Port}!Simple\+Web\+Socket\+Server\+Library\+::\+Simple\+Web\+Socket\+Http\+Server\+::\+Web\+Socket\+Http\+Server@{Simple\+Web\+Socket\+Server\+Library\+::\+Simple\+Web\+Socket\+Http\+Server\+::\+Web\+Socket\+Http\+Server}}
+\subsubsection{\texorpdfstring{\+\_\+\+Port}{\_Port}}
+{\footnotesize\ttfamily readonly int Simple\+Web\+Socket\+Server\+Library.\+Simple\+Web\+Socket\+Http\+Server.\+Web\+Socket\+Http\+Server.\+\_\+\+Port\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Contains the port to listen to. 
+
+
+
+Definition at line 39 of file Web\+Socket\+Http\+Server.\+cs.
+
+\mbox{\Hypertarget{class_simple_web_socket_server_library_1_1_simple_web_socket_http_server_1_1_web_socket_http_server_ae945702bb623e9f65e14f23668c86cb1}\label{class_simple_web_socket_server_library_1_1_simple_web_socket_http_server_1_1_web_socket_http_server_ae945702bb623e9f65e14f23668c86cb1}} 
+\index{Simple\+Web\+Socket\+Server\+Library\+::\+Simple\+Web\+Socket\+Http\+Server\+::\+Web\+Socket\+Http\+Server@{Simple\+Web\+Socket\+Server\+Library\+::\+Simple\+Web\+Socket\+Http\+Server\+::\+Web\+Socket\+Http\+Server}!\+\_\+\+Stop@{\+\_\+\+Stop}}
+\index{\+\_\+\+Stop@{\+\_\+\+Stop}!Simple\+Web\+Socket\+Server\+Library\+::\+Simple\+Web\+Socket\+Http\+Server\+::\+Web\+Socket\+Http\+Server@{Simple\+Web\+Socket\+Server\+Library\+::\+Simple\+Web\+Socket\+Http\+Server\+::\+Web\+Socket\+Http\+Server}}
+\subsubsection{\texorpdfstring{\+\_\+\+Stop}{\_Stop}}
+{\footnotesize\ttfamily bool Simple\+Web\+Socket\+Server\+Library.\+Simple\+Web\+Socket\+Http\+Server.\+Web\+Socket\+Http\+Server.\+\_\+\+Stop = false\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Tells the server task to stop and disconnect. 
+
+
+
+Definition at line 52 of file Web\+Socket\+Http\+Server.\+cs.
+
+\mbox{\Hypertarget{class_simple_web_socket_server_library_1_1_simple_web_socket_http_server_1_1_web_socket_http_server_a4de0d450cb58e0ddabc5a270dd7806c8}\label{class_simple_web_socket_server_library_1_1_simple_web_socket_http_server_1_1_web_socket_http_server_a4de0d450cb58e0ddabc5a270dd7806c8}} 
+\index{Simple\+Web\+Socket\+Server\+Library\+::\+Simple\+Web\+Socket\+Http\+Server\+::\+Web\+Socket\+Http\+Server@{Simple\+Web\+Socket\+Server\+Library\+::\+Simple\+Web\+Socket\+Http\+Server\+::\+Web\+Socket\+Http\+Server}!\+\_\+\+Websocket\+Handler@{\+\_\+\+Websocket\+Handler}}
+\index{\+\_\+\+Websocket\+Handler@{\+\_\+\+Websocket\+Handler}!Simple\+Web\+Socket\+Server\+Library\+::\+Simple\+Web\+Socket\+Http\+Server\+::\+Web\+Socket\+Http\+Server@{Simple\+Web\+Socket\+Server\+Library\+::\+Simple\+Web\+Socket\+Http\+Server\+::\+Web\+Socket\+Http\+Server}}
+\subsubsection{\texorpdfstring{\+\_\+\+Websocket\+Handler}{\_WebsocketHandler}}
+{\footnotesize\ttfamily readonly \mbox{\hyperlink{interface_simple_web_socket_server_library_1_1_simple_web_socket_handler_1_1_i_web_socket_handler}{I\+Web\+Socket\+Handler}} Simple\+Web\+Socket\+Server\+Library.\+Simple\+Web\+Socket\+Http\+Server.\+Web\+Socket\+Http\+Server.\+\_\+\+Websocket\+Handler\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Contains the handler for websocket servers. 
+
+
+
+Definition at line 43 of file Web\+Socket\+Http\+Server.\+cs.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{_web_socket_http_server_8cs}{Web\+Socket\+Http\+Server.\+cs}}\end{DoxyCompactItemize}

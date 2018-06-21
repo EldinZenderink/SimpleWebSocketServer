@@ -1,9 +1,10 @@
-﻿using System;
+﻿using SimpleWebSocketServerLibrary.WSocketServer;
+using System;
 using System.Collections.Generic;
 using System.Net.Sockets;
 using System.Threading.Tasks;
 
-namespace SimpleWebSocketServerLibrary
+namespace SimpleWebSocketServerLibrary.SimpleWebSocketHandler
 {
     /// <summary>
     /// Inteface for class: WebSocketHandler.
@@ -34,7 +35,7 @@ namespace SimpleWebSocketServerLibrary
         /// <param name="stream">NetworkStream stream handler.</param>
         /// <param name="clientId">Id of client.</param>
         /// <param name="baseUrl">URL path used by client.</param>
-        void StartConnection(TcpClient client, NetworkStream stream, string clientId, string baseUrl);
+        void StartConnection(TcpClient client, string clientId, string baseUrl);
         /// <summary>
         /// Stops a connection with a specific client.
         /// </summary>
@@ -65,7 +66,7 @@ namespace SimpleWebSocketServerLibrary
     /// <summary>
     /// Class contains handler for handeling multiple websocket clients and hubs.
     /// </summary>
-    class WebSocketHandler : IWebSocketHandler
+    public class WebSocketHandler : IWebSocketHandler
     {
         private readonly int _BufferSize;
         private readonly Dictionary<WebSocketClientInfo, WebSocketServer> _ListWithConnections;
@@ -89,19 +90,19 @@ namespace SimpleWebSocketServerLibrary
         /// <param name="stream">NetworkStream stream handler.</param>
         /// <param name="clientId">Id of client.</param>
         /// <param name="baseUrl">URL path used by client.</param>
-        public async void StartConnection(TcpClient client, NetworkStream stream, string clientId, string baseUrl)
+        public async void StartConnection(TcpClient client,  string clientId, string baseUrl)
         {
             WebSocketClientInfo info = new WebSocketClientInfo()
             {
                 client = client,
-                stream = stream,
                 clientId = clientId,
                 clientBaseUrl = baseUrl
             };
 
-            WebSocketServer newServer = new WebSocketServer(info, this, _BufferSize);
+            WebSocketServer newServer = new WebSocketServer(info, _BufferSize);
+            newServer.WebSocketServerEvent += OnWebsocketEvent;
             _ListWithConnections.Add(info, newServer);
-            await newServer.StartServer();
+            await newServer.StartServerAsync();
         }
 
         /// <summary>
@@ -116,7 +117,7 @@ namespace SimpleWebSocketServerLibrary
             {
                 if (connection.Key.clientId == clientId)
                 {
-                    succes = await connection.Value.StopServer();
+                    succes = await connection.Value.StopServerAsync();
                 }
             }
             return succes;
@@ -135,7 +136,7 @@ namespace SimpleWebSocketServerLibrary
             {
                 if (connection.Key.clientId == clientId)
                 {
-                    succes = await connection.Value.StopServer(reason);
+                    succes = await connection.Value.StopServerAsync(reason);
                 }
             }
 
@@ -151,7 +152,7 @@ namespace SimpleWebSocketServerLibrary
             bool succes = false;
             foreach (var connection in _ListWithConnections)
             {
-                 succes = await connection.Value.StopServer();
+                 succes = await connection.Value.StopServerAsync();
             }
 
             return succes;
@@ -167,7 +168,7 @@ namespace SimpleWebSocketServerLibrary
             bool succes = false;
             foreach (var connection in _ListWithConnections)
             {
-                succes = await connection.Value.StopServer();
+                succes = await connection.Value.StopServerAsync();
             }
 
             return succes;
@@ -185,7 +186,7 @@ namespace SimpleWebSocketServerLibrary
             {
                 if (connection.Key.clientId == clientId)
                 {
-                    return await connection.Value.SendMessage(message);
+                    return await connection.Value.SendMessageAsync(message);
                 }
             }
 
@@ -203,7 +204,7 @@ namespace SimpleWebSocketServerLibrary
             foreach (var connection in _ListWithConnections)
             {
                 
-                succes = await connection.Value.SendMessage(message);
+                succes = await connection.Value.SendMessageAsync(message);
             }
 
             return succes;
@@ -213,7 +214,7 @@ namespace SimpleWebSocketServerLibrary
         /// WebSocket Server event handler, fires the event.
         /// </summary>
         /// <param name="arg">Arguments containing event arguments.</param>
-        public void OnWebsocketEvent(WebSocketEventArg arg)
+        public void OnWebsocketEvent(object sender, WebSocketEventArg arg)
         {
             WebsocketEvent?.Invoke(this, arg);
         }

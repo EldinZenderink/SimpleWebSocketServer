@@ -1,0 +1,13 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="namespace_simple_web_socket_server_library_1_1_simple_web_socket_handler" kind="namespace" language="C#">
+    <compoundname>SimpleWebSocketServerLibrary::SimpleWebSocketHandler</compoundname>
+    <innerclass refid="interface_simple_web_socket_server_library_1_1_simple_web_socket_handler_1_1_i_web_socket_handler" prot="public">SimpleWebSocketServerLibrary::SimpleWebSocketHandler::IWebSocketHandler</innerclass>
+    <innerclass refid="class_simple_web_socket_server_library_1_1_simple_web_socket_handler_1_1_web_socket_handler" prot="public">SimpleWebSocketServerLibrary::SimpleWebSocketHandler::WebSocketHandler</innerclass>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="WebsocketHandler.cs" line="8" column="1"/>
+  </compounddef>
+</doxygen>

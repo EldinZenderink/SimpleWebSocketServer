@@ -6,22 +6,32 @@ using System.Net.Sockets;
 using System.Security.Cryptography;
 using System.Text;
 using System.Threading.Tasks;
+using SimpleWebSocketServerLibrary;
+using SimpleWebSocketServerLibrary.SimpleWebSocketHandler;
 
-namespace SimpleWebSocketServerLibrary
+namespace SimpleWebSocketServerLibrary.SimpleWebSocketHttpServer
 {
     /// <summary>
     /// Interface for WebSocketHttpServer class.
     /// </summary>
     public interface IWebSocketHttpServer
     {
+        /// <summary>
+        /// Starts a server within a task.
+        /// </summary>
+        /// <returns></returns>
         Task RunServer();
+
+        /// <summary>
+        /// Sets a global value within the class that tells the server to stop running.
+        /// </summary>
         void Stop();
     }
 
     /// <summary>
     /// Runs the http server where a client needs to connect to.
     /// </summary>
-    class WebSocketHttpServer : IWebSocketHttpServer
+    public class WebSocketHttpServer : IWebSocketHttpServer
     {
         /// <summary>
         /// Contains the port to listen to.
@@ -157,11 +167,11 @@ namespace SimpleWebSocketServerLibrary
 
                     if (customId == null)
                     {
-                        _WebsocketHandler.StartConnection(client, stream, Guid.NewGuid().ToString("N"), baseUrlDecoded);
+                        _WebsocketHandler.StartConnection(client, Guid.NewGuid().ToString("N"), baseUrlDecoded);
                     }
                     else
                     {
-                        _WebsocketHandler.StartConnection(client, stream, customId, baseUrlDecoded);
+                        _WebsocketHandler.StartConnection(client, customId, baseUrlDecoded);
                     }
                 }
                 else

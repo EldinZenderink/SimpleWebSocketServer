@@ -1,0 +1,690 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="class_simple_web_socket_server_library_1_1_simple_web_socket_server" kind="class" language="C#" prot="public">
+    <compoundname>SimpleWebSocketServerLibrary::SimpleWebSocketServer</compoundname>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_simple_web_socket_server_library_1_1_simple_web_socket_server_1a4bfb888a3f666e48f561a55373eb4bd3" prot="private" static="no" mutable="no">
+        <type>readonly <ref refid="interface_simple_web_socket_server_library_1_1_simple_web_socket_handler_1_1_i_web_socket_handler" kindref="compound">IWebSocketHandler</ref></type>
+        <definition>readonly IWebSocketHandler SimpleWebSocketServerLibrary.SimpleWebSocketServer._WebsocketHandler</definition>
+        <argsstring></argsstring>
+        <name>_WebsocketHandler</name>
+        <briefdescription>
+<para>Interface for the WebSocketHandler class. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SimpleWebsocketServer.cs" line="17" column="1" bodyfile="SimpleWebsocketServer.cs" bodystart="17" bodyend="-1"/>
+        <referencedby refid="class_simple_web_socket_server_library_1_1_simple_web_socket_server_1af3cde755fdb2781292c27174161508ed" compoundref="_simple_websocket_server_8cs" startline="33" endline="38">SimpleWebSocketServerLibrary.SimpleWebSocketServer.SimpleWebSocketServer</referencedby>
+        <referencedby refid="class_simple_web_socket_server_library_1_1_simple_web_socket_server_1aefe75fd888dea52bd64108dd03abed61" compoundref="_simple_websocket_server_8cs" startline="77" endline="91">SimpleWebSocketServerLibrary.SimpleWebSocketServer.SendTextMessageAsync</referencedby>
+        <referencedby refid="class_simple_web_socket_server_library_1_1_simple_web_socket_server_1a4ea5479402f769e2e73a8bcc06b654b1" compoundref="_simple_websocket_server_8cs" startline="99" endline="113">SimpleWebSocketServerLibrary.SimpleWebSocketServer.SendTextMessage</referencedby>
+        <referencedby refid="class_simple_web_socket_server_library_1_1_simple_web_socket_server_1a9d94bdf3e2964c65cafc62a80102a28c" compoundref="_simple_websocket_server_8cs" startline="122" endline="136">SimpleWebSocketServerLibrary.SimpleWebSocketServer.SendBinaryMessageAsync</referencedby>
+        <referencedby refid="class_simple_web_socket_server_library_1_1_simple_web_socket_server_1ac6ddccc7dd4b54d16721d2dca025dc58" compoundref="_simple_websocket_server_8cs" startline="144" endline="158">SimpleWebSocketServerLibrary.SimpleWebSocketServer.SendBinaryMessage</referencedby>
+        <referencedby refid="class_simple_web_socket_server_library_1_1_simple_web_socket_server_1a7f0eca90a424040685527ac873c31229" compoundref="_simple_websocket_server_8cs" startline="166" endline="179">SimpleWebSocketServerLibrary.SimpleWebSocketServer.SendPingMessageAsync</referencedby>
+        <referencedby refid="class_simple_web_socket_server_library_1_1_simple_web_socket_server_1ab47f01467513ad98f0d9de69d41e12a5" compoundref="_simple_websocket_server_8cs" startline="187" endline="200">SimpleWebSocketServerLibrary.SimpleWebSocketServer.SendPingMessage</referencedby>
+        <referencedby refid="class_simple_web_socket_server_library_1_1_simple_web_socket_server_1a20bd2a898b9465f492a5b19c4a8e1021" compoundref="_simple_websocket_server_8cs" startline="208" endline="221">SimpleWebSocketServerLibrary.SimpleWebSocketServer.SendPongMessageAsync</referencedby>
+        <referencedby refid="class_simple_web_socket_server_library_1_1_simple_web_socket_server_1af1f35a19ed0272c0bd02bf51f175b4b7" compoundref="_simple_websocket_server_8cs" startline="229" endline="242">SimpleWebSocketServerLibrary.SimpleWebSocketServer.SendPongMessage</referencedby>
+        <referencedby refid="class_simple_web_socket_server_library_1_1_simple_web_socket_server_1ad0559ffe3b936e25e202b205fa2931a7" compoundref="_simple_websocket_server_8cs" startline="250" endline="260">SimpleWebSocketServerLibrary.SimpleWebSocketServer.StopClientAsync</referencedby>
+        <referencedby refid="class_simple_web_socket_server_library_1_1_simple_web_socket_server_1a15254218104e0b1a6af5363c7b0810a6" compoundref="_simple_websocket_server_8cs" startline="268" endline="278">SimpleWebSocketServerLibrary.SimpleWebSocketServer.StopClient</referencedby>
+        <referencedby refid="class_simple_web_socket_server_library_1_1_simple_web_socket_server_1a1bb139b6266636ee732e584926844fdf" compoundref="_simple_websocket_server_8cs" startline="286" endline="296">SimpleWebSocketServerLibrary.SimpleWebSocketServer.StopAllAsync</referencedby>
+        <referencedby refid="class_simple_web_socket_server_library_1_1_simple_web_socket_server_1ad80184887910735a4caa22b903ee5fd1" compoundref="_simple_websocket_server_8cs" startline="303" endline="313">SimpleWebSocketServerLibrary.SimpleWebSocketServer.StopAll</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_simple_web_socket_server_library_1_1_simple_web_socket_server_1af16d2b86849d66572a4bbf06ddc5e94e" prot="private" static="no" mutable="no">
+        <type>readonly <ref refid="interface_simple_web_socket_server_library_1_1_simple_web_socket_http_server_1_1_i_web_socket_http_server" kindref="compound">IWebSocketHttpServer</ref></type>
+        <definition>readonly IWebSocketHttpServer SimpleWebSocketServerLibrary.SimpleWebSocketServer._WebSocketHttpServer</definition>
+        <argsstring></argsstring>
+        <name>_WebSocketHttpServer</name>
+        <briefdescription>
+<para>Interface for the WebSocketHttpServer class. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SimpleWebsocketServer.cs" line="21" column="1" bodyfile="SimpleWebsocketServer.cs" bodystart="21" bodyend="-1"/>
+        <referencedby refid="class_simple_web_socket_server_library_1_1_simple_web_socket_server_1af3cde755fdb2781292c27174161508ed" compoundref="_simple_websocket_server_8cs" startline="33" endline="38">SimpleWebSocketServerLibrary.SimpleWebSocketServer.SimpleWebSocketServer</referencedby>
+        <referencedby refid="class_simple_web_socket_server_library_1_1_simple_web_socket_server_1a14730d592f2fdd3278a8df1403ebd672" compoundref="_simple_websocket_server_8cs" startline="58" endline="61">SimpleWebSocketServerLibrary.SimpleWebSocketServer.StartServerAsync</referencedby>
+        <referencedby refid="class_simple_web_socket_server_library_1_1_simple_web_socket_server_1ad354c38a3f5583fe213ab913085c320a" compoundref="_simple_websocket_server_8cs" startline="66" endline="69">SimpleWebSocketServerLibrary.SimpleWebSocketServer.StartServer</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="event">
+      <memberdef kind="event" id="class_simple_web_socket_server_library_1_1_simple_web_socket_server_1adfd5705f4c6ccf291409035cd1d1e34b" prot="public" static="no" add="no" remove="no" raise="no">
+        <type>EventHandler&lt; <ref refid="class_simple_web_socket_server_library_1_1_web_socket_event_arg" kindref="compound">WebSocketEventArg</ref> &gt;</type>
+        <definition>EventHandler&lt;WebSocketEventArg&gt; SimpleWebSocketServerLibrary.SimpleWebSocketServer.WebsocketServerEvent</definition>
+        <argsstring></argsstring>
+        <name>WebsocketServerEvent</name>
+        <briefdescription>
+<para>Eventhandler for when events such as receiving messages and errors from the websocket server happen. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SimpleWebsocketServer.cs" line="27" column="1" bodyfile="SimpleWebsocketServer.cs" bodystart="27" bodyend="-1"/>
+        <referencedby refid="class_simple_web_socket_server_library_1_1_simple_web_socket_server_1acc5670ca5bb72d689d08682f5328477e" compoundref="_simple_websocket_server_8cs" startline="50" endline="53">SimpleWebSocketServerLibrary.SimpleWebSocketServer.OnWebsocketServerEvent</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_simple_web_socket_server_library_1_1_simple_web_socket_server_1af3cde755fdb2781292c27174161508ed" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>SimpleWebSocketServerLibrary.SimpleWebSocketServer.SimpleWebSocketServer</definition>
+        <argsstring>(SimpleWebSocketServerSettings settings)</argsstring>
+        <name>SimpleWebSocketServer</name>
+        <param>
+          <type><ref refid="class_simple_web_socket_server_library_1_1_simple_web_socket_server_settings" kindref="compound">SimpleWebSocketServerSettings</ref></type>
+          <declname>settings</declname>
+        </param>
+        <briefdescription>
+<para>Constructor for setting up the Library. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>settings</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Settings with default values.</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SimpleWebsocketServer.cs" line="33" column="1" bodyfile="SimpleWebsocketServer.cs" bodystart="33" bodyend="38"/>
+        <references refid="class_simple_web_socket_server_library_1_1_simple_web_socket_server_1a4bfb888a3f666e48f561a55373eb4bd3" compoundref="_simple_websocket_server_8cs" startline="17">SimpleWebSocketServerLibrary.SimpleWebSocketServer._WebsocketHandler</references>
+        <references refid="class_simple_web_socket_server_library_1_1_simple_web_socket_server_settings_1a4ef28355e14363a3884552e8b7fb9567" compoundref="_simple_web_socket_server_settings_8cs" startline="21" endline="21">SimpleWebSocketServerLibrary.SimpleWebSocketServerSettings.bufferSize</references>
+        <references refid="interface_simple_web_socket_server_library_1_1_simple_web_socket_handler_1_1_i_web_socket_handler_1a49e994104add420c0583de677b3cc4b1" compoundref="_websocket_handler_8cs" startline="17">SimpleWebSocketServerLibrary.SimpleWebSocketHandler.IWebSocketHandler.WebsocketEvent</references>
+        <references refid="class_simple_web_socket_server_library_1_1_simple_web_socket_server_1acc5670ca5bb72d689d08682f5328477e" compoundref="_simple_websocket_server_8cs" startline="50" endline="53">SimpleWebSocketServerLibrary.SimpleWebSocketServer.OnWebsocketServerEvent</references>
+        <references refid="class_simple_web_socket_server_library_1_1_simple_web_socket_server_1af16d2b86849d66572a4bbf06ddc5e94e" compoundref="_simple_websocket_server_8cs" startline="21">SimpleWebSocketServerLibrary.SimpleWebSocketServer._WebSocketHttpServer</references>
+      </memberdef>
+      <memberdef kind="function" id="class_simple_web_socket_server_library_1_1_simple_web_socket_server_1adb600b8e26bb7a91c7e8a196de1c3c68" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>SimpleWebSocketServerLibrary.SimpleWebSocketServer.SimpleWebSocketServer</definition>
+        <argsstring>()</argsstring>
+        <name>SimpleWebSocketServer</name>
+        <briefdescription>
+<para>Overload constructor for setting up library with default values. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SimpleWebsocketServer.cs" line="43" column="1" bodyfile="SimpleWebsocketServer.cs" bodystart="43" bodyend="43"/>
+      </memberdef>
+      <memberdef kind="function" id="class_simple_web_socket_server_library_1_1_simple_web_socket_server_1a14730d592f2fdd3278a8df1403ebd672" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>async Task</type>
+        <definition>async Task SimpleWebSocketServerLibrary.SimpleWebSocketServer.StartServerAsync</definition>
+        <argsstring>()</argsstring>
+        <name>StartServerAsync</name>
+        <briefdescription>
+<para>Starts running the server async. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SimpleWebsocketServer.cs" line="58" column="1" bodyfile="SimpleWebsocketServer.cs" bodystart="58" bodyend="61"/>
+        <references refid="class_simple_web_socket_server_library_1_1_simple_web_socket_server_1af16d2b86849d66572a4bbf06ddc5e94e" compoundref="_simple_websocket_server_8cs" startline="21">SimpleWebSocketServerLibrary.SimpleWebSocketServer._WebSocketHttpServer</references>
+        <references refid="interface_simple_web_socket_server_library_1_1_simple_web_socket_http_server_1_1_i_web_socket_http_server_1ace7dda0ccffcbf99eb142e0b33ed3f54">SimpleWebSocketServerLibrary.SimpleWebSocketHttpServer.IWebSocketHttpServer.RunServer</references>
+      </memberdef>
+      <memberdef kind="function" id="class_simple_web_socket_server_library_1_1_simple_web_socket_server_1ad354c38a3f5583fe213ab913085c320a" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void SimpleWebSocketServerLibrary.SimpleWebSocketServer.StartServer</definition>
+        <argsstring>()</argsstring>
+        <name>StartServer</name>
+        <briefdescription>
+<para>Starts running the server async. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SimpleWebsocketServer.cs" line="66" column="1" bodyfile="SimpleWebsocketServer.cs" bodystart="66" bodyend="69"/>
+        <references refid="class_simple_web_socket_server_library_1_1_simple_web_socket_server_1af16d2b86849d66572a4bbf06ddc5e94e" compoundref="_simple_websocket_server_8cs" startline="21">SimpleWebSocketServerLibrary.SimpleWebSocketServer._WebSocketHttpServer</references>
+        <references refid="interface_simple_web_socket_server_library_1_1_simple_web_socket_http_server_1_1_i_web_socket_http_server_1ace7dda0ccffcbf99eb142e0b33ed3f54">SimpleWebSocketServerLibrary.SimpleWebSocketHttpServer.IWebSocketHttpServer.RunServer</references>
+      </memberdef>
+      <memberdef kind="function" id="class_simple_web_socket_server_library_1_1_simple_web_socket_server_1aefe75fd888dea52bd64108dd03abed61" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>async Task&lt; bool &gt;</type>
+        <definition>async Task&lt;bool&gt; SimpleWebSocketServerLibrary.SimpleWebSocketServer.SendTextMessageAsync</definition>
+        <argsstring>(string messageToSend, string clientId=null)</argsstring>
+        <name>SendTextMessageAsync</name>
+        <param>
+          <type>string</type>
+          <declname>messageToSend</declname>
+        </param>
+        <param>
+          <type>string</type>
+          <declname>clientId</declname>
+          <defval>null</defval>
+        </param>
+        <briefdescription>
+<para>Overload method for sending text messages to a specific client, using it&apos;s id, asynchronous. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>messageToSend</parametername>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>clientId</parametername>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>True when send succesfully.</para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SimpleWebsocketServer.cs" line="77" column="1" bodyfile="SimpleWebsocketServer.cs" bodystart="77" bodyend="91"/>
+        <references refid="class_simple_web_socket_server_library_1_1_simple_web_socket_server_1a4bfb888a3f666e48f561a55373eb4bd3" compoundref="_simple_websocket_server_8cs" startline="17">SimpleWebSocketServerLibrary.SimpleWebSocketServer._WebsocketHandler</references>
+        <references refid="interface_simple_web_socket_server_library_1_1_simple_web_socket_handler_1_1_i_web_socket_handler_1a3d9b246d14117c85014486b3f5bb71c8">SimpleWebSocketServerLibrary.SimpleWebSocketHandler.IWebSocketHandler.SendMessage</references>
+      </memberdef>
+      <memberdef kind="function" id="class_simple_web_socket_server_library_1_1_simple_web_socket_server_1a4ea5479402f769e2e73a8bcc06b654b1" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool SimpleWebSocketServerLibrary.SimpleWebSocketServer.SendTextMessage</definition>
+        <argsstring>(string messageToSend, string clientId=null)</argsstring>
+        <name>SendTextMessage</name>
+        <param>
+          <type>string</type>
+          <declname>messageToSend</declname>
+        </param>
+        <param>
+          <type>string</type>
+          <declname>clientId</declname>
+          <defval>null</defval>
+        </param>
+        <briefdescription>
+<para>Overload method for sending text messages to a specific client, using it&apos;s id, synchronous. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>messageToSend</parametername>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>clientId</parametername>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>True when send succesfully.</para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SimpleWebsocketServer.cs" line="99" column="1" bodyfile="SimpleWebsocketServer.cs" bodystart="99" bodyend="113"/>
+        <references refid="class_simple_web_socket_server_library_1_1_simple_web_socket_server_1a4bfb888a3f666e48f561a55373eb4bd3" compoundref="_simple_websocket_server_8cs" startline="17">SimpleWebSocketServerLibrary.SimpleWebSocketServer._WebsocketHandler</references>
+        <references refid="interface_simple_web_socket_server_library_1_1_simple_web_socket_handler_1_1_i_web_socket_handler_1a3d9b246d14117c85014486b3f5bb71c8">SimpleWebSocketServerLibrary.SimpleWebSocketHandler.IWebSocketHandler.SendMessage</references>
+      </memberdef>
+      <memberdef kind="function" id="class_simple_web_socket_server_library_1_1_simple_web_socket_server_1a9d94bdf3e2964c65cafc62a80102a28c" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>async Task&lt; bool &gt;</type>
+        <definition>async Task&lt;bool&gt; SimpleWebSocketServerLibrary.SimpleWebSocketServer.SendBinaryMessageAsync</definition>
+        <argsstring>(byte[] messageToSend, string clientId=null)</argsstring>
+        <name>SendBinaryMessageAsync</name>
+        <param>
+          <type>byte []</type>
+          <declname>messageToSend</declname>
+        </param>
+        <param>
+          <type>string</type>
+          <declname>clientId</declname>
+          <defval>null</defval>
+        </param>
+        <briefdescription>
+<para>Sends a binary &quot;message&quot; to a specific client asynchronous. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>messageToSend</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Message in binary format (byte array).</para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>clientId</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Client to send to.</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>True when succesfully send.</para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SimpleWebsocketServer.cs" line="122" column="1" bodyfile="SimpleWebsocketServer.cs" bodystart="122" bodyend="136"/>
+        <references refid="class_simple_web_socket_server_library_1_1_simple_web_socket_server_1a4bfb888a3f666e48f561a55373eb4bd3" compoundref="_simple_websocket_server_8cs" startline="17">SimpleWebSocketServerLibrary.SimpleWebSocketServer._WebsocketHandler</references>
+        <references refid="interface_simple_web_socket_server_library_1_1_simple_web_socket_handler_1_1_i_web_socket_handler_1a3d9b246d14117c85014486b3f5bb71c8">SimpleWebSocketServerLibrary.SimpleWebSocketHandler.IWebSocketHandler.SendMessage</references>
+      </memberdef>
+      <memberdef kind="function" id="class_simple_web_socket_server_library_1_1_simple_web_socket_server_1ac6ddccc7dd4b54d16721d2dca025dc58" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool SimpleWebSocketServerLibrary.SimpleWebSocketServer.SendBinaryMessage</definition>
+        <argsstring>(byte[] messageToSend, string clientId=null)</argsstring>
+        <name>SendBinaryMessage</name>
+        <param>
+          <type>byte []</type>
+          <declname>messageToSend</declname>
+        </param>
+        <param>
+          <type>string</type>
+          <declname>clientId</declname>
+          <defval>null</defval>
+        </param>
+        <briefdescription>
+<para>Sends a binary &quot;message&quot; to a specific client synchronous. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>messageToSend</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Message in binary format (byte array).</para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>clientId</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Client to send to.</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>True when succesfully send.</para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SimpleWebsocketServer.cs" line="144" column="1" bodyfile="SimpleWebsocketServer.cs" bodystart="144" bodyend="158"/>
+        <references refid="class_simple_web_socket_server_library_1_1_simple_web_socket_server_1a4bfb888a3f666e48f561a55373eb4bd3" compoundref="_simple_websocket_server_8cs" startline="17">SimpleWebSocketServerLibrary.SimpleWebSocketServer._WebsocketHandler</references>
+        <references refid="interface_simple_web_socket_server_library_1_1_simple_web_socket_handler_1_1_i_web_socket_handler_1a3d9b246d14117c85014486b3f5bb71c8">SimpleWebSocketServerLibrary.SimpleWebSocketHandler.IWebSocketHandler.SendMessage</references>
+      </memberdef>
+      <memberdef kind="function" id="class_simple_web_socket_server_library_1_1_simple_web_socket_server_1a7f0eca90a424040685527ac873c31229" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>async Task&lt; bool &gt;</type>
+        <definition>async Task&lt;bool&gt; SimpleWebSocketServerLibrary.SimpleWebSocketServer.SendPingMessageAsync</definition>
+        <argsstring>(string messageToSend=&quot;&quot;, string clientId=null)</argsstring>
+        <name>SendPingMessageAsync</name>
+        <param>
+          <type>string</type>
+          <declname>messageToSend</declname>
+          <defval>&quot;&quot;</defval>
+        </param>
+        <param>
+          <type>string</type>
+          <declname>clientId</declname>
+          <defval>null</defval>
+        </param>
+        <briefdescription>
+<para>Sends a ping message to all clients asynchronous, can have message. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>messageToSend</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Possible extra message to send along ping.</para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>clientId</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Set clientId in case you want to send to a specific client.</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>True when succesfully send.</para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SimpleWebsocketServer.cs" line="166" column="1" bodyfile="SimpleWebsocketServer.cs" bodystart="166" bodyend="179"/>
+        <references refid="class_simple_web_socket_server_library_1_1_simple_web_socket_server_1a4bfb888a3f666e48f561a55373eb4bd3" compoundref="_simple_websocket_server_8cs" startline="17">SimpleWebSocketServerLibrary.SimpleWebSocketServer._WebsocketHandler</references>
+        <references refid="interface_simple_web_socket_server_library_1_1_simple_web_socket_handler_1_1_i_web_socket_handler_1a3d9b246d14117c85014486b3f5bb71c8">SimpleWebSocketServerLibrary.SimpleWebSocketHandler.IWebSocketHandler.SendMessage</references>
+      </memberdef>
+      <memberdef kind="function" id="class_simple_web_socket_server_library_1_1_simple_web_socket_server_1ab47f01467513ad98f0d9de69d41e12a5" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool SimpleWebSocketServerLibrary.SimpleWebSocketServer.SendPingMessage</definition>
+        <argsstring>(string messageToSend=&quot;&quot;, string clientId=null)</argsstring>
+        <name>SendPingMessage</name>
+        <param>
+          <type>string</type>
+          <declname>messageToSend</declname>
+          <defval>&quot;&quot;</defval>
+        </param>
+        <param>
+          <type>string</type>
+          <declname>clientId</declname>
+          <defval>null</defval>
+        </param>
+        <briefdescription>
+<para>Sends a ping message to all clients synchronous, can have message. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>messageToSend</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Possible extra message to send along ping.</para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>clientId</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Set clientId in case you want to send to a specific client.</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>True when succesfully send.</para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SimpleWebsocketServer.cs" line="187" column="1" bodyfile="SimpleWebsocketServer.cs" bodystart="187" bodyend="200"/>
+        <references refid="class_simple_web_socket_server_library_1_1_simple_web_socket_server_1a4bfb888a3f666e48f561a55373eb4bd3" compoundref="_simple_websocket_server_8cs" startline="17">SimpleWebSocketServerLibrary.SimpleWebSocketServer._WebsocketHandler</references>
+        <references refid="interface_simple_web_socket_server_library_1_1_simple_web_socket_handler_1_1_i_web_socket_handler_1a3d9b246d14117c85014486b3f5bb71c8">SimpleWebSocketServerLibrary.SimpleWebSocketHandler.IWebSocketHandler.SendMessage</references>
+      </memberdef>
+      <memberdef kind="function" id="class_simple_web_socket_server_library_1_1_simple_web_socket_server_1a20bd2a898b9465f492a5b19c4a8e1021" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>async Task&lt; bool &gt;</type>
+        <definition>async Task&lt;bool&gt; SimpleWebSocketServerLibrary.SimpleWebSocketServer.SendPongMessageAsync</definition>
+        <argsstring>(string messageToSend=&quot;&quot;, string clientId=null)</argsstring>
+        <name>SendPongMessageAsync</name>
+        <param>
+          <type>string</type>
+          <declname>messageToSend</declname>
+          <defval>&quot;&quot;</defval>
+        </param>
+        <param>
+          <type>string</type>
+          <declname>clientId</declname>
+          <defval>null</defval>
+        </param>
+        <briefdescription>
+<para>Send pong message to all available clients asynchronous, can have message. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>messageToSend</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Possible extra message to send along ping.</para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>clientId</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Set clientId in case you want to send to a specific client.</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>True when succesfully send.</para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SimpleWebsocketServer.cs" line="208" column="1" bodyfile="SimpleWebsocketServer.cs" bodystart="208" bodyend="221"/>
+        <references refid="class_simple_web_socket_server_library_1_1_simple_web_socket_server_1a4bfb888a3f666e48f561a55373eb4bd3" compoundref="_simple_websocket_server_8cs" startline="17">SimpleWebSocketServerLibrary.SimpleWebSocketServer._WebsocketHandler</references>
+        <references refid="interface_simple_web_socket_server_library_1_1_simple_web_socket_handler_1_1_i_web_socket_handler_1a3d9b246d14117c85014486b3f5bb71c8">SimpleWebSocketServerLibrary.SimpleWebSocketHandler.IWebSocketHandler.SendMessage</references>
+      </memberdef>
+      <memberdef kind="function" id="class_simple_web_socket_server_library_1_1_simple_web_socket_server_1af1f35a19ed0272c0bd02bf51f175b4b7" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool SimpleWebSocketServerLibrary.SimpleWebSocketServer.SendPongMessage</definition>
+        <argsstring>(string messageToSend=&quot;&quot;, string clientId=null)</argsstring>
+        <name>SendPongMessage</name>
+        <param>
+          <type>string</type>
+          <declname>messageToSend</declname>
+          <defval>&quot;&quot;</defval>
+        </param>
+        <param>
+          <type>string</type>
+          <declname>clientId</declname>
+          <defval>null</defval>
+        </param>
+        <briefdescription>
+<para>Send pong message to all available clients synchronous, can have message. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>messageToSend</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Possible extra message to send along ping.</para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>clientId</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Set clientId in case you want to send to a specific client.</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>True when succesfully send.</para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SimpleWebsocketServer.cs" line="229" column="1" bodyfile="SimpleWebsocketServer.cs" bodystart="229" bodyend="242"/>
+        <references refid="class_simple_web_socket_server_library_1_1_simple_web_socket_server_1a4bfb888a3f666e48f561a55373eb4bd3" compoundref="_simple_websocket_server_8cs" startline="17">SimpleWebSocketServerLibrary.SimpleWebSocketServer._WebsocketHandler</references>
+        <references refid="interface_simple_web_socket_server_library_1_1_simple_web_socket_handler_1_1_i_web_socket_handler_1a3d9b246d14117c85014486b3f5bb71c8">SimpleWebSocketServerLibrary.SimpleWebSocketHandler.IWebSocketHandler.SendMessage</references>
+      </memberdef>
+      <memberdef kind="function" id="class_simple_web_socket_server_library_1_1_simple_web_socket_server_1ad0559ffe3b936e25e202b205fa2931a7" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>async Task&lt; bool &gt;</type>
+        <definition>async Task&lt;bool&gt; SimpleWebSocketServerLibrary.SimpleWebSocketServer.StopClientAsync</definition>
+        <argsstring>(string clientId, string reason=&quot;&quot;)</argsstring>
+        <name>StopClientAsync</name>
+        <param>
+          <type>string</type>
+          <declname>clientId</declname>
+        </param>
+        <param>
+          <type>string</type>
+          <declname>reason</declname>
+          <defval>&quot;&quot;</defval>
+        </param>
+        <briefdescription>
+<para>Stops a connection with a specific client asynchronous. Can provide reason. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>clientId</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Specific client to close connection with.</para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>reason</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Possible reason to close the connection.</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>True when succesfully closed.</para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SimpleWebsocketServer.cs" line="250" column="1" bodyfile="SimpleWebsocketServer.cs" bodystart="250" bodyend="260"/>
+        <references refid="class_simple_web_socket_server_library_1_1_simple_web_socket_server_1a4bfb888a3f666e48f561a55373eb4bd3" compoundref="_simple_websocket_server_8cs" startline="17">SimpleWebSocketServerLibrary.SimpleWebSocketServer._WebsocketHandler</references>
+        <references refid="interface_simple_web_socket_server_library_1_1_simple_web_socket_handler_1_1_i_web_socket_handler_1a38b3104f285279f6fd3101765b2f0076">SimpleWebSocketServerLibrary.SimpleWebSocketHandler.IWebSocketHandler.StopClient</references>
+      </memberdef>
+      <memberdef kind="function" id="class_simple_web_socket_server_library_1_1_simple_web_socket_server_1a15254218104e0b1a6af5363c7b0810a6" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool SimpleWebSocketServerLibrary.SimpleWebSocketServer.StopClient</definition>
+        <argsstring>(string clientId, string reason=&quot;&quot;)</argsstring>
+        <name>StopClient</name>
+        <param>
+          <type>string</type>
+          <declname>clientId</declname>
+        </param>
+        <param>
+          <type>string</type>
+          <declname>reason</declname>
+          <defval>&quot;&quot;</defval>
+        </param>
+        <briefdescription>
+<para>Stops a connection with a specific client synchronous. Can provide reason. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>clientId</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Specific client to close connection with.</para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>reason</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Possible reason to close the connection.</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>True when succesfully closed.</para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SimpleWebsocketServer.cs" line="268" column="1" bodyfile="SimpleWebsocketServer.cs" bodystart="268" bodyend="278"/>
+        <references refid="class_simple_web_socket_server_library_1_1_simple_web_socket_server_1a4bfb888a3f666e48f561a55373eb4bd3" compoundref="_simple_websocket_server_8cs" startline="17">SimpleWebSocketServerLibrary.SimpleWebSocketServer._WebsocketHandler</references>
+        <references refid="interface_simple_web_socket_server_library_1_1_simple_web_socket_handler_1_1_i_web_socket_handler_1a38b3104f285279f6fd3101765b2f0076">SimpleWebSocketServerLibrary.SimpleWebSocketHandler.IWebSocketHandler.StopClient</references>
+      </memberdef>
+      <memberdef kind="function" id="class_simple_web_socket_server_library_1_1_simple_web_socket_server_1a1bb139b6266636ee732e584926844fdf" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>async Task&lt; bool &gt;</type>
+        <definition>async Task&lt;bool&gt; SimpleWebSocketServerLibrary.SimpleWebSocketServer.StopAllAsync</definition>
+        <argsstring>(string reason=&quot;&quot;)</argsstring>
+        <name>StopAllAsync</name>
+        <param>
+          <type>string</type>
+          <declname>reason</declname>
+          <defval>&quot;&quot;</defval>
+        </param>
+        <briefdescription>
+<para>Stops all connections with all clients asynchronous. Can provide reason. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>reason</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Possible reason to close the connection.</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>True when succesfully closed.</para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SimpleWebsocketServer.cs" line="286" column="1" bodyfile="SimpleWebsocketServer.cs" bodystart="286" bodyend="296"/>
+        <references refid="class_simple_web_socket_server_library_1_1_simple_web_socket_server_1a4bfb888a3f666e48f561a55373eb4bd3" compoundref="_simple_websocket_server_8cs" startline="17">SimpleWebSocketServerLibrary.SimpleWebSocketServer._WebsocketHandler</references>
+        <references refid="interface_simple_web_socket_server_library_1_1_simple_web_socket_handler_1_1_i_web_socket_handler_1a9320e5c10e5afa670c1377b5c0e2f762">SimpleWebSocketServerLibrary.SimpleWebSocketHandler.IWebSocketHandler.StopAll</references>
+      </memberdef>
+      <memberdef kind="function" id="class_simple_web_socket_server_library_1_1_simple_web_socket_server_1ad80184887910735a4caa22b903ee5fd1" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool SimpleWebSocketServerLibrary.SimpleWebSocketServer.StopAll</definition>
+        <argsstring>(string reason=&quot;&quot;)</argsstring>
+        <name>StopAll</name>
+        <param>
+          <type>string</type>
+          <declname>reason</declname>
+          <defval>&quot;&quot;</defval>
+        </param>
+        <briefdescription>
+<para>Stops all connections with all clients synchronous. Can provide reason. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>reason</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Possible reason to close the connection.</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>True when succesfully closed.</para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SimpleWebsocketServer.cs" line="303" column="1" bodyfile="SimpleWebsocketServer.cs" bodystart="303" bodyend="313"/>
+        <references refid="class_simple_web_socket_server_library_1_1_simple_web_socket_server_1a4bfb888a3f666e48f561a55373eb4bd3" compoundref="_simple_websocket_server_8cs" startline="17">SimpleWebSocketServerLibrary.SimpleWebSocketServer._WebsocketHandler</references>
+        <references refid="interface_simple_web_socket_server_library_1_1_simple_web_socket_handler_1_1_i_web_socket_handler_1a9320e5c10e5afa670c1377b5c0e2f762">SimpleWebSocketServerLibrary.SimpleWebSocketHandler.IWebSocketHandler.StopAll</references>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="class_simple_web_socket_server_library_1_1_simple_web_socket_server_1acc5670ca5bb72d689d08682f5328477e" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void SimpleWebSocketServerLibrary.SimpleWebSocketServer.OnWebsocketServerEvent</definition>
+        <argsstring>(object sender, WebSocketEventArg arg)</argsstring>
+        <name>OnWebsocketServerEvent</name>
+        <param>
+          <type>object</type>
+          <declname>sender</declname>
+        </param>
+        <param>
+          <type><ref refid="class_simple_web_socket_server_library_1_1_web_socket_event_arg" kindref="compound">WebSocketEventArg</ref></type>
+          <declname>arg</declname>
+        </param>
+        <briefdescription>
+<para>Event handler for receiving websocket messages from the websocket handler. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>sender</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Instance of firing class.</para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>arg</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Arguments for event.</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SimpleWebsocketServer.cs" line="50" column="1" bodyfile="SimpleWebsocketServer.cs" bodystart="50" bodyend="53"/>
+        <references refid="class_simple_web_socket_server_library_1_1_simple_web_socket_server_1adfd5705f4c6ccf291409035cd1d1e34b" compoundref="_simple_websocket_server_8cs" startline="27">SimpleWebSocketServerLibrary.SimpleWebSocketServer.WebsocketServerEvent</references>
+        <referencedby refid="class_simple_web_socket_server_library_1_1_simple_web_socket_server_1af3cde755fdb2781292c27174161508ed" compoundref="_simple_websocket_server_8cs" startline="33" endline="38">SimpleWebSocketServerLibrary.SimpleWebSocketServer.SimpleWebSocketServer</referencedby>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Middleware class for interfacing with the WebSocketHandler and WebSocketHttpServer class. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="10">
+        <label>SimpleWebSocketServerLibrary.SimpleWebSocketHttpServer.IWebSocketHttpServer</label>
+        <link refid="interface_simple_web_socket_server_library_1_1_simple_web_socket_http_server_1_1_i_web_socket_http_server"/>
+      </node>
+      <node id="9">
+        <label>SimpleWebSocketServerLibrary.SimpleWebSocketServer</label>
+        <link refid="class_simple_web_socket_server_library_1_1_simple_web_socket_server"/>
+        <childnode refid="10" relation="usage">
+          <edgelabel>_WebSocketHttpServer</edgelabel>
+        </childnode>
+        <childnode refid="11" relation="usage">
+          <edgelabel>_WebsocketHandler</edgelabel>
+        </childnode>
+      </node>
+      <node id="11">
+        <label>SimpleWebSocketServerLibrary.SimpleWebSocketHandler.IWebSocketHandler</label>
+        <link refid="interface_simple_web_socket_server_library_1_1_simple_web_socket_handler_1_1_i_web_socket_handler"/>
+      </node>
+    </collaborationgraph>
+    <location file="SimpleWebsocketServer.cs" line="13" column="1" bodyfile="SimpleWebsocketServer.cs" bodystart="12" bodyend="315"/>
+    <listofallmembers>
+      <member refid="class_simple_web_socket_server_library_1_1_simple_web_socket_server_1a4bfb888a3f666e48f561a55373eb4bd3" prot="private" virt="non-virtual"><scope>SimpleWebSocketServerLibrary::SimpleWebSocketServer</scope><name>_WebsocketHandler</name></member>
+      <member refid="class_simple_web_socket_server_library_1_1_simple_web_socket_server_1af16d2b86849d66572a4bbf06ddc5e94e" prot="private" virt="non-virtual"><scope>SimpleWebSocketServerLibrary::SimpleWebSocketServer</scope><name>_WebSocketHttpServer</name></member>
+      <member refid="class_simple_web_socket_server_library_1_1_simple_web_socket_server_1acc5670ca5bb72d689d08682f5328477e" prot="private" virt="non-virtual"><scope>SimpleWebSocketServerLibrary::SimpleWebSocketServer</scope><name>OnWebsocketServerEvent</name></member>
+      <member refid="class_simple_web_socket_server_library_1_1_simple_web_socket_server_1ac6ddccc7dd4b54d16721d2dca025dc58" prot="public" virt="non-virtual"><scope>SimpleWebSocketServerLibrary::SimpleWebSocketServer</scope><name>SendBinaryMessage</name></member>
+      <member refid="class_simple_web_socket_server_library_1_1_simple_web_socket_server_1a9d94bdf3e2964c65cafc62a80102a28c" prot="public" virt="non-virtual"><scope>SimpleWebSocketServerLibrary::SimpleWebSocketServer</scope><name>SendBinaryMessageAsync</name></member>
+      <member refid="class_simple_web_socket_server_library_1_1_simple_web_socket_server_1ab47f01467513ad98f0d9de69d41e12a5" prot="public" virt="non-virtual"><scope>SimpleWebSocketServerLibrary::SimpleWebSocketServer</scope><name>SendPingMessage</name></member>
+      <member refid="class_simple_web_socket_server_library_1_1_simple_web_socket_server_1a7f0eca90a424040685527ac873c31229" prot="public" virt="non-virtual"><scope>SimpleWebSocketServerLibrary::SimpleWebSocketServer</scope><name>SendPingMessageAsync</name></member>
+      <member refid="class_simple_web_socket_server_library_1_1_simple_web_socket_server_1af1f35a19ed0272c0bd02bf51f175b4b7" prot="public" virt="non-virtual"><scope>SimpleWebSocketServerLibrary::SimpleWebSocketServer</scope><name>SendPongMessage</name></member>
+      <member refid="class_simple_web_socket_server_library_1_1_simple_web_socket_server_1a20bd2a898b9465f492a5b19c4a8e1021" prot="public" virt="non-virtual"><scope>SimpleWebSocketServerLibrary::SimpleWebSocketServer</scope><name>SendPongMessageAsync</name></member>
+      <member refid="class_simple_web_socket_server_library_1_1_simple_web_socket_server_1a4ea5479402f769e2e73a8bcc06b654b1" prot="public" virt="non-virtual"><scope>SimpleWebSocketServerLibrary::SimpleWebSocketServer</scope><name>SendTextMessage</name></member>
+      <member refid="class_simple_web_socket_server_library_1_1_simple_web_socket_server_1aefe75fd888dea52bd64108dd03abed61" prot="public" virt="non-virtual"><scope>SimpleWebSocketServerLibrary::SimpleWebSocketServer</scope><name>SendTextMessageAsync</name></member>
+      <member refid="class_simple_web_socket_server_library_1_1_simple_web_socket_server_1af3cde755fdb2781292c27174161508ed" prot="public" virt="non-virtual"><scope>SimpleWebSocketServerLibrary::SimpleWebSocketServer</scope><name>SimpleWebSocketServer</name></member>
+      <member refid="class_simple_web_socket_server_library_1_1_simple_web_socket_server_1adb600b8e26bb7a91c7e8a196de1c3c68" prot="public" virt="non-virtual"><scope>SimpleWebSocketServerLibrary::SimpleWebSocketServer</scope><name>SimpleWebSocketServer</name></member>
+      <member refid="class_simple_web_socket_server_library_1_1_simple_web_socket_server_1ad354c38a3f5583fe213ab913085c320a" prot="public" virt="non-virtual"><scope>SimpleWebSocketServerLibrary::SimpleWebSocketServer</scope><name>StartServer</name></member>
+      <member refid="class_simple_web_socket_server_library_1_1_simple_web_socket_server_1a14730d592f2fdd3278a8df1403ebd672" prot="public" virt="non-virtual"><scope>SimpleWebSocketServerLibrary::SimpleWebSocketServer</scope><name>StartServerAsync</name></member>
+      <member refid="class_simple_web_socket_server_library_1_1_simple_web_socket_server_1ad80184887910735a4caa22b903ee5fd1" prot="public" virt="non-virtual"><scope>SimpleWebSocketServerLibrary::SimpleWebSocketServer</scope><name>StopAll</name></member>
+      <member refid="class_simple_web_socket_server_library_1_1_simple_web_socket_server_1a1bb139b6266636ee732e584926844fdf" prot="public" virt="non-virtual"><scope>SimpleWebSocketServerLibrary::SimpleWebSocketServer</scope><name>StopAllAsync</name></member>
+      <member refid="class_simple_web_socket_server_library_1_1_simple_web_socket_server_1a15254218104e0b1a6af5363c7b0810a6" prot="public" virt="non-virtual"><scope>SimpleWebSocketServerLibrary::SimpleWebSocketServer</scope><name>StopClient</name></member>
+      <member refid="class_simple_web_socket_server_library_1_1_simple_web_socket_server_1ad0559ffe3b936e25e202b205fa2931a7" prot="public" virt="non-virtual"><scope>SimpleWebSocketServerLibrary::SimpleWebSocketServer</scope><name>StopClientAsync</name></member>
+      <member refid="class_simple_web_socket_server_library_1_1_simple_web_socket_server_1adfd5705f4c6ccf291409035cd1d1e34b" prot="public" virt="non-virtual"><scope>SimpleWebSocketServerLibrary::SimpleWebSocketServer</scope><name>WebsocketServerEvent</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

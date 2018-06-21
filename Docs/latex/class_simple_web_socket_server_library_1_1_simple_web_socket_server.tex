@@ -1,0 +1,631 @@
+\hypertarget{class_simple_web_socket_server_library_1_1_simple_web_socket_server}{}\section{Simple\+Web\+Socket\+Server\+Library.\+Simple\+Web\+Socket\+Server Class Reference}
+\label{class_simple_web_socket_server_library_1_1_simple_web_socket_server}\index{Simple\+Web\+Socket\+Server\+Library.\+Simple\+Web\+Socket\+Server@{Simple\+Web\+Socket\+Server\+Library.\+Simple\+Web\+Socket\+Server}}
+
+
+Middleware class for interfacing with the Web\+Socket\+Handler and Web\+Socket\+Http\+Server class.  
+
+
+
+
+Collaboration diagram for Simple\+Web\+Socket\+Server\+Library.\+Simple\+Web\+Socket\+Server\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_simple_web_socket_server_library_1_1_simple_web_socket_server__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_simple_web_socket_server_library_1_1_simple_web_socket_server_af3cde755fdb2781292c27174161508ed}{Simple\+Web\+Socket\+Server}} (\mbox{\hyperlink{class_simple_web_socket_server_library_1_1_simple_web_socket_server_settings}{Simple\+Web\+Socket\+Server\+Settings}} settings)
+\begin{DoxyCompactList}\small\item\em Constructor for setting up the Library. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_simple_web_socket_server_library_1_1_simple_web_socket_server_adb600b8e26bb7a91c7e8a196de1c3c68}{Simple\+Web\+Socket\+Server}} ()
+\begin{DoxyCompactList}\small\item\em Overload constructor for setting up library with default values. \end{DoxyCompactList}\item 
+async Task \mbox{\hyperlink{class_simple_web_socket_server_library_1_1_simple_web_socket_server_a14730d592f2fdd3278a8df1403ebd672}{Start\+Server\+Async}} ()
+\begin{DoxyCompactList}\small\item\em Starts running the server async. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_simple_web_socket_server_library_1_1_simple_web_socket_server_ad354c38a3f5583fe213ab913085c320a}{Start\+Server}} ()
+\begin{DoxyCompactList}\small\item\em Starts running the server async. \end{DoxyCompactList}\item 
+async Task$<$ bool $>$ \mbox{\hyperlink{class_simple_web_socket_server_library_1_1_simple_web_socket_server_aefe75fd888dea52bd64108dd03abed61}{Send\+Text\+Message\+Async}} (string message\+To\+Send, string client\+Id=null)
+\begin{DoxyCompactList}\small\item\em Overload method for sending text messages to a specific client, using it\textquotesingle{}s id, asynchronous. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_simple_web_socket_server_library_1_1_simple_web_socket_server_a4ea5479402f769e2e73a8bcc06b654b1}{Send\+Text\+Message}} (string message\+To\+Send, string client\+Id=null)
+\begin{DoxyCompactList}\small\item\em Overload method for sending text messages to a specific client, using it\textquotesingle{}s id, synchronous. \end{DoxyCompactList}\item 
+async Task$<$ bool $>$ \mbox{\hyperlink{class_simple_web_socket_server_library_1_1_simple_web_socket_server_a9d94bdf3e2964c65cafc62a80102a28c}{Send\+Binary\+Message\+Async}} (byte\mbox{[}$\,$\mbox{]} message\+To\+Send, string client\+Id=null)
+\begin{DoxyCompactList}\small\item\em Sends a binary \char`\"{}message\char`\"{} to a specific client asynchronous. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_simple_web_socket_server_library_1_1_simple_web_socket_server_ac6ddccc7dd4b54d16721d2dca025dc58}{Send\+Binary\+Message}} (byte\mbox{[}$\,$\mbox{]} message\+To\+Send, string client\+Id=null)
+\begin{DoxyCompactList}\small\item\em Sends a binary \char`\"{}message\char`\"{} to a specific client synchronous. \end{DoxyCompactList}\item 
+async Task$<$ bool $>$ \mbox{\hyperlink{class_simple_web_socket_server_library_1_1_simple_web_socket_server_a7f0eca90a424040685527ac873c31229}{Send\+Ping\+Message\+Async}} (string message\+To\+Send=\char`\"{}\char`\"{}, string client\+Id=null)
+\begin{DoxyCompactList}\small\item\em Sends a ping message to all clients asynchronous, can have message. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_simple_web_socket_server_library_1_1_simple_web_socket_server_ab47f01467513ad98f0d9de69d41e12a5}{Send\+Ping\+Message}} (string message\+To\+Send=\char`\"{}\char`\"{}, string client\+Id=null)
+\begin{DoxyCompactList}\small\item\em Sends a ping message to all clients synchronous, can have message. \end{DoxyCompactList}\item 
+async Task$<$ bool $>$ \mbox{\hyperlink{class_simple_web_socket_server_library_1_1_simple_web_socket_server_a20bd2a898b9465f492a5b19c4a8e1021}{Send\+Pong\+Message\+Async}} (string message\+To\+Send=\char`\"{}\char`\"{}, string client\+Id=null)
+\begin{DoxyCompactList}\small\item\em Send pong message to all available clients asynchronous, can have message. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_simple_web_socket_server_library_1_1_simple_web_socket_server_af1f35a19ed0272c0bd02bf51f175b4b7}{Send\+Pong\+Message}} (string message\+To\+Send=\char`\"{}\char`\"{}, string client\+Id=null)
+\begin{DoxyCompactList}\small\item\em Send pong message to all available clients synchronous, can have message. \end{DoxyCompactList}\item 
+async Task$<$ bool $>$ \mbox{\hyperlink{class_simple_web_socket_server_library_1_1_simple_web_socket_server_ad0559ffe3b936e25e202b205fa2931a7}{Stop\+Client\+Async}} (string client\+Id, string reason=\char`\"{}\char`\"{})
+\begin{DoxyCompactList}\small\item\em Stops a connection with a specific client asynchronous. Can provide reason. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_simple_web_socket_server_library_1_1_simple_web_socket_server_a15254218104e0b1a6af5363c7b0810a6}{Stop\+Client}} (string client\+Id, string reason=\char`\"{}\char`\"{})
+\begin{DoxyCompactList}\small\item\em Stops a connection with a specific client synchronous. Can provide reason. \end{DoxyCompactList}\item 
+async Task$<$ bool $>$ \mbox{\hyperlink{class_simple_web_socket_server_library_1_1_simple_web_socket_server_a1bb139b6266636ee732e584926844fdf}{Stop\+All\+Async}} (string reason=\char`\"{}\char`\"{})
+\begin{DoxyCompactList}\small\item\em Stops all connections with all clients asynchronous. Can provide reason. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_simple_web_socket_server_library_1_1_simple_web_socket_server_ad80184887910735a4caa22b903ee5fd1}{Stop\+All}} (string reason=\char`\"{}\char`\"{})
+\begin{DoxyCompactList}\small\item\em Stops all connections with all clients synchronous. Can provide reason. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Events}
+\begin{DoxyCompactItemize}
+\item 
+Event\+Handler$<$ \mbox{\hyperlink{class_simple_web_socket_server_library_1_1_web_socket_event_arg}{Web\+Socket\+Event\+Arg}} $>$ \mbox{\hyperlink{class_simple_web_socket_server_library_1_1_simple_web_socket_server_adfd5705f4c6ccf291409035cd1d1e34b}{Websocket\+Server\+Event}}
+\begin{DoxyCompactList}\small\item\em Eventhandler for when events such as receiving messages and errors from the websocket server happen. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_simple_web_socket_server_library_1_1_simple_web_socket_server_acc5670ca5bb72d689d08682f5328477e}{On\+Websocket\+Server\+Event}} (object sender, \mbox{\hyperlink{class_simple_web_socket_server_library_1_1_web_socket_event_arg}{Web\+Socket\+Event\+Arg}} arg)
+\begin{DoxyCompactList}\small\item\em Event handler for receiving websocket messages from the websocket handler. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+readonly \mbox{\hyperlink{interface_simple_web_socket_server_library_1_1_simple_web_socket_handler_1_1_i_web_socket_handler}{I\+Web\+Socket\+Handler}} \mbox{\hyperlink{class_simple_web_socket_server_library_1_1_simple_web_socket_server_a4bfb888a3f666e48f561a55373eb4bd3}{\+\_\+\+Websocket\+Handler}}
+\begin{DoxyCompactList}\small\item\em Interface for the Web\+Socket\+Handler class. \end{DoxyCompactList}\item 
+readonly \mbox{\hyperlink{interface_simple_web_socket_server_library_1_1_simple_web_socket_http_server_1_1_i_web_socket_http_server}{I\+Web\+Socket\+Http\+Server}} \mbox{\hyperlink{class_simple_web_socket_server_library_1_1_simple_web_socket_server_af16d2b86849d66572a4bbf06ddc5e94e}{\+\_\+\+Web\+Socket\+Http\+Server}}
+\begin{DoxyCompactList}\small\item\em Interface for the Web\+Socket\+Http\+Server class. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Middleware class for interfacing with the Web\+Socket\+Handler and Web\+Socket\+Http\+Server class. 
+
+
+
+Definition at line 12 of file Simple\+Websocket\+Server.\+cs.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_simple_web_socket_server_library_1_1_simple_web_socket_server_af3cde755fdb2781292c27174161508ed}\label{class_simple_web_socket_server_library_1_1_simple_web_socket_server_af3cde755fdb2781292c27174161508ed}} 
+\index{Simple\+Web\+Socket\+Server\+Library\+::\+Simple\+Web\+Socket\+Server@{Simple\+Web\+Socket\+Server\+Library\+::\+Simple\+Web\+Socket\+Server}!Simple\+Web\+Socket\+Server@{Simple\+Web\+Socket\+Server}}
+\index{Simple\+Web\+Socket\+Server@{Simple\+Web\+Socket\+Server}!Simple\+Web\+Socket\+Server\+Library\+::\+Simple\+Web\+Socket\+Server@{Simple\+Web\+Socket\+Server\+Library\+::\+Simple\+Web\+Socket\+Server}}
+\subsubsection{\texorpdfstring{Simple\+Web\+Socket\+Server()}{SimpleWebSocketServer()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily Simple\+Web\+Socket\+Server\+Library.\+Simple\+Web\+Socket\+Server.\+Simple\+Web\+Socket\+Server (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_simple_web_socket_server_library_1_1_simple_web_socket_server_settings}{Simple\+Web\+Socket\+Server\+Settings}}}]{settings }\end{DoxyParamCaption})}
+
+
+
+Constructor for setting up the Library. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em settings} & Settings with default values.\\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 33 of file Simple\+Websocket\+Server.\+cs.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_simple_web_socket_server_library_1_1_simple_web_socket_server_af3cde755fdb2781292c27174161508ed_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_simple_web_socket_server_library_1_1_simple_web_socket_server_adb600b8e26bb7a91c7e8a196de1c3c68}\label{class_simple_web_socket_server_library_1_1_simple_web_socket_server_adb600b8e26bb7a91c7e8a196de1c3c68}} 
+\index{Simple\+Web\+Socket\+Server\+Library\+::\+Simple\+Web\+Socket\+Server@{Simple\+Web\+Socket\+Server\+Library\+::\+Simple\+Web\+Socket\+Server}!Simple\+Web\+Socket\+Server@{Simple\+Web\+Socket\+Server}}
+\index{Simple\+Web\+Socket\+Server@{Simple\+Web\+Socket\+Server}!Simple\+Web\+Socket\+Server\+Library\+::\+Simple\+Web\+Socket\+Server@{Simple\+Web\+Socket\+Server\+Library\+::\+Simple\+Web\+Socket\+Server}}
+\subsubsection{\texorpdfstring{Simple\+Web\+Socket\+Server()}{SimpleWebSocketServer()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily Simple\+Web\+Socket\+Server\+Library.\+Simple\+Web\+Socket\+Server.\+Simple\+Web\+Socket\+Server (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Overload constructor for setting up library with default values. 
+
+
+
+Definition at line 43 of file Simple\+Websocket\+Server.\+cs.
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_simple_web_socket_server_library_1_1_simple_web_socket_server_acc5670ca5bb72d689d08682f5328477e}\label{class_simple_web_socket_server_library_1_1_simple_web_socket_server_acc5670ca5bb72d689d08682f5328477e}} 
+\index{Simple\+Web\+Socket\+Server\+Library\+::\+Simple\+Web\+Socket\+Server@{Simple\+Web\+Socket\+Server\+Library\+::\+Simple\+Web\+Socket\+Server}!On\+Websocket\+Server\+Event@{On\+Websocket\+Server\+Event}}
+\index{On\+Websocket\+Server\+Event@{On\+Websocket\+Server\+Event}!Simple\+Web\+Socket\+Server\+Library\+::\+Simple\+Web\+Socket\+Server@{Simple\+Web\+Socket\+Server\+Library\+::\+Simple\+Web\+Socket\+Server}}
+\subsubsection{\texorpdfstring{On\+Websocket\+Server\+Event()}{OnWebsocketServerEvent()}}
+{\footnotesize\ttfamily void Simple\+Web\+Socket\+Server\+Library.\+Simple\+Web\+Socket\+Server.\+On\+Websocket\+Server\+Event (\begin{DoxyParamCaption}\item[{object}]{sender,  }\item[{\mbox{\hyperlink{class_simple_web_socket_server_library_1_1_web_socket_event_arg}{Web\+Socket\+Event\+Arg}}}]{arg }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Event handler for receiving websocket messages from the websocket handler. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em sender} & Instance of firing class.\\
+\hline
+{\em arg} & Arguments for event.\\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 50 of file Simple\+Websocket\+Server.\+cs.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_simple_web_socket_server_library_1_1_simple_web_socket_server_acc5670ca5bb72d689d08682f5328477e_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_simple_web_socket_server_library_1_1_simple_web_socket_server_ac6ddccc7dd4b54d16721d2dca025dc58}\label{class_simple_web_socket_server_library_1_1_simple_web_socket_server_ac6ddccc7dd4b54d16721d2dca025dc58}} 
+\index{Simple\+Web\+Socket\+Server\+Library\+::\+Simple\+Web\+Socket\+Server@{Simple\+Web\+Socket\+Server\+Library\+::\+Simple\+Web\+Socket\+Server}!Send\+Binary\+Message@{Send\+Binary\+Message}}
+\index{Send\+Binary\+Message@{Send\+Binary\+Message}!Simple\+Web\+Socket\+Server\+Library\+::\+Simple\+Web\+Socket\+Server@{Simple\+Web\+Socket\+Server\+Library\+::\+Simple\+Web\+Socket\+Server}}
+\subsubsection{\texorpdfstring{Send\+Binary\+Message()}{SendBinaryMessage()}}
+{\footnotesize\ttfamily bool Simple\+Web\+Socket\+Server\+Library.\+Simple\+Web\+Socket\+Server.\+Send\+Binary\+Message (\begin{DoxyParamCaption}\item[{byte \mbox{[}$\,$\mbox{]}}]{message\+To\+Send,  }\item[{string}]{client\+Id = {\ttfamily null} }\end{DoxyParamCaption})}
+
+
+
+Sends a binary \char`\"{}message\char`\"{} to a specific client synchronous. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em message\+To\+Send} & Message in binary format (byte array).\\
+\hline
+{\em client\+Id} & Client to send to.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True when succesfully send.
+\end{DoxyReturn}
+
+
+Definition at line 144 of file Simple\+Websocket\+Server.\+cs.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_simple_web_socket_server_library_1_1_simple_web_socket_server_ac6ddccc7dd4b54d16721d2dca025dc58_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_simple_web_socket_server_library_1_1_simple_web_socket_server_a9d94bdf3e2964c65cafc62a80102a28c}\label{class_simple_web_socket_server_library_1_1_simple_web_socket_server_a9d94bdf3e2964c65cafc62a80102a28c}} 
+\index{Simple\+Web\+Socket\+Server\+Library\+::\+Simple\+Web\+Socket\+Server@{Simple\+Web\+Socket\+Server\+Library\+::\+Simple\+Web\+Socket\+Server}!Send\+Binary\+Message\+Async@{Send\+Binary\+Message\+Async}}
+\index{Send\+Binary\+Message\+Async@{Send\+Binary\+Message\+Async}!Simple\+Web\+Socket\+Server\+Library\+::\+Simple\+Web\+Socket\+Server@{Simple\+Web\+Socket\+Server\+Library\+::\+Simple\+Web\+Socket\+Server}}
+\subsubsection{\texorpdfstring{Send\+Binary\+Message\+Async()}{SendBinaryMessageAsync()}}
+{\footnotesize\ttfamily async Task$<$bool$>$ Simple\+Web\+Socket\+Server\+Library.\+Simple\+Web\+Socket\+Server.\+Send\+Binary\+Message\+Async (\begin{DoxyParamCaption}\item[{byte \mbox{[}$\,$\mbox{]}}]{message\+To\+Send,  }\item[{string}]{client\+Id = {\ttfamily null} }\end{DoxyParamCaption})}
+
+
+
+Sends a binary \char`\"{}message\char`\"{} to a specific client asynchronous. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em message\+To\+Send} & Message in binary format (byte array).\\
+\hline
+{\em client\+Id} & Client to send to.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True when succesfully send.
+\end{DoxyReturn}
+
+
+Definition at line 122 of file Simple\+Websocket\+Server.\+cs.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_simple_web_socket_server_library_1_1_simple_web_socket_server_a9d94bdf3e2964c65cafc62a80102a28c_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_simple_web_socket_server_library_1_1_simple_web_socket_server_ab47f01467513ad98f0d9de69d41e12a5}\label{class_simple_web_socket_server_library_1_1_simple_web_socket_server_ab47f01467513ad98f0d9de69d41e12a5}} 
+\index{Simple\+Web\+Socket\+Server\+Library\+::\+Simple\+Web\+Socket\+Server@{Simple\+Web\+Socket\+Server\+Library\+::\+Simple\+Web\+Socket\+Server}!Send\+Ping\+Message@{Send\+Ping\+Message}}
+\index{Send\+Ping\+Message@{Send\+Ping\+Message}!Simple\+Web\+Socket\+Server\+Library\+::\+Simple\+Web\+Socket\+Server@{Simple\+Web\+Socket\+Server\+Library\+::\+Simple\+Web\+Socket\+Server}}
+\subsubsection{\texorpdfstring{Send\+Ping\+Message()}{SendPingMessage()}}
+{\footnotesize\ttfamily bool Simple\+Web\+Socket\+Server\+Library.\+Simple\+Web\+Socket\+Server.\+Send\+Ping\+Message (\begin{DoxyParamCaption}\item[{string}]{message\+To\+Send = {\ttfamily \char`\"{}\char`\"{}},  }\item[{string}]{client\+Id = {\ttfamily null} }\end{DoxyParamCaption})}
+
+
+
+Sends a ping message to all clients synchronous, can have message. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em message\+To\+Send} & Possible extra message to send along ping.\\
+\hline
+{\em client\+Id} & Set client\+Id in case you want to send to a specific client.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True when succesfully send.
+\end{DoxyReturn}
+
+
+Definition at line 187 of file Simple\+Websocket\+Server.\+cs.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_simple_web_socket_server_library_1_1_simple_web_socket_server_ab47f01467513ad98f0d9de69d41e12a5_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_simple_web_socket_server_library_1_1_simple_web_socket_server_a7f0eca90a424040685527ac873c31229}\label{class_simple_web_socket_server_library_1_1_simple_web_socket_server_a7f0eca90a424040685527ac873c31229}} 
+\index{Simple\+Web\+Socket\+Server\+Library\+::\+Simple\+Web\+Socket\+Server@{Simple\+Web\+Socket\+Server\+Library\+::\+Simple\+Web\+Socket\+Server}!Send\+Ping\+Message\+Async@{Send\+Ping\+Message\+Async}}
+\index{Send\+Ping\+Message\+Async@{Send\+Ping\+Message\+Async}!Simple\+Web\+Socket\+Server\+Library\+::\+Simple\+Web\+Socket\+Server@{Simple\+Web\+Socket\+Server\+Library\+::\+Simple\+Web\+Socket\+Server}}
+\subsubsection{\texorpdfstring{Send\+Ping\+Message\+Async()}{SendPingMessageAsync()}}
+{\footnotesize\ttfamily async Task$<$bool$>$ Simple\+Web\+Socket\+Server\+Library.\+Simple\+Web\+Socket\+Server.\+Send\+Ping\+Message\+Async (\begin{DoxyParamCaption}\item[{string}]{message\+To\+Send = {\ttfamily \char`\"{}\char`\"{}},  }\item[{string}]{client\+Id = {\ttfamily null} }\end{DoxyParamCaption})}
+
+
+
+Sends a ping message to all clients asynchronous, can have message. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em message\+To\+Send} & Possible extra message to send along ping.\\
+\hline
+{\em client\+Id} & Set client\+Id in case you want to send to a specific client.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True when succesfully send.
+\end{DoxyReturn}
+
+
+Definition at line 166 of file Simple\+Websocket\+Server.\+cs.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_simple_web_socket_server_library_1_1_simple_web_socket_server_a7f0eca90a424040685527ac873c31229_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_simple_web_socket_server_library_1_1_simple_web_socket_server_af1f35a19ed0272c0bd02bf51f175b4b7}\label{class_simple_web_socket_server_library_1_1_simple_web_socket_server_af1f35a19ed0272c0bd02bf51f175b4b7}} 
+\index{Simple\+Web\+Socket\+Server\+Library\+::\+Simple\+Web\+Socket\+Server@{Simple\+Web\+Socket\+Server\+Library\+::\+Simple\+Web\+Socket\+Server}!Send\+Pong\+Message@{Send\+Pong\+Message}}
+\index{Send\+Pong\+Message@{Send\+Pong\+Message}!Simple\+Web\+Socket\+Server\+Library\+::\+Simple\+Web\+Socket\+Server@{Simple\+Web\+Socket\+Server\+Library\+::\+Simple\+Web\+Socket\+Server}}
+\subsubsection{\texorpdfstring{Send\+Pong\+Message()}{SendPongMessage()}}
+{\footnotesize\ttfamily bool Simple\+Web\+Socket\+Server\+Library.\+Simple\+Web\+Socket\+Server.\+Send\+Pong\+Message (\begin{DoxyParamCaption}\item[{string}]{message\+To\+Send = {\ttfamily \char`\"{}\char`\"{}},  }\item[{string}]{client\+Id = {\ttfamily null} }\end{DoxyParamCaption})}
+
+
+
+Send pong message to all available clients synchronous, can have message. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em message\+To\+Send} & Possible extra message to send along ping.\\
+\hline
+{\em client\+Id} & Set client\+Id in case you want to send to a specific client.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True when succesfully send.
+\end{DoxyReturn}
+
+
+Definition at line 229 of file Simple\+Websocket\+Server.\+cs.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_simple_web_socket_server_library_1_1_simple_web_socket_server_af1f35a19ed0272c0bd02bf51f175b4b7_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_simple_web_socket_server_library_1_1_simple_web_socket_server_a20bd2a898b9465f492a5b19c4a8e1021}\label{class_simple_web_socket_server_library_1_1_simple_web_socket_server_a20bd2a898b9465f492a5b19c4a8e1021}} 
+\index{Simple\+Web\+Socket\+Server\+Library\+::\+Simple\+Web\+Socket\+Server@{Simple\+Web\+Socket\+Server\+Library\+::\+Simple\+Web\+Socket\+Server}!Send\+Pong\+Message\+Async@{Send\+Pong\+Message\+Async}}
+\index{Send\+Pong\+Message\+Async@{Send\+Pong\+Message\+Async}!Simple\+Web\+Socket\+Server\+Library\+::\+Simple\+Web\+Socket\+Server@{Simple\+Web\+Socket\+Server\+Library\+::\+Simple\+Web\+Socket\+Server}}
+\subsubsection{\texorpdfstring{Send\+Pong\+Message\+Async()}{SendPongMessageAsync()}}
+{\footnotesize\ttfamily async Task$<$bool$>$ Simple\+Web\+Socket\+Server\+Library.\+Simple\+Web\+Socket\+Server.\+Send\+Pong\+Message\+Async (\begin{DoxyParamCaption}\item[{string}]{message\+To\+Send = {\ttfamily \char`\"{}\char`\"{}},  }\item[{string}]{client\+Id = {\ttfamily null} }\end{DoxyParamCaption})}
+
+
+
+Send pong message to all available clients asynchronous, can have message. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em message\+To\+Send} & Possible extra message to send along ping.\\
+\hline
+{\em client\+Id} & Set client\+Id in case you want to send to a specific client.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True when succesfully send.
+\end{DoxyReturn}
+
+
+Definition at line 208 of file Simple\+Websocket\+Server.\+cs.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_simple_web_socket_server_library_1_1_simple_web_socket_server_a20bd2a898b9465f492a5b19c4a8e1021_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_simple_web_socket_server_library_1_1_simple_web_socket_server_a4ea5479402f769e2e73a8bcc06b654b1}\label{class_simple_web_socket_server_library_1_1_simple_web_socket_server_a4ea5479402f769e2e73a8bcc06b654b1}} 
+\index{Simple\+Web\+Socket\+Server\+Library\+::\+Simple\+Web\+Socket\+Server@{Simple\+Web\+Socket\+Server\+Library\+::\+Simple\+Web\+Socket\+Server}!Send\+Text\+Message@{Send\+Text\+Message}}
+\index{Send\+Text\+Message@{Send\+Text\+Message}!Simple\+Web\+Socket\+Server\+Library\+::\+Simple\+Web\+Socket\+Server@{Simple\+Web\+Socket\+Server\+Library\+::\+Simple\+Web\+Socket\+Server}}
+\subsubsection{\texorpdfstring{Send\+Text\+Message()}{SendTextMessage()}}
+{\footnotesize\ttfamily bool Simple\+Web\+Socket\+Server\+Library.\+Simple\+Web\+Socket\+Server.\+Send\+Text\+Message (\begin{DoxyParamCaption}\item[{string}]{message\+To\+Send,  }\item[{string}]{client\+Id = {\ttfamily null} }\end{DoxyParamCaption})}
+
+
+
+Overload method for sending text messages to a specific client, using it\textquotesingle{}s id, synchronous. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em message\+To\+Send} & \\
+\hline
+{\em client\+Id} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True when send succesfully.
+\end{DoxyReturn}
+
+
+Definition at line 99 of file Simple\+Websocket\+Server.\+cs.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_simple_web_socket_server_library_1_1_simple_web_socket_server_a4ea5479402f769e2e73a8bcc06b654b1_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_simple_web_socket_server_library_1_1_simple_web_socket_server_aefe75fd888dea52bd64108dd03abed61}\label{class_simple_web_socket_server_library_1_1_simple_web_socket_server_aefe75fd888dea52bd64108dd03abed61}} 
+\index{Simple\+Web\+Socket\+Server\+Library\+::\+Simple\+Web\+Socket\+Server@{Simple\+Web\+Socket\+Server\+Library\+::\+Simple\+Web\+Socket\+Server}!Send\+Text\+Message\+Async@{Send\+Text\+Message\+Async}}
+\index{Send\+Text\+Message\+Async@{Send\+Text\+Message\+Async}!Simple\+Web\+Socket\+Server\+Library\+::\+Simple\+Web\+Socket\+Server@{Simple\+Web\+Socket\+Server\+Library\+::\+Simple\+Web\+Socket\+Server}}
+\subsubsection{\texorpdfstring{Send\+Text\+Message\+Async()}{SendTextMessageAsync()}}
+{\footnotesize\ttfamily async Task$<$bool$>$ Simple\+Web\+Socket\+Server\+Library.\+Simple\+Web\+Socket\+Server.\+Send\+Text\+Message\+Async (\begin{DoxyParamCaption}\item[{string}]{message\+To\+Send,  }\item[{string}]{client\+Id = {\ttfamily null} }\end{DoxyParamCaption})}
+
+
+
+Overload method for sending text messages to a specific client, using it\textquotesingle{}s id, asynchronous. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em message\+To\+Send} & \\
+\hline
+{\em client\+Id} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True when send succesfully.
+\end{DoxyReturn}
+
+
+Definition at line 77 of file Simple\+Websocket\+Server.\+cs.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_simple_web_socket_server_library_1_1_simple_web_socket_server_aefe75fd888dea52bd64108dd03abed61_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_simple_web_socket_server_library_1_1_simple_web_socket_server_ad354c38a3f5583fe213ab913085c320a}\label{class_simple_web_socket_server_library_1_1_simple_web_socket_server_ad354c38a3f5583fe213ab913085c320a}} 
+\index{Simple\+Web\+Socket\+Server\+Library\+::\+Simple\+Web\+Socket\+Server@{Simple\+Web\+Socket\+Server\+Library\+::\+Simple\+Web\+Socket\+Server}!Start\+Server@{Start\+Server}}
+\index{Start\+Server@{Start\+Server}!Simple\+Web\+Socket\+Server\+Library\+::\+Simple\+Web\+Socket\+Server@{Simple\+Web\+Socket\+Server\+Library\+::\+Simple\+Web\+Socket\+Server}}
+\subsubsection{\texorpdfstring{Start\+Server()}{StartServer()}}
+{\footnotesize\ttfamily void Simple\+Web\+Socket\+Server\+Library.\+Simple\+Web\+Socket\+Server.\+Start\+Server (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Starts running the server async. 
+
+
+
+Definition at line 66 of file Simple\+Websocket\+Server.\+cs.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_simple_web_socket_server_library_1_1_simple_web_socket_server_ad354c38a3f5583fe213ab913085c320a_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_simple_web_socket_server_library_1_1_simple_web_socket_server_a14730d592f2fdd3278a8df1403ebd672}\label{class_simple_web_socket_server_library_1_1_simple_web_socket_server_a14730d592f2fdd3278a8df1403ebd672}} 
+\index{Simple\+Web\+Socket\+Server\+Library\+::\+Simple\+Web\+Socket\+Server@{Simple\+Web\+Socket\+Server\+Library\+::\+Simple\+Web\+Socket\+Server}!Start\+Server\+Async@{Start\+Server\+Async}}
+\index{Start\+Server\+Async@{Start\+Server\+Async}!Simple\+Web\+Socket\+Server\+Library\+::\+Simple\+Web\+Socket\+Server@{Simple\+Web\+Socket\+Server\+Library\+::\+Simple\+Web\+Socket\+Server}}
+\subsubsection{\texorpdfstring{Start\+Server\+Async()}{StartServerAsync()}}
+{\footnotesize\ttfamily async Task Simple\+Web\+Socket\+Server\+Library.\+Simple\+Web\+Socket\+Server.\+Start\+Server\+Async (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Starts running the server async. 
+
+
+
+Definition at line 58 of file Simple\+Websocket\+Server.\+cs.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_simple_web_socket_server_library_1_1_simple_web_socket_server_a14730d592f2fdd3278a8df1403ebd672_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_simple_web_socket_server_library_1_1_simple_web_socket_server_ad80184887910735a4caa22b903ee5fd1}\label{class_simple_web_socket_server_library_1_1_simple_web_socket_server_ad80184887910735a4caa22b903ee5fd1}} 
+\index{Simple\+Web\+Socket\+Server\+Library\+::\+Simple\+Web\+Socket\+Server@{Simple\+Web\+Socket\+Server\+Library\+::\+Simple\+Web\+Socket\+Server}!Stop\+All@{Stop\+All}}
+\index{Stop\+All@{Stop\+All}!Simple\+Web\+Socket\+Server\+Library\+::\+Simple\+Web\+Socket\+Server@{Simple\+Web\+Socket\+Server\+Library\+::\+Simple\+Web\+Socket\+Server}}
+\subsubsection{\texorpdfstring{Stop\+All()}{StopAll()}}
+{\footnotesize\ttfamily bool Simple\+Web\+Socket\+Server\+Library.\+Simple\+Web\+Socket\+Server.\+Stop\+All (\begin{DoxyParamCaption}\item[{string}]{reason = {\ttfamily \char`\"{}\char`\"{}} }\end{DoxyParamCaption})}
+
+
+
+Stops all connections with all clients synchronous. Can provide reason. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em reason} & Possible reason to close the connection.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True when succesfully closed.
+\end{DoxyReturn}
+
+
+Definition at line 303 of file Simple\+Websocket\+Server.\+cs.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_simple_web_socket_server_library_1_1_simple_web_socket_server_ad80184887910735a4caa22b903ee5fd1_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_simple_web_socket_server_library_1_1_simple_web_socket_server_a1bb139b6266636ee732e584926844fdf}\label{class_simple_web_socket_server_library_1_1_simple_web_socket_server_a1bb139b6266636ee732e584926844fdf}} 
+\index{Simple\+Web\+Socket\+Server\+Library\+::\+Simple\+Web\+Socket\+Server@{Simple\+Web\+Socket\+Server\+Library\+::\+Simple\+Web\+Socket\+Server}!Stop\+All\+Async@{Stop\+All\+Async}}
+\index{Stop\+All\+Async@{Stop\+All\+Async}!Simple\+Web\+Socket\+Server\+Library\+::\+Simple\+Web\+Socket\+Server@{Simple\+Web\+Socket\+Server\+Library\+::\+Simple\+Web\+Socket\+Server}}
+\subsubsection{\texorpdfstring{Stop\+All\+Async()}{StopAllAsync()}}
+{\footnotesize\ttfamily async Task$<$bool$>$ Simple\+Web\+Socket\+Server\+Library.\+Simple\+Web\+Socket\+Server.\+Stop\+All\+Async (\begin{DoxyParamCaption}\item[{string}]{reason = {\ttfamily \char`\"{}\char`\"{}} }\end{DoxyParamCaption})}
+
+
+
+Stops all connections with all clients asynchronous. Can provide reason. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em reason} & Possible reason to close the connection.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True when succesfully closed.
+\end{DoxyReturn}
+
+
+Definition at line 286 of file Simple\+Websocket\+Server.\+cs.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_simple_web_socket_server_library_1_1_simple_web_socket_server_a1bb139b6266636ee732e584926844fdf_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_simple_web_socket_server_library_1_1_simple_web_socket_server_a15254218104e0b1a6af5363c7b0810a6}\label{class_simple_web_socket_server_library_1_1_simple_web_socket_server_a15254218104e0b1a6af5363c7b0810a6}} 
+\index{Simple\+Web\+Socket\+Server\+Library\+::\+Simple\+Web\+Socket\+Server@{Simple\+Web\+Socket\+Server\+Library\+::\+Simple\+Web\+Socket\+Server}!Stop\+Client@{Stop\+Client}}
+\index{Stop\+Client@{Stop\+Client}!Simple\+Web\+Socket\+Server\+Library\+::\+Simple\+Web\+Socket\+Server@{Simple\+Web\+Socket\+Server\+Library\+::\+Simple\+Web\+Socket\+Server}}
+\subsubsection{\texorpdfstring{Stop\+Client()}{StopClient()}}
+{\footnotesize\ttfamily bool Simple\+Web\+Socket\+Server\+Library.\+Simple\+Web\+Socket\+Server.\+Stop\+Client (\begin{DoxyParamCaption}\item[{string}]{client\+Id,  }\item[{string}]{reason = {\ttfamily \char`\"{}\char`\"{}} }\end{DoxyParamCaption})}
+
+
+
+Stops a connection with a specific client synchronous. Can provide reason. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em client\+Id} & Specific client to close connection with.\\
+\hline
+{\em reason} & Possible reason to close the connection.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True when succesfully closed.
+\end{DoxyReturn}
+
+
+Definition at line 268 of file Simple\+Websocket\+Server.\+cs.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_simple_web_socket_server_library_1_1_simple_web_socket_server_a15254218104e0b1a6af5363c7b0810a6_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_simple_web_socket_server_library_1_1_simple_web_socket_server_ad0559ffe3b936e25e202b205fa2931a7}\label{class_simple_web_socket_server_library_1_1_simple_web_socket_server_ad0559ffe3b936e25e202b205fa2931a7}} 
+\index{Simple\+Web\+Socket\+Server\+Library\+::\+Simple\+Web\+Socket\+Server@{Simple\+Web\+Socket\+Server\+Library\+::\+Simple\+Web\+Socket\+Server}!Stop\+Client\+Async@{Stop\+Client\+Async}}
+\index{Stop\+Client\+Async@{Stop\+Client\+Async}!Simple\+Web\+Socket\+Server\+Library\+::\+Simple\+Web\+Socket\+Server@{Simple\+Web\+Socket\+Server\+Library\+::\+Simple\+Web\+Socket\+Server}}
+\subsubsection{\texorpdfstring{Stop\+Client\+Async()}{StopClientAsync()}}
+{\footnotesize\ttfamily async Task$<$bool$>$ Simple\+Web\+Socket\+Server\+Library.\+Simple\+Web\+Socket\+Server.\+Stop\+Client\+Async (\begin{DoxyParamCaption}\item[{string}]{client\+Id,  }\item[{string}]{reason = {\ttfamily \char`\"{}\char`\"{}} }\end{DoxyParamCaption})}
+
+
+
+Stops a connection with a specific client asynchronous. Can provide reason. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em client\+Id} & Specific client to close connection with.\\
+\hline
+{\em reason} & Possible reason to close the connection.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True when succesfully closed.
+\end{DoxyReturn}
+
+
+Definition at line 250 of file Simple\+Websocket\+Server.\+cs.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_simple_web_socket_server_library_1_1_simple_web_socket_server_ad0559ffe3b936e25e202b205fa2931a7_cgraph}
+\end{center}
+\end{figure}
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{class_simple_web_socket_server_library_1_1_simple_web_socket_server_a4bfb888a3f666e48f561a55373eb4bd3}\label{class_simple_web_socket_server_library_1_1_simple_web_socket_server_a4bfb888a3f666e48f561a55373eb4bd3}} 
+\index{Simple\+Web\+Socket\+Server\+Library\+::\+Simple\+Web\+Socket\+Server@{Simple\+Web\+Socket\+Server\+Library\+::\+Simple\+Web\+Socket\+Server}!\+\_\+\+Websocket\+Handler@{\+\_\+\+Websocket\+Handler}}
+\index{\+\_\+\+Websocket\+Handler@{\+\_\+\+Websocket\+Handler}!Simple\+Web\+Socket\+Server\+Library\+::\+Simple\+Web\+Socket\+Server@{Simple\+Web\+Socket\+Server\+Library\+::\+Simple\+Web\+Socket\+Server}}
+\subsubsection{\texorpdfstring{\+\_\+\+Websocket\+Handler}{\_WebsocketHandler}}
+{\footnotesize\ttfamily readonly \mbox{\hyperlink{interface_simple_web_socket_server_library_1_1_simple_web_socket_handler_1_1_i_web_socket_handler}{I\+Web\+Socket\+Handler}} Simple\+Web\+Socket\+Server\+Library.\+Simple\+Web\+Socket\+Server.\+\_\+\+Websocket\+Handler\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Interface for the Web\+Socket\+Handler class. 
+
+
+
+Definition at line 17 of file Simple\+Websocket\+Server.\+cs.
+
+\mbox{\Hypertarget{class_simple_web_socket_server_library_1_1_simple_web_socket_server_af16d2b86849d66572a4bbf06ddc5e94e}\label{class_simple_web_socket_server_library_1_1_simple_web_socket_server_af16d2b86849d66572a4bbf06ddc5e94e}} 
+\index{Simple\+Web\+Socket\+Server\+Library\+::\+Simple\+Web\+Socket\+Server@{Simple\+Web\+Socket\+Server\+Library\+::\+Simple\+Web\+Socket\+Server}!\+\_\+\+Web\+Socket\+Http\+Server@{\+\_\+\+Web\+Socket\+Http\+Server}}
+\index{\+\_\+\+Web\+Socket\+Http\+Server@{\+\_\+\+Web\+Socket\+Http\+Server}!Simple\+Web\+Socket\+Server\+Library\+::\+Simple\+Web\+Socket\+Server@{Simple\+Web\+Socket\+Server\+Library\+::\+Simple\+Web\+Socket\+Server}}
+\subsubsection{\texorpdfstring{\+\_\+\+Web\+Socket\+Http\+Server}{\_WebSocketHttpServer}}
+{\footnotesize\ttfamily readonly \mbox{\hyperlink{interface_simple_web_socket_server_library_1_1_simple_web_socket_http_server_1_1_i_web_socket_http_server}{I\+Web\+Socket\+Http\+Server}} Simple\+Web\+Socket\+Server\+Library.\+Simple\+Web\+Socket\+Server.\+\_\+\+Web\+Socket\+Http\+Server\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Interface for the Web\+Socket\+Http\+Server class. 
+
+
+
+Definition at line 21 of file Simple\+Websocket\+Server.\+cs.
+
+
+
+\subsection{Event Documentation}
+\mbox{\Hypertarget{class_simple_web_socket_server_library_1_1_simple_web_socket_server_adfd5705f4c6ccf291409035cd1d1e34b}\label{class_simple_web_socket_server_library_1_1_simple_web_socket_server_adfd5705f4c6ccf291409035cd1d1e34b}} 
+\index{Simple\+Web\+Socket\+Server\+Library\+::\+Simple\+Web\+Socket\+Server@{Simple\+Web\+Socket\+Server\+Library\+::\+Simple\+Web\+Socket\+Server}!Websocket\+Server\+Event@{Websocket\+Server\+Event}}
+\index{Websocket\+Server\+Event@{Websocket\+Server\+Event}!Simple\+Web\+Socket\+Server\+Library\+::\+Simple\+Web\+Socket\+Server@{Simple\+Web\+Socket\+Server\+Library\+::\+Simple\+Web\+Socket\+Server}}
+\subsubsection{\texorpdfstring{Websocket\+Server\+Event}{WebsocketServerEvent}}
+{\footnotesize\ttfamily Event\+Handler$<$\mbox{\hyperlink{class_simple_web_socket_server_library_1_1_web_socket_event_arg}{Web\+Socket\+Event\+Arg}}$>$ Simple\+Web\+Socket\+Server\+Library.\+Simple\+Web\+Socket\+Server.\+Websocket\+Server\+Event}
+
+
+
+Eventhandler for when events such as receiving messages and errors from the websocket server happen. 
+
+
+
+Definition at line 27 of file Simple\+Websocket\+Server.\+cs.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{_simple_websocket_server_8cs}{Simple\+Websocket\+Server.\+cs}}\end{DoxyCompactItemize}

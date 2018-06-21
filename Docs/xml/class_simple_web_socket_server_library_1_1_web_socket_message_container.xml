@@ -1,0 +1,116 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="class_simple_web_socket_server_library_1_1_web_socket_message_container" kind="class" language="C#" prot="public">
+    <compoundname>SimpleWebSocketServerLibrary::WebSocketMessageContainer</compoundname>
+      <sectiondef kind="property">
+      <memberdef kind="property" id="class_simple_web_socket_server_library_1_1_web_socket_message_container_1a0d340c630f9f0aa968c3ab769d123a08" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
+        <type>bool</type>
+        <definition>bool SimpleWebSocketServerLibrary.WebSocketMessageContainer.isText</definition>
+        <argsstring></argsstring>
+        <name>isText</name>
+        <initializer>= false</initializer>
+        <briefdescription>
+<para>Is true when message is a text message. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="WebsocketMessageContainer.cs" line="11" column="1" bodyfile="WebsocketMessageContainer.cs" bodystart="11" bodyend="11"/>
+        <referencedby refid="class_simple_web_socket_server_library_1_1_w_socket_server_1_1_web_socket_server_1ab8f08517c5288c0ae1f18db7f12379c6" compoundref="_websocket_server_8cs" startline="50" endline="128">SimpleWebSocketServerLibrary.WSocketServer.WebSocketServer.SendMessage</referencedby>
+        <referencedby refid="class_simple_web_socket_server_library_1_1_w_socket_server_1_1_web_socket_server_1aee6acd7a909b4f9376cb3896484a24b5" compoundref="_websocket_server_8cs" startline="136" endline="214">SimpleWebSocketServerLibrary.WSocketServer.WebSocketServer.SendMessageAsync</referencedby>
+      </memberdef>
+      <memberdef kind="property" id="class_simple_web_socket_server_library_1_1_web_socket_message_container_1ae755138482b14a3fdc1003c8d89b9925" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
+        <type>bool</type>
+        <definition>bool SimpleWebSocketServerLibrary.WebSocketMessageContainer.isBinary</definition>
+        <argsstring></argsstring>
+        <name>isBinary</name>
+        <initializer>= false</initializer>
+        <briefdescription>
+<para>Is true when message is a binairy message. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="WebsocketMessageContainer.cs" line="15" column="1" bodyfile="WebsocketMessageContainer.cs" bodystart="15" bodyend="15"/>
+        <referencedby refid="class_simple_web_socket_server_library_1_1_w_socket_server_1_1_web_socket_server_1ab8f08517c5288c0ae1f18db7f12379c6" compoundref="_websocket_server_8cs" startline="50" endline="128">SimpleWebSocketServerLibrary.WSocketServer.WebSocketServer.SendMessage</referencedby>
+        <referencedby refid="class_simple_web_socket_server_library_1_1_w_socket_server_1_1_web_socket_server_1aee6acd7a909b4f9376cb3896484a24b5" compoundref="_websocket_server_8cs" startline="136" endline="214">SimpleWebSocketServerLibrary.WSocketServer.WebSocketServer.SendMessageAsync</referencedby>
+      </memberdef>
+      <memberdef kind="property" id="class_simple_web_socket_server_library_1_1_web_socket_message_container_1af110b8e8a38b3f8b025abcc403b5074a" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
+        <type>bool</type>
+        <definition>bool SimpleWebSocketServerLibrary.WebSocketMessageContainer.isClosed</definition>
+        <argsstring></argsstring>
+        <name>isClosed</name>
+        <initializer>= false</initializer>
+        <briefdescription>
+<para>Is true when a client send a close message. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="WebsocketMessageContainer.cs" line="19" column="1" bodyfile="WebsocketMessageContainer.cs" bodystart="19" bodyend="19"/>
+        <referencedby refid="class_simple_web_socket_server_library_1_1_w_socket_server_1_1_web_socket_server_1ab8f08517c5288c0ae1f18db7f12379c6" compoundref="_websocket_server_8cs" startline="50" endline="128">SimpleWebSocketServerLibrary.WSocketServer.WebSocketServer.SendMessage</referencedby>
+        <referencedby refid="class_simple_web_socket_server_library_1_1_w_socket_server_1_1_web_socket_server_1aee6acd7a909b4f9376cb3896484a24b5" compoundref="_websocket_server_8cs" startline="136" endline="214">SimpleWebSocketServerLibrary.WSocketServer.WebSocketServer.SendMessageAsync</referencedby>
+      </memberdef>
+      <memberdef kind="property" id="class_simple_web_socket_server_library_1_1_web_socket_message_container_1af5408cb3e61e53ae6a428f4a7fc50b9d" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
+        <type>bool</type>
+        <definition>bool SimpleWebSocketServerLibrary.WebSocketMessageContainer.isPing</definition>
+        <argsstring></argsstring>
+        <name>isPing</name>
+        <initializer>= false</initializer>
+        <briefdescription>
+<para>Is true when message from client is a ping message. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="WebsocketMessageContainer.cs" line="23" column="1" bodyfile="WebsocketMessageContainer.cs" bodystart="23" bodyend="23"/>
+        <referencedby refid="class_simple_web_socket_server_library_1_1_w_socket_server_1_1_web_socket_server_1ab8f08517c5288c0ae1f18db7f12379c6" compoundref="_websocket_server_8cs" startline="50" endline="128">SimpleWebSocketServerLibrary.WSocketServer.WebSocketServer.SendMessage</referencedby>
+        <referencedby refid="class_simple_web_socket_server_library_1_1_w_socket_server_1_1_web_socket_server_1aee6acd7a909b4f9376cb3896484a24b5" compoundref="_websocket_server_8cs" startline="136" endline="214">SimpleWebSocketServerLibrary.WSocketServer.WebSocketServer.SendMessageAsync</referencedby>
+      </memberdef>
+      <memberdef kind="property" id="class_simple_web_socket_server_library_1_1_web_socket_message_container_1a6cf131e019a37135d6054cd8101b8e5a" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
+        <type>bool</type>
+        <definition>bool SimpleWebSocketServerLibrary.WebSocketMessageContainer.isPong</definition>
+        <argsstring></argsstring>
+        <name>isPong</name>
+        <initializer>= false</initializer>
+        <briefdescription>
+<para>Is true when message from client is a pong message. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="WebsocketMessageContainer.cs" line="27" column="1" bodyfile="WebsocketMessageContainer.cs" bodystart="27" bodyend="27"/>
+        <referencedby refid="class_simple_web_socket_server_library_1_1_w_socket_server_1_1_web_socket_server_1ab8f08517c5288c0ae1f18db7f12379c6" compoundref="_websocket_server_8cs" startline="50" endline="128">SimpleWebSocketServerLibrary.WSocketServer.WebSocketServer.SendMessage</referencedby>
+        <referencedby refid="class_simple_web_socket_server_library_1_1_w_socket_server_1_1_web_socket_server_1aee6acd7a909b4f9376cb3896484a24b5" compoundref="_websocket_server_8cs" startline="136" endline="214">SimpleWebSocketServerLibrary.WSocketServer.WebSocketServer.SendMessageAsync</referencedby>
+      </memberdef>
+      <memberdef kind="property" id="class_simple_web_socket_server_library_1_1_web_socket_message_container_1a9c3e49f9275fadc3dc02c9d58ae65457" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
+        <type>byte []</type>
+        <definition>byte [] SimpleWebSocketServerLibrary.WebSocketMessageContainer.data</definition>
+        <argsstring></argsstring>
+        <name>data</name>
+        <briefdescription>
+<para>Contains the extra data send by a client. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="WebsocketMessageContainer.cs" line="31" column="1" bodyfile="WebsocketMessageContainer.cs" bodystart="31" bodyend="31"/>
+        <referencedby refid="class_simple_web_socket_server_library_1_1_w_socket_server_1_1_web_socket_server_1ab8f08517c5288c0ae1f18db7f12379c6" compoundref="_websocket_server_8cs" startline="50" endline="128">SimpleWebSocketServerLibrary.WSocketServer.WebSocketServer.SendMessage</referencedby>
+        <referencedby refid="class_simple_web_socket_server_library_1_1_w_socket_server_1_1_web_socket_server_1aee6acd7a909b4f9376cb3896484a24b5" compoundref="_websocket_server_8cs" startline="136" endline="214">SimpleWebSocketServerLibrary.WSocketServer.WebSocketServer.SendMessageAsync</referencedby>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Contains information about a websocket client message. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="WebsocketMessageContainer.cs" line="7" column="1" bodyfile="WebsocketMessageContainer.cs" bodystart="6" bodyend="32"/>
+    <listofallmembers>
+      <member refid="class_simple_web_socket_server_library_1_1_web_socket_message_container_1a9c3e49f9275fadc3dc02c9d58ae65457" prot="public" virt="non-virtual"><scope>SimpleWebSocketServerLibrary::WebSocketMessageContainer</scope><name>data</name></member>
+      <member refid="class_simple_web_socket_server_library_1_1_web_socket_message_container_1ae755138482b14a3fdc1003c8d89b9925" prot="public" virt="non-virtual"><scope>SimpleWebSocketServerLibrary::WebSocketMessageContainer</scope><name>isBinary</name></member>
+      <member refid="class_simple_web_socket_server_library_1_1_web_socket_message_container_1af110b8e8a38b3f8b025abcc403b5074a" prot="public" virt="non-virtual"><scope>SimpleWebSocketServerLibrary::WebSocketMessageContainer</scope><name>isClosed</name></member>
+      <member refid="class_simple_web_socket_server_library_1_1_web_socket_message_container_1af5408cb3e61e53ae6a428f4a7fc50b9d" prot="public" virt="non-virtual"><scope>SimpleWebSocketServerLibrary::WebSocketMessageContainer</scope><name>isPing</name></member>
+      <member refid="class_simple_web_socket_server_library_1_1_web_socket_message_container_1a6cf131e019a37135d6054cd8101b8e5a" prot="public" virt="non-virtual"><scope>SimpleWebSocketServerLibrary::WebSocketMessageContainer</scope><name>isPong</name></member>
+      <member refid="class_simple_web_socket_server_library_1_1_web_socket_message_container_1a0d340c630f9f0aa968c3ab769d123a08" prot="public" virt="non-virtual"><scope>SimpleWebSocketServerLibrary::WebSocketMessageContainer</scope><name>isText</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,23 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="dir_a71c3b2ad23b9ff58220dd012d201987" kind="dir">
+    <compoundname>obj/Debug</compoundname>
+    <innerdir refid="dir_ec27f8b9c61982018356a34076bd5915">obj/Debug/net40</innerdir>
+    <innerdir refid="dir_bd1b7d9c44d12bcf9dfc7703b0636408">obj/Debug/net45</innerdir>
+    <innerdir refid="dir_f4394778d253323d399c3a3e8331c697">obj/Debug/net451</innerdir>
+    <innerdir refid="dir_60ab7a6295573a58bb37a9cf0a51c0c0">obj/Debug/net452</innerdir>
+    <innerdir refid="dir_6019302c4064a6b7abd48416bffa09ad">obj/Debug/net46</innerdir>
+    <innerdir refid="dir_007a0b69f2982230e95df9ab808b7429">obj/Debug/net461</innerdir>
+    <innerdir refid="dir_6ff6ce5ad8963428b9c5c37bd705a689">obj/Debug/net462</innerdir>
+    <innerdir refid="dir_a03e5126f2e147181a404694931c00da">obj/Debug/net47</innerdir>
+    <innerdir refid="dir_178706c48d41ca0f2a298322f964c4d7">obj/Debug/netcoreapp1.0</innerdir>
+    <innerdir refid="dir_268cf0a65fff1e031e868ccff5d42a7d">obj/Debug/netcoreapp1.1</innerdir>
+    <innerdir refid="dir_d5195bf08bcacbe99bae411567ec7778">obj/Debug/netcoreapp2.0</innerdir>
+    <innerdir refid="dir_ca3a19cec90cbda5e133c48b7de7c892">obj/Debug/netcoreapp2.1</innerdir>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="obj/Debug/"/>
+  </compounddef>
+</doxygen>

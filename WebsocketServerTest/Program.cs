@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Text;
 using System.Threading.Tasks;
 using SimpleWebSocketServerLibrary;
+using SimpleWebSocketServerLibrary.WSocketServer;
 
 namespace WebsocketServerTest
 {
@@ -14,7 +15,29 @@ namespace WebsocketServerTest
 
             Console.WriteLine("WebSocket Server is running, press a key to stop the server!");
 
-            SimpleWebSocketServer websocketServer = new SimpleWebSocketServer(new SimpleWebSocketServerSettings());
+            SimpleWebSocketServer websocketServer = new SimpleWebSocketServer(new SimpleWebSocketServerSettings()
+            {
+                baseUrls = new List<string>(){"/urlendpoint1", "/urlendpoint2"},
+                bufferSize = 8192,
+                port = 1234
+            });
+
+
+            WebSocketClientInfo webSocketClientInfo = new WebSocketClientInfo()
+            {
+                clientId = "GENERATE CLIENT ID",
+                clientBaseUrl = "URL CLIENT USED TO CONNECT",
+                client = new System.Net.Sockets.TcpClient() // TCP CLIENT RETREIVED FROM HTTP SERVER
+            };
+
+            WebSocketServer newServer = new WebSocketServer(webSocketClientInfo);
+            newServer.WebSocketServerEvent += OnWebsocketEvent;
+            newServer.StartServer();
+            Console.ReadKey();
+            newServer.StopServer();
+
+
+
 
             websocketServer.WebsocketServerEvent += OnWebsocketEvent;
             websocketServer.StartServer();
@@ -44,8 +67,6 @@ namespace WebsocketServerTest
             if (args.data != null && args.isText)
             {
                 string received = Encoding.UTF8.GetString(args.data);
-                Console.WriteLine("Received message with length: " + args.messageLength + " from client: " + args.clientId + " on url: " + args.clientBaseUrl + ":");
-                Console.WriteLine(received);
                 await _WebsocketServer.SendTextMessageAsync("Client: " + args.clientId + " on url: " + args.clientBaseUrl + ", says: " + received);
             }
             else

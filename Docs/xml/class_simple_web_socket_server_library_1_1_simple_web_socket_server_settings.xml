@@ -1,0 +1,63 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="class_simple_web_socket_server_library_1_1_simple_web_socket_server_settings" kind="class" language="C#" prot="public">
+    <compoundname>SimpleWebSocketServerLibrary::SimpleWebSocketServerSettings</compoundname>
+      <sectiondef kind="property">
+      <memberdef kind="property" id="class_simple_web_socket_server_library_1_1_simple_web_socket_server_settings_1a75a76b265e2d7b35a6eb33bcbf38efb4" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
+        <type>List&lt; string &gt;</type>
+        <definition>List&lt;string&gt; SimpleWebSocketServerLibrary.SimpleWebSocketServerSettings.baseUrls</definition>
+        <argsstring></argsstring>
+        <name>baseUrls</name>
+        <initializer>= new List&lt;string&gt;(){&quot;/&quot;}</initializer>
+        <briefdescription>
+<para>List with url paths where the websocket server needs to listen to. Default = &quot;&quot;; </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SimpleWebSocketServerSettings.cs" line="13" column="1" bodyfile="SimpleWebSocketServerSettings.cs" bodystart="13" bodyend="13"/>
+        <referencedby refid="class_simple_web_socket_server_library_1_1_simple_web_socket_http_server_1_1_web_socket_http_server_1aa8e23540cfef48f5304591d1251f0f63" compoundref="_web_socket_http_server_8cs" startline="59" endline="64">SimpleWebSocketServerLibrary.SimpleWebSocketHttpServer.WebSocketHttpServer.WebSocketHttpServer</referencedby>
+      </memberdef>
+      <memberdef kind="property" id="class_simple_web_socket_server_library_1_1_simple_web_socket_server_settings_1a58a8ef37b983c6697c5a33cd44992fcd" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
+        <type>int</type>
+        <definition>int SimpleWebSocketServerLibrary.SimpleWebSocketServerSettings.port</definition>
+        <argsstring></argsstring>
+        <name>port</name>
+        <initializer>= 80</initializer>
+        <briefdescription>
+<para>Port where the server needs to listen to. Default = 80; </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SimpleWebSocketServerSettings.cs" line="17" column="1" bodyfile="SimpleWebSocketServerSettings.cs" bodystart="17" bodyend="17"/>
+        <referencedby refid="class_simple_web_socket_server_library_1_1_simple_web_socket_http_server_1_1_web_socket_http_server_1aa8e23540cfef48f5304591d1251f0f63" compoundref="_web_socket_http_server_8cs" startline="59" endline="64">SimpleWebSocketServerLibrary.SimpleWebSocketHttpServer.WebSocketHttpServer.WebSocketHttpServer</referencedby>
+      </memberdef>
+      <memberdef kind="property" id="class_simple_web_socket_server_library_1_1_simple_web_socket_server_settings_1a4ef28355e14363a3884552e8b7fb9567" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
+        <type>int</type>
+        <definition>int SimpleWebSocketServerLibrary.SimpleWebSocketServerSettings.bufferSize</definition>
+        <argsstring></argsstring>
+        <name>bufferSize</name>
+        <initializer>= 4096</initializer>
+        <briefdescription>
+<para>Buffer size for receiving messages. Default = 4096; (bytes) </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SimpleWebSocketServerSettings.cs" line="21" column="1" bodyfile="SimpleWebSocketServerSettings.cs" bodystart="21" bodyend="21"/>
+        <referencedby refid="class_simple_web_socket_server_library_1_1_simple_web_socket_server_1af3cde755fdb2781292c27174161508ed" compoundref="_simple_websocket_server_8cs" startline="33" endline="38">SimpleWebSocketServerLibrary.SimpleWebSocketServer.SimpleWebSocketServer</referencedby>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Provides settings and default values for the <ref refid="class_simple_web_socket_server_library_1_1_simple_web_socket_server" kindref="compound">SimpleWebSocketServer</ref> Class. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="SimpleWebSocketServerSettings.cs" line="9" column="1" bodyfile="SimpleWebSocketServerSettings.cs" bodystart="8" bodyend="23"/>
+    <listofallmembers>
+      <member refid="class_simple_web_socket_server_library_1_1_simple_web_socket_server_settings_1a75a76b265e2d7b35a6eb33bcbf38efb4" prot="public" virt="non-virtual"><scope>SimpleWebSocketServerLibrary::SimpleWebSocketServerSettings</scope><name>baseUrls</name></member>
+      <member refid="class_simple_web_socket_server_library_1_1_simple_web_socket_server_settings_1a4ef28355e14363a3884552e8b7fb9567" prot="public" virt="non-virtual"><scope>SimpleWebSocketServerLibrary::SimpleWebSocketServerSettings</scope><name>bufferSize</name></member>
+      <member refid="class_simple_web_socket_server_library_1_1_simple_web_socket_server_settings_1a58a8ef37b983c6697c5a33cd44992fcd" prot="public" virt="non-virtual"><scope>SimpleWebSocketServerLibrary::SimpleWebSocketServerSettings</scope><name>port</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

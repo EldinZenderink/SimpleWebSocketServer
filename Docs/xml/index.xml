@@ -1,0 +1,319 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygenindex xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="index.xsd" version="1.8.14">
+  <compound refid="class_simple_websocket_server_1_1_http_server_settings" kind="class"><name>SimpleWebsocketServer::HttpServerSettings</name>
+  </compound>
+  <compound refid="interface_simple_web_socket_server_library_1_1_simple_web_socket_handler_1_1_i_web_socket_handler" kind="interface"><name>SimpleWebSocketServerLibrary::SimpleWebSocketHandler::IWebSocketHandler</name>
+    <member refid="interface_simple_web_socket_server_library_1_1_simple_web_socket_handler_1_1_i_web_socket_handler_1a49e994104add420c0583de677b3cc4b1" kind="event"><name>WebsocketEvent</name></member>
+    <member refid="interface_simple_web_socket_server_library_1_1_simple_web_socket_handler_1_1_i_web_socket_handler_1a3d9b246d14117c85014486b3f5bb71c8" kind="function"><name>SendMessage</name></member>
+    <member refid="interface_simple_web_socket_server_library_1_1_simple_web_socket_handler_1_1_i_web_socket_handler_1a1b44785a16efa0750d5eb7e42aab28b8" kind="function"><name>SendMessage</name></member>
+    <member refid="interface_simple_web_socket_server_library_1_1_simple_web_socket_handler_1_1_i_web_socket_handler_1af92326fd7434aab33b1dc154f9e3cb52" kind="function"><name>StartConnection</name></member>
+    <member refid="interface_simple_web_socket_server_library_1_1_simple_web_socket_handler_1_1_i_web_socket_handler_1a38b3104f285279f6fd3101765b2f0076" kind="function"><name>StopClient</name></member>
+    <member refid="interface_simple_web_socket_server_library_1_1_simple_web_socket_handler_1_1_i_web_socket_handler_1ae8b12d5764a614d7827c51cdb086bee0" kind="function"><name>StopClient</name></member>
+    <member refid="interface_simple_web_socket_server_library_1_1_simple_web_socket_handler_1_1_i_web_socket_handler_1a9320e5c10e5afa670c1377b5c0e2f762" kind="function"><name>StopAll</name></member>
+    <member refid="interface_simple_web_socket_server_library_1_1_simple_web_socket_handler_1_1_i_web_socket_handler_1a27d174acc63098601266f85f4e3f873f" kind="function"><name>StopAll</name></member>
+  </compound>
+  <compound refid="interface_simple_web_socket_server_library_1_1_simple_web_socket_http_server_1_1_i_web_socket_http_server" kind="interface"><name>SimpleWebSocketServerLibrary::SimpleWebSocketHttpServer::IWebSocketHttpServer</name>
+    <member refid="interface_simple_web_socket_server_library_1_1_simple_web_socket_http_server_1_1_i_web_socket_http_server_1ace7dda0ccffcbf99eb142e0b33ed3f54" kind="function"><name>RunServer</name></member>
+    <member refid="interface_simple_web_socket_server_library_1_1_simple_web_socket_http_server_1_1_i_web_socket_http_server_1a73208116838cad69e1a7198ccfc89bbf" kind="function"><name>Stop</name></member>
+  </compound>
+  <compound refid="class_simple_web_socket_server_library_1_1_simple_web_socket_server" kind="class"><name>SimpleWebSocketServerLibrary::SimpleWebSocketServer</name>
+    <member refid="class_simple_web_socket_server_library_1_1_simple_web_socket_server_1a4bfb888a3f666e48f561a55373eb4bd3" kind="variable"><name>_WebsocketHandler</name></member>
+    <member refid="class_simple_web_socket_server_library_1_1_simple_web_socket_server_1af16d2b86849d66572a4bbf06ddc5e94e" kind="variable"><name>_WebSocketHttpServer</name></member>
+    <member refid="class_simple_web_socket_server_library_1_1_simple_web_socket_server_1adfd5705f4c6ccf291409035cd1d1e34b" kind="event"><name>WebsocketServerEvent</name></member>
+    <member refid="class_simple_web_socket_server_library_1_1_simple_web_socket_server_1af3cde755fdb2781292c27174161508ed" kind="function"><name>SimpleWebSocketServer</name></member>
+    <member refid="class_simple_web_socket_server_library_1_1_simple_web_socket_server_1adb600b8e26bb7a91c7e8a196de1c3c68" kind="function"><name>SimpleWebSocketServer</name></member>
+    <member refid="class_simple_web_socket_server_library_1_1_simple_web_socket_server_1a14730d592f2fdd3278a8df1403ebd672" kind="function"><name>StartServerAsync</name></member>
+    <member refid="class_simple_web_socket_server_library_1_1_simple_web_socket_server_1ad354c38a3f5583fe213ab913085c320a" kind="function"><name>StartServer</name></member>
+    <member refid="class_simple_web_socket_server_library_1_1_simple_web_socket_server_1aefe75fd888dea52bd64108dd03abed61" kind="function"><name>SendTextMessageAsync</name></member>
+    <member refid="class_simple_web_socket_server_library_1_1_simple_web_socket_server_1a4ea5479402f769e2e73a8bcc06b654b1" kind="function"><name>SendTextMessage</name></member>
+    <member refid="class_simple_web_socket_server_library_1_1_simple_web_socket_server_1a9d94bdf3e2964c65cafc62a80102a28c" kind="function"><name>SendBinaryMessageAsync</name></member>
+    <member refid="class_simple_web_socket_server_library_1_1_simple_web_socket_server_1ac6ddccc7dd4b54d16721d2dca025dc58" kind="function"><name>SendBinaryMessage</name></member>
+    <member refid="class_simple_web_socket_server_library_1_1_simple_web_socket_server_1a7f0eca90a424040685527ac873c31229" kind="function"><name>SendPingMessageAsync</name></member>
+    <member refid="class_simple_web_socket_server_library_1_1_simple_web_socket_server_1ab47f01467513ad98f0d9de69d41e12a5" kind="function"><name>SendPingMessage</name></member>
+    <member refid="class_simple_web_socket_server_library_1_1_simple_web_socket_server_1a20bd2a898b9465f492a5b19c4a8e1021" kind="function"><name>SendPongMessageAsync</name></member>
+    <member refid="class_simple_web_socket_server_library_1_1_simple_web_socket_server_1af1f35a19ed0272c0bd02bf51f175b4b7" kind="function"><name>SendPongMessage</name></member>
+    <member refid="class_simple_web_socket_server_library_1_1_simple_web_socket_server_1ad0559ffe3b936e25e202b205fa2931a7" kind="function"><name>StopClientAsync</name></member>
+    <member refid="class_simple_web_socket_server_library_1_1_simple_web_socket_server_1a15254218104e0b1a6af5363c7b0810a6" kind="function"><name>StopClient</name></member>
+    <member refid="class_simple_web_socket_server_library_1_1_simple_web_socket_server_1a1bb139b6266636ee732e584926844fdf" kind="function"><name>StopAllAsync</name></member>
+    <member refid="class_simple_web_socket_server_library_1_1_simple_web_socket_server_1ad80184887910735a4caa22b903ee5fd1" kind="function"><name>StopAll</name></member>
+    <member refid="class_simple_web_socket_server_library_1_1_simple_web_socket_server_1acc5670ca5bb72d689d08682f5328477e" kind="function"><name>OnWebsocketServerEvent</name></member>
+  </compound>
+  <compound refid="class_simple_web_socket_server_library_1_1_simple_web_socket_server_settings" kind="class"><name>SimpleWebSocketServerLibrary::SimpleWebSocketServerSettings</name>
+    <member refid="class_simple_web_socket_server_library_1_1_simple_web_socket_server_settings_1a75a76b265e2d7b35a6eb33bcbf38efb4" kind="property"><name>baseUrls</name></member>
+    <member refid="class_simple_web_socket_server_library_1_1_simple_web_socket_server_settings_1a58a8ef37b983c6697c5a33cd44992fcd" kind="property"><name>port</name></member>
+    <member refid="class_simple_web_socket_server_library_1_1_simple_web_socket_server_settings_1a4ef28355e14363a3884552e8b7fb9567" kind="property"><name>bufferSize</name></member>
+  </compound>
+  <compound refid="class_simple_web_socket_server_library_1_1_web_socket_client_info" kind="class"><name>SimpleWebSocketServerLibrary::WebSocketClientInfo</name>
+    <member refid="class_simple_web_socket_server_library_1_1_web_socket_client_info_1aba024d83617572017cc840759b251074" kind="property"><name>client</name></member>
+    <member refid="class_simple_web_socket_server_library_1_1_web_socket_client_info_1acebd7343b1d38251fba57353a82ecf42" kind="property"><name>clientId</name></member>
+    <member refid="class_simple_web_socket_server_library_1_1_web_socket_client_info_1ad63571c277768d4ded702f39abbb0846" kind="property"><name>clientBaseUrl</name></member>
+  </compound>
+  <compound refid="class_simple_web_socket_server_library_1_1_web_socket_event_arg" kind="class"><name>SimpleWebSocketServerLibrary::WebSocketEventArg</name>
+    <member refid="class_simple_web_socket_server_library_1_1_web_socket_event_arg_1ae1619a301983241ee6b8443bcebf6ea0" kind="property"><name>isText</name></member>
+    <member refid="class_simple_web_socket_server_library_1_1_web_socket_event_arg_1a5378f4e2ca3458f99d8aea904128f421" kind="property"><name>isBinary</name></member>
+    <member refid="class_simple_web_socket_server_library_1_1_web_socket_event_arg_1a9c2010cbe732a5b7ae710378fbe94048" kind="property"><name>isClosed</name></member>
+    <member refid="class_simple_web_socket_server_library_1_1_web_socket_event_arg_1a1b09e765edfe5540bc860ad274b1c045" kind="property"><name>isOpen</name></member>
+    <member refid="class_simple_web_socket_server_library_1_1_web_socket_event_arg_1ae1f43d554e7a6a3a98775d20fecc57c2" kind="property"><name>isPing</name></member>
+    <member refid="class_simple_web_socket_server_library_1_1_web_socket_event_arg_1ac6a62b7fad9a6026be6e144ff20e9557" kind="property"><name>isPong</name></member>
+    <member refid="class_simple_web_socket_server_library_1_1_web_socket_event_arg_1a5e5ceea142e556d624403fcd496ed388" kind="property"><name>data</name></member>
+    <member refid="class_simple_web_socket_server_library_1_1_web_socket_event_arg_1a0b1215c622bb42a4be0dd360d60de6c6" kind="property"><name>messageLength</name></member>
+    <member refid="class_simple_web_socket_server_library_1_1_web_socket_event_arg_1afde3b8e9a9522972a7b5a1b0d09d8dbc" kind="property"><name>clientId</name></member>
+    <member refid="class_simple_web_socket_server_library_1_1_web_socket_event_arg_1a5881e5179e52593950e4418bf8045372" kind="property"><name>clientBaseUrl</name></member>
+    <member refid="class_simple_web_socket_server_library_1_1_web_socket_event_arg_1af8b4dda14c45b976751e8386f99c6dda" kind="property"><name>errorMessage</name></member>
+  </compound>
+  <compound refid="class_simple_web_socket_server_library_1_1_simple_web_socket_handler_1_1_web_socket_handler" kind="class"><name>SimpleWebSocketServerLibrary::SimpleWebSocketHandler::WebSocketHandler</name>
+    <member refid="class_simple_web_socket_server_library_1_1_simple_web_socket_handler_1_1_web_socket_handler_1a82f255d10f7ada8915b0083a90aa488e" kind="variable"><name>_BufferSize</name></member>
+    <member refid="class_simple_web_socket_server_library_1_1_simple_web_socket_handler_1_1_web_socket_handler_1a4cba1d5137e38a568d552bc6c6c6d68c" kind="variable"><name>_ListWithConnections</name></member>
+    <member refid="class_simple_web_socket_server_library_1_1_simple_web_socket_handler_1_1_web_socket_handler_1adbe536b05d81b80f879bb6742ee53eb8" kind="event"><name>WebsocketEvent</name></member>
+    <member refid="class_simple_web_socket_server_library_1_1_simple_web_socket_handler_1_1_web_socket_handler_1a10096ce5b5af80b4e5656e6d1d8ad485" kind="function"><name>WebSocketHandler</name></member>
+    <member refid="class_simple_web_socket_server_library_1_1_simple_web_socket_handler_1_1_web_socket_handler_1aab85fcebece3958e4308996b57415bd5" kind="function"><name>StartConnection</name></member>
+    <member refid="class_simple_web_socket_server_library_1_1_simple_web_socket_handler_1_1_web_socket_handler_1a9783bb897a6a9708ab861edc102df693" kind="function"><name>StopClient</name></member>
+    <member refid="class_simple_web_socket_server_library_1_1_simple_web_socket_handler_1_1_web_socket_handler_1a26ca8d6d9ebbefae58bbdaf3ff7986c4" kind="function"><name>StopClient</name></member>
+    <member refid="class_simple_web_socket_server_library_1_1_simple_web_socket_handler_1_1_web_socket_handler_1acd6bdfe5797bdacb39730f83bafde6fc" kind="function"><name>StopAll</name></member>
+    <member refid="class_simple_web_socket_server_library_1_1_simple_web_socket_handler_1_1_web_socket_handler_1a77f5d9d54d3a2a3032b5ce1f21d5ef34" kind="function"><name>StopAll</name></member>
+    <member refid="class_simple_web_socket_server_library_1_1_simple_web_socket_handler_1_1_web_socket_handler_1abee1c137ad80d04fb2a1de7644d2d60d" kind="function"><name>SendMessage</name></member>
+    <member refid="class_simple_web_socket_server_library_1_1_simple_web_socket_handler_1_1_web_socket_handler_1af6f2bd90d72a21a48f1f46a0d42af80d" kind="function"><name>SendMessage</name></member>
+    <member refid="class_simple_web_socket_server_library_1_1_simple_web_socket_handler_1_1_web_socket_handler_1a54df3f3848a5b8eecb4eba76ac9a328c" kind="function"><name>OnWebsocketEvent</name></member>
+  </compound>
+  <compound refid="class_simple_web_socket_server_library_1_1_simple_web_socket_http_server_1_1_web_socket_http_server" kind="class"><name>SimpleWebSocketServerLibrary::SimpleWebSocketHttpServer::WebSocketHttpServer</name>
+    <member refid="class_simple_web_socket_server_library_1_1_simple_web_socket_http_server_1_1_web_socket_http_server_1abe8db2f7583ba87d2731ca04a751ed28" kind="variable"><name>_Port</name></member>
+    <member refid="class_simple_web_socket_server_library_1_1_simple_web_socket_http_server_1_1_web_socket_http_server_1a4de0d450cb58e0ddabc5a270dd7806c8" kind="variable"><name>_WebsocketHandler</name></member>
+    <member refid="class_simple_web_socket_server_library_1_1_simple_web_socket_http_server_1_1_web_socket_http_server_1a70e5c60e525049aed662d4f174413f43" kind="variable"><name>_BaseUrls</name></member>
+    <member refid="class_simple_web_socket_server_library_1_1_simple_web_socket_http_server_1_1_web_socket_http_server_1ae945702bb623e9f65e14f23668c86cb1" kind="variable"><name>_Stop</name></member>
+    <member refid="class_simple_web_socket_server_library_1_1_simple_web_socket_http_server_1_1_web_socket_http_server_1aa8e23540cfef48f5304591d1251f0f63" kind="function"><name>WebSocketHttpServer</name></member>
+    <member refid="class_simple_web_socket_server_library_1_1_simple_web_socket_http_server_1_1_web_socket_http_server_1afc1c8b7fbec382f17e02bc5a6a1d0623" kind="function"><name>CheckIfBaseUrl</name></member>
+    <member refid="class_simple_web_socket_server_library_1_1_simple_web_socket_http_server_1_1_web_socket_http_server_1ad03927a5f521986b6fdbd1ee2c5d77ba" kind="function"><name>CheckIfCustomIdIsSet</name></member>
+    <member refid="class_simple_web_socket_server_library_1_1_simple_web_socket_http_server_1_1_web_socket_http_server_1a069af261c2eea78d3c3b75a39f97ea15" kind="function"><name>GenerateAcceptResponse</name></member>
+    <member refid="class_simple_web_socket_server_library_1_1_simple_web_socket_http_server_1_1_web_socket_http_server_1a57b76afde46781493110c513b984417c" kind="function"><name>RunServer</name></member>
+    <member refid="class_simple_web_socket_server_library_1_1_simple_web_socket_http_server_1_1_web_socket_http_server_1af61f4c057d2af50ed5b8942424dbf3ad" kind="function"><name>Stop</name></member>
+    <member refid="class_simple_web_socket_server_library_1_1_simple_web_socket_http_server_1_1_web_socket_http_server_1a21e28d41ea86e21f91848fc50b6cea66" kind="function"><name>Hash</name></member>
+  </compound>
+  <compound refid="class_simple_web_socket_server_library_1_1_web_socket_message_container" kind="class"><name>SimpleWebSocketServerLibrary::WebSocketMessageContainer</name>
+    <member refid="class_simple_web_socket_server_library_1_1_web_socket_message_container_1a0d340c630f9f0aa968c3ab769d123a08" kind="property"><name>isText</name></member>
+    <member refid="class_simple_web_socket_server_library_1_1_web_socket_message_container_1ae755138482b14a3fdc1003c8d89b9925" kind="property"><name>isBinary</name></member>
+    <member refid="class_simple_web_socket_server_library_1_1_web_socket_message_container_1af110b8e8a38b3f8b025abcc403b5074a" kind="property"><name>isClosed</name></member>
+    <member refid="class_simple_web_socket_server_library_1_1_web_socket_message_container_1af5408cb3e61e53ae6a428f4a7fc50b9d" kind="property"><name>isPing</name></member>
+    <member refid="class_simple_web_socket_server_library_1_1_web_socket_message_container_1a6cf131e019a37135d6054cd8101b8e5a" kind="property"><name>isPong</name></member>
+    <member refid="class_simple_web_socket_server_library_1_1_web_socket_message_container_1a9c3e49f9275fadc3dc02c9d58ae65457" kind="property"><name>data</name></member>
+  </compound>
+  <compound refid="class_simple_web_socket_server_library_1_1_w_socket_server_1_1_web_socket_server" kind="class"><name>SimpleWebSocketServerLibrary::WSocketServer::WebSocketServer</name>
+    <member refid="class_simple_web_socket_server_library_1_1_w_socket_server_1_1_web_socket_server_1a6fbda1ede55611bd2e293f27998b21c3" kind="event"><name>WebSocketServerEvent</name></member>
+    <member refid="class_simple_web_socket_server_library_1_1_w_socket_server_1_1_web_socket_server_1a6d5baef80e87cbb0f7b6588498ea33c0" kind="variable"><name>_BufferSize</name></member>
+    <member refid="class_simple_web_socket_server_library_1_1_w_socket_server_1_1_web_socket_server_1a43967b2701368bc8a17258f14e22707b" kind="variable"><name>_ClientInfo</name></member>
+    <member refid="class_simple_web_socket_server_library_1_1_w_socket_server_1_1_web_socket_server_1a4162571a5f4e62f103082ed52cba9566" kind="function"><name>WebSocketServer</name></member>
+    <member refid="class_simple_web_socket_server_library_1_1_w_socket_server_1_1_web_socket_server_1ab8f08517c5288c0ae1f18db7f12379c6" kind="function"><name>SendMessage</name></member>
+    <member refid="class_simple_web_socket_server_library_1_1_w_socket_server_1_1_web_socket_server_1aee6acd7a909b4f9376cb3896484a24b5" kind="function"><name>SendMessageAsync</name></member>
+    <member refid="class_simple_web_socket_server_library_1_1_w_socket_server_1_1_web_socket_server_1a20756f37e37a07b424764d14cfdd9f6b" kind="function"><name>StopServer</name></member>
+    <member refid="class_simple_web_socket_server_library_1_1_w_socket_server_1_1_web_socket_server_1a8fc32773b77146e5380e4d932b5b3511" kind="function"><name>StopServerAsync</name></member>
+    <member refid="class_simple_web_socket_server_library_1_1_w_socket_server_1_1_web_socket_server_1ade70132fb8fb9150d8366eec2b9831e4" kind="function"><name>StartServerAsync</name></member>
+    <member refid="class_simple_web_socket_server_library_1_1_w_socket_server_1_1_web_socket_server_1a8fd29cfd7fd558b6f397c317385f6674" kind="function"><name>StartServer</name></member>
+  </compound>
+  <compound refid="namespace_simple_websocket_server" kind="namespace"><name>SimpleWebsocketServer</name>
+  </compound>
+  <compound refid="namespace_simple_web_socket_server_library" kind="namespace"><name>SimpleWebSocketServerLibrary</name>
+  </compound>
+  <compound refid="namespace_simple_web_socket_server_library_1_1_simple_web_socket_handler" kind="namespace"><name>SimpleWebSocketServerLibrary::SimpleWebSocketHandler</name>
+  </compound>
+  <compound refid="namespace_simple_web_socket_server_library_1_1_simple_web_socket_http_server" kind="namespace"><name>SimpleWebSocketServerLibrary::SimpleWebSocketHttpServer</name>
+  </compound>
+  <compound refid="namespace_simple_web_socket_server_library_1_1_w_socket_server" kind="namespace"><name>SimpleWebSocketServerLibrary::WSocketServer</name>
+  </compound>
+  <compound refid="namespace_system" kind="namespace"><name>System</name>
+  </compound>
+  <compound refid="namespace_system_1_1_collections_1_1_generic" kind="namespace"><name>System::Collections::Generic</name>
+  </compound>
+  <compound refid="namespace_system_1_1_diagnostics" kind="namespace"><name>System::Diagnostics</name>
+  </compound>
+  <compound refid="namespace_system_1_1_linq" kind="namespace"><name>System::Linq</name>
+  </compound>
+  <compound refid="namespace_system_1_1_net" kind="namespace"><name>System::Net</name>
+  </compound>
+  <compound refid="namespace_system_1_1_net_1_1_sockets" kind="namespace"><name>System::Net::Sockets</name>
+  </compound>
+  <compound refid="namespace_system_1_1_reflection" kind="namespace"><name>System::Reflection</name>
+  </compound>
+  <compound refid="namespace_system_1_1_security_1_1_cryptography" kind="namespace"><name>System::Security::Cryptography</name>
+  </compound>
+  <compound refid="namespace_system_1_1_text" kind="namespace"><name>System::Text</name>
+  </compound>
+  <compound refid="namespace_system_1_1_threading" kind="namespace"><name>System::Threading</name>
+  </compound>
+  <compound refid="namespace_system_1_1_threading_1_1_tasks" kind="namespace"><name>System::Threading::Tasks</name>
+  </compound>
+  <compound refid="_http_server_settings_8cs" kind="file"><name>HttpServerSettings.cs</name>
+  </compound>
+  <compound refid="_debug_2net40_2_simple_websocket_server_8_assembly_info_8cs" kind="file"><name>SimpleWebsocketServer.AssemblyInfo.cs</name>
+  </compound>
+  <compound refid="_debug_2net45_2_simple_websocket_server_8_assembly_info_8cs" kind="file"><name>SimpleWebsocketServer.AssemblyInfo.cs</name>
+  </compound>
+  <compound refid="_debug_2net451_2_simple_websocket_server_8_assembly_info_8cs" kind="file"><name>SimpleWebsocketServer.AssemblyInfo.cs</name>
+  </compound>
+  <compound refid="_debug_2net452_2_simple_websocket_server_8_assembly_info_8cs" kind="file"><name>SimpleWebsocketServer.AssemblyInfo.cs</name>
+  </compound>
+  <compound refid="_debug_2net46_2_simple_websocket_server_8_assembly_info_8cs" kind="file"><name>SimpleWebsocketServer.AssemblyInfo.cs</name>
+  </compound>
+  <compound refid="_debug_2net461_2_simple_websocket_server_8_assembly_info_8cs" kind="file"><name>SimpleWebsocketServer.AssemblyInfo.cs</name>
+  </compound>
+  <compound refid="_debug_2net462_2_simple_websocket_server_8_assembly_info_8cs" kind="file"><name>SimpleWebsocketServer.AssemblyInfo.cs</name>
+  </compound>
+  <compound refid="_debug_2net47_2_simple_websocket_server_8_assembly_info_8cs" kind="file"><name>SimpleWebsocketServer.AssemblyInfo.cs</name>
+  </compound>
+  <compound refid="_debug_2netcoreapp1_80_2_simple_websocket_server_8_assembly_info_8cs" kind="file"><name>SimpleWebsocketServer.AssemblyInfo.cs</name>
+  </compound>
+  <compound refid="_debug_2netcoreapp1_81_2_simple_websocket_server_8_assembly_info_8cs" kind="file"><name>SimpleWebsocketServer.AssemblyInfo.cs</name>
+  </compound>
+  <compound refid="_debug_2netcoreapp2_80_2_simple_websocket_server_8_assembly_info_8cs" kind="file"><name>SimpleWebsocketServer.AssemblyInfo.cs</name>
+  </compound>
+  <compound refid="_debug_2netcoreapp2_81_2_simple_websocket_server_8_assembly_info_8cs" kind="file"><name>SimpleWebsocketServer.AssemblyInfo.cs</name>
+  </compound>
+  <compound refid="_release_2net45_2_simple_websocket_server_8_assembly_info_8cs" kind="file"><name>SimpleWebsocketServer.AssemblyInfo.cs</name>
+  </compound>
+  <compound refid="_release_2net46_2_simple_websocket_server_8_assembly_info_8cs" kind="file"><name>SimpleWebsocketServer.AssemblyInfo.cs</name>
+  </compound>
+  <compound refid="_release_2net47_2_simple_websocket_server_8_assembly_info_8cs" kind="file"><name>SimpleWebsocketServer.AssemblyInfo.cs</name>
+  </compound>
+  <compound refid="_release_2netcoreapp2_80_2_simple_websocket_server_8_assembly_info_8cs" kind="file"><name>SimpleWebsocketServer.AssemblyInfo.cs</name>
+  </compound>
+  <compound refid="_release_2netcoreapp2_81_2_simple_websocket_server_8_assembly_info_8cs" kind="file"><name>SimpleWebsocketServer.AssemblyInfo.cs</name>
+  </compound>
+  <compound refid="_debug_2net45_2_temporary_generated_file__036_c0_b5_b-1481-4323-8_d20-8_f5_a_d_c_b23_d92_8cs" kind="file"><name>TemporaryGeneratedFile_036C0B5B-1481-4323-8D20-8F5ADCB23D92.cs</name>
+  </compound>
+  <compound refid="_debug_2net451_2_temporary_generated_file__036_c0_b5_b-1481-4323-8_d20-8_f5_a_d_c_b23_d92_8cs" kind="file"><name>TemporaryGeneratedFile_036C0B5B-1481-4323-8D20-8F5ADCB23D92.cs</name>
+  </compound>
+  <compound refid="_debug_2net452_2_temporary_generated_file__036_c0_b5_b-1481-4323-8_d20-8_f5_a_d_c_b23_d92_8cs" kind="file"><name>TemporaryGeneratedFile_036C0B5B-1481-4323-8D20-8F5ADCB23D92.cs</name>
+  </compound>
+  <compound refid="_debug_2net46_2_temporary_generated_file__036_c0_b5_b-1481-4323-8_d20-8_f5_a_d_c_b23_d92_8cs" kind="file"><name>TemporaryGeneratedFile_036C0B5B-1481-4323-8D20-8F5ADCB23D92.cs</name>
+  </compound>
+  <compound refid="_debug_2net461_2_temporary_generated_file__036_c0_b5_b-1481-4323-8_d20-8_f5_a_d_c_b23_d92_8cs" kind="file"><name>TemporaryGeneratedFile_036C0B5B-1481-4323-8D20-8F5ADCB23D92.cs</name>
+  </compound>
+  <compound refid="_debug_2net462_2_temporary_generated_file__036_c0_b5_b-1481-4323-8_d20-8_f5_a_d_c_b23_d92_8cs" kind="file"><name>TemporaryGeneratedFile_036C0B5B-1481-4323-8D20-8F5ADCB23D92.cs</name>
+  </compound>
+  <compound refid="_debug_2net47_2_temporary_generated_file__036_c0_b5_b-1481-4323-8_d20-8_f5_a_d_c_b23_d92_8cs" kind="file"><name>TemporaryGeneratedFile_036C0B5B-1481-4323-8D20-8F5ADCB23D92.cs</name>
+  </compound>
+  <compound refid="_debug_2netcoreapp1_80_2_temporary_generated_file__036_c0_b5_b-1481-4323-8_d20-8_f5_a_d_c_b23_d92_8cs" kind="file"><name>TemporaryGeneratedFile_036C0B5B-1481-4323-8D20-8F5ADCB23D92.cs</name>
+  </compound>
+  <compound refid="_debug_2netcoreapp1_81_2_temporary_generated_file__036_c0_b5_b-1481-4323-8_d20-8_f5_a_d_c_b23_d92_8cs" kind="file"><name>TemporaryGeneratedFile_036C0B5B-1481-4323-8D20-8F5ADCB23D92.cs</name>
+  </compound>
+  <compound refid="_debug_2netcoreapp2_81_2_temporary_generated_file__036_c0_b5_b-1481-4323-8_d20-8_f5_a_d_c_b23_d92_8cs" kind="file"><name>TemporaryGeneratedFile_036C0B5B-1481-4323-8D20-8F5ADCB23D92.cs</name>
+  </compound>
+  <compound refid="_release_2net45_2_temporary_generated_file__036_c0_b5_b-1481-4323-8_d20-8_f5_a_d_c_b23_d92_8cs" kind="file"><name>TemporaryGeneratedFile_036C0B5B-1481-4323-8D20-8F5ADCB23D92.cs</name>
+  </compound>
+  <compound refid="_release_2net46_2_temporary_generated_file__036_c0_b5_b-1481-4323-8_d20-8_f5_a_d_c_b23_d92_8cs" kind="file"><name>TemporaryGeneratedFile_036C0B5B-1481-4323-8D20-8F5ADCB23D92.cs</name>
+  </compound>
+  <compound refid="_release_2net47_2_temporary_generated_file__036_c0_b5_b-1481-4323-8_d20-8_f5_a_d_c_b23_d92_8cs" kind="file"><name>TemporaryGeneratedFile_036C0B5B-1481-4323-8D20-8F5ADCB23D92.cs</name>
+  </compound>
+  <compound refid="_release_2netcoreapp2_81_2_temporary_generated_file__036_c0_b5_b-1481-4323-8_d20-8_f5_a_d_c_b23_d92_8cs" kind="file"><name>TemporaryGeneratedFile_036C0B5B-1481-4323-8D20-8F5ADCB23D92.cs</name>
+  </compound>
+  <compound refid="_debug_2net45_2_temporary_generated_file__5937a670-0e60-4077-877b-f7221da3dda1_8cs" kind="file"><name>TemporaryGeneratedFile_5937a670-0e60-4077-877b-f7221da3dda1.cs</name>
+  </compound>
+  <compound refid="_debug_2net451_2_temporary_generated_file__5937a670-0e60-4077-877b-f7221da3dda1_8cs" kind="file"><name>TemporaryGeneratedFile_5937a670-0e60-4077-877b-f7221da3dda1.cs</name>
+  </compound>
+  <compound refid="_debug_2net452_2_temporary_generated_file__5937a670-0e60-4077-877b-f7221da3dda1_8cs" kind="file"><name>TemporaryGeneratedFile_5937a670-0e60-4077-877b-f7221da3dda1.cs</name>
+  </compound>
+  <compound refid="_debug_2net46_2_temporary_generated_file__5937a670-0e60-4077-877b-f7221da3dda1_8cs" kind="file"><name>TemporaryGeneratedFile_5937a670-0e60-4077-877b-f7221da3dda1.cs</name>
+  </compound>
+  <compound refid="_debug_2net461_2_temporary_generated_file__5937a670-0e60-4077-877b-f7221da3dda1_8cs" kind="file"><name>TemporaryGeneratedFile_5937a670-0e60-4077-877b-f7221da3dda1.cs</name>
+  </compound>
+  <compound refid="_debug_2net462_2_temporary_generated_file__5937a670-0e60-4077-877b-f7221da3dda1_8cs" kind="file"><name>TemporaryGeneratedFile_5937a670-0e60-4077-877b-f7221da3dda1.cs</name>
+  </compound>
+  <compound refid="_debug_2net47_2_temporary_generated_file__5937a670-0e60-4077-877b-f7221da3dda1_8cs" kind="file"><name>TemporaryGeneratedFile_5937a670-0e60-4077-877b-f7221da3dda1.cs</name>
+  </compound>
+  <compound refid="_debug_2netcoreapp1_80_2_temporary_generated_file__5937a670-0e60-4077-877b-f7221da3dda1_8cs" kind="file"><name>TemporaryGeneratedFile_5937a670-0e60-4077-877b-f7221da3dda1.cs</name>
+  </compound>
+  <compound refid="_debug_2netcoreapp1_81_2_temporary_generated_file__5937a670-0e60-4077-877b-f7221da3dda1_8cs" kind="file"><name>TemporaryGeneratedFile_5937a670-0e60-4077-877b-f7221da3dda1.cs</name>
+  </compound>
+  <compound refid="_debug_2netcoreapp2_81_2_temporary_generated_file__5937a670-0e60-4077-877b-f7221da3dda1_8cs" kind="file"><name>TemporaryGeneratedFile_5937a670-0e60-4077-877b-f7221da3dda1.cs</name>
+  </compound>
+  <compound refid="_release_2net45_2_temporary_generated_file__5937a670-0e60-4077-877b-f7221da3dda1_8cs" kind="file"><name>TemporaryGeneratedFile_5937a670-0e60-4077-877b-f7221da3dda1.cs</name>
+  </compound>
+  <compound refid="_release_2net46_2_temporary_generated_file__5937a670-0e60-4077-877b-f7221da3dda1_8cs" kind="file"><name>TemporaryGeneratedFile_5937a670-0e60-4077-877b-f7221da3dda1.cs</name>
+  </compound>
+  <compound refid="_release_2net47_2_temporary_generated_file__5937a670-0e60-4077-877b-f7221da3dda1_8cs" kind="file"><name>TemporaryGeneratedFile_5937a670-0e60-4077-877b-f7221da3dda1.cs</name>
+  </compound>
+  <compound refid="_release_2netcoreapp2_81_2_temporary_generated_file__5937a670-0e60-4077-877b-f7221da3dda1_8cs" kind="file"><name>TemporaryGeneratedFile_5937a670-0e60-4077-877b-f7221da3dda1.cs</name>
+  </compound>
+  <compound refid="_debug_2net45_2_temporary_generated_file___e7_a71_f73-0_f8_d-4_b9_b-_b56_e-8_e70_b10_b_c5_d3_8cs" kind="file"><name>TemporaryGeneratedFile_E7A71F73-0F8D-4B9B-B56E-8E70B10BC5D3.cs</name>
+  </compound>
+  <compound refid="_debug_2net451_2_temporary_generated_file___e7_a71_f73-0_f8_d-4_b9_b-_b56_e-8_e70_b10_b_c5_d3_8cs" kind="file"><name>TemporaryGeneratedFile_E7A71F73-0F8D-4B9B-B56E-8E70B10BC5D3.cs</name>
+  </compound>
+  <compound refid="_debug_2net452_2_temporary_generated_file___e7_a71_f73-0_f8_d-4_b9_b-_b56_e-8_e70_b10_b_c5_d3_8cs" kind="file"><name>TemporaryGeneratedFile_E7A71F73-0F8D-4B9B-B56E-8E70B10BC5D3.cs</name>
+  </compound>
+  <compound refid="_debug_2net46_2_temporary_generated_file___e7_a71_f73-0_f8_d-4_b9_b-_b56_e-8_e70_b10_b_c5_d3_8cs" kind="file"><name>TemporaryGeneratedFile_E7A71F73-0F8D-4B9B-B56E-8E70B10BC5D3.cs</name>
+  </compound>
+  <compound refid="_debug_2net461_2_temporary_generated_file___e7_a71_f73-0_f8_d-4_b9_b-_b56_e-8_e70_b10_b_c5_d3_8cs" kind="file"><name>TemporaryGeneratedFile_E7A71F73-0F8D-4B9B-B56E-8E70B10BC5D3.cs</name>
+  </compound>
+  <compound refid="_debug_2net462_2_temporary_generated_file___e7_a71_f73-0_f8_d-4_b9_b-_b56_e-8_e70_b10_b_c5_d3_8cs" kind="file"><name>TemporaryGeneratedFile_E7A71F73-0F8D-4B9B-B56E-8E70B10BC5D3.cs</name>
+  </compound>
+  <compound refid="_debug_2net47_2_temporary_generated_file___e7_a71_f73-0_f8_d-4_b9_b-_b56_e-8_e70_b10_b_c5_d3_8cs" kind="file"><name>TemporaryGeneratedFile_E7A71F73-0F8D-4B9B-B56E-8E70B10BC5D3.cs</name>
+  </compound>
+  <compound refid="_debug_2netcoreapp1_80_2_temporary_generated_file___e7_a71_f73-0_f8_d-4_b9_b-_b56_e-8_e70_b10_b_c5_d3_8cs" kind="file"><name>TemporaryGeneratedFile_E7A71F73-0F8D-4B9B-B56E-8E70B10BC5D3.cs</name>
+  </compound>
+  <compound refid="_debug_2netcoreapp1_81_2_temporary_generated_file___e7_a71_f73-0_f8_d-4_b9_b-_b56_e-8_e70_b10_b_c5_d3_8cs" kind="file"><name>TemporaryGeneratedFile_E7A71F73-0F8D-4B9B-B56E-8E70B10BC5D3.cs</name>
+  </compound>
+  <compound refid="_debug_2netcoreapp2_81_2_temporary_generated_file___e7_a71_f73-0_f8_d-4_b9_b-_b56_e-8_e70_b10_b_c5_d3_8cs" kind="file"><name>TemporaryGeneratedFile_E7A71F73-0F8D-4B9B-B56E-8E70B10BC5D3.cs</name>
+  </compound>
+  <compound refid="_release_2net45_2_temporary_generated_file___e7_a71_f73-0_f8_d-4_b9_b-_b56_e-8_e70_b10_b_c5_d3_8cs" kind="file"><name>TemporaryGeneratedFile_E7A71F73-0F8D-4B9B-B56E-8E70B10BC5D3.cs</name>
+  </compound>
+  <compound refid="_release_2net46_2_temporary_generated_file___e7_a71_f73-0_f8_d-4_b9_b-_b56_e-8_e70_b10_b_c5_d3_8cs" kind="file"><name>TemporaryGeneratedFile_E7A71F73-0F8D-4B9B-B56E-8E70B10BC5D3.cs</name>
+  </compound>
+  <compound refid="_release_2net47_2_temporary_generated_file___e7_a71_f73-0_f8_d-4_b9_b-_b56_e-8_e70_b10_b_c5_d3_8cs" kind="file"><name>TemporaryGeneratedFile_E7A71F73-0F8D-4B9B-B56E-8E70B10BC5D3.cs</name>
+  </compound>
+  <compound refid="_release_2netcoreapp2_81_2_temporary_generated_file___e7_a71_f73-0_f8_d-4_b9_b-_b56_e-8_e70_b10_b_c5_d3_8cs" kind="file"><name>TemporaryGeneratedFile_E7A71F73-0F8D-4B9B-B56E-8E70B10BC5D3.cs</name>
+  </compound>
+  <compound refid="_simple_websocket_server_8cs" kind="file"><name>SimpleWebsocketServer.cs</name>
+  </compound>
+  <compound refid="_simple_web_socket_server_settings_8cs" kind="file"><name>SimpleWebSocketServerSettings.cs</name>
+  </compound>
+  <compound refid="_websocket_client_info_8cs" kind="file"><name>WebsocketClientInfo.cs</name>
+  </compound>
+  <compound refid="_websocket_event_arg_8cs" kind="file"><name>WebsocketEventArg.cs</name>
+  </compound>
+  <compound refid="_websocket_handler_8cs" kind="file"><name>WebsocketHandler.cs</name>
+  </compound>
+  <compound refid="_web_socket_http_server_8cs" kind="file"><name>WebSocketHttpServer.cs</name>
+  </compound>
+  <compound refid="_websocket_message_container_8cs" kind="file"><name>WebsocketMessageContainer.cs</name>
+  </compound>
+  <compound refid="_websocket_server_8cs" kind="file"><name>WebsocketServer.cs</name>
+  </compound>
+  <compound refid="dir_a71c3b2ad23b9ff58220dd012d201987" kind="dir"><name>obj/Debug</name>
+  </compound>
+  <compound refid="dir_ec27f8b9c61982018356a34076bd5915" kind="dir"><name>obj/Debug/net40</name>
+  </compound>
+  <compound refid="dir_bd1b7d9c44d12bcf9dfc7703b0636408" kind="dir"><name>obj/Debug/net45</name>
+  </compound>
+  <compound refid="dir_111b4f2a32c34b02acdb370f8e12514d" kind="dir"><name>obj/Release/net45</name>
+  </compound>
+  <compound refid="dir_f4394778d253323d399c3a3e8331c697" kind="dir"><name>obj/Debug/net451</name>
+  </compound>
+  <compound refid="dir_60ab7a6295573a58bb37a9cf0a51c0c0" kind="dir"><name>obj/Debug/net452</name>
+  </compound>
+  <compound refid="dir_67296400dc887967529d6892c18c15d0" kind="dir"><name>obj/Release/net46</name>
+  </compound>
+  <compound refid="dir_6019302c4064a6b7abd48416bffa09ad" kind="dir"><name>obj/Debug/net46</name>
+  </compound>
+  <compound refid="dir_007a0b69f2982230e95df9ab808b7429" kind="dir"><name>obj/Debug/net461</name>
+  </compound>
+  <compound refid="dir_6ff6ce5ad8963428b9c5c37bd705a689" kind="dir"><name>obj/Debug/net462</name>
+  </compound>
+  <compound refid="dir_a0f06852932a12d9b023645011091644" kind="dir"><name>obj/Release/net47</name>
+  </compound>
+  <compound refid="dir_a03e5126f2e147181a404694931c00da" kind="dir"><name>obj/Debug/net47</name>
+  </compound>
+  <compound refid="dir_178706c48d41ca0f2a298322f964c4d7" kind="dir"><name>obj/Debug/netcoreapp1.0</name>
+  </compound>
+  <compound refid="dir_268cf0a65fff1e031e868ccff5d42a7d" kind="dir"><name>obj/Debug/netcoreapp1.1</name>
+  </compound>
+  <compound refid="dir_26bb39a787623d6e3b043f6acddeb5e4" kind="dir"><name>obj/Release/netcoreapp2.0</name>
+  </compound>
+  <compound refid="dir_d5195bf08bcacbe99bae411567ec7778" kind="dir"><name>obj/Debug/netcoreapp2.0</name>
+  </compound>
+  <compound refid="dir_767f095ced170d53eeb4221e0327d820" kind="dir"><name>obj/Release/netcoreapp2.1</name>
+  </compound>
+  <compound refid="dir_ca3a19cec90cbda5e133c48b7de7c892" kind="dir"><name>obj/Debug/netcoreapp2.1</name>
+  </compound>
+  <compound refid="dir_43724e81dd40e09f32417973865cdd64" kind="dir"><name>obj</name>
+  </compound>
+  <compound refid="dir_9fe5cc214b8578ee5b8e153089aca810" kind="dir"><name>obj/Release</name>
+  </compound>
+</doxygenindex>
