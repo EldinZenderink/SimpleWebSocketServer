@@ -1,0 +1,572 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>SimpleWebsocketServer</name>
+    </assembly>
+    <members>
+        <member name="T:SimpleWebSocketServerLibrary.SimpleWebSocketServer">
+            <summary>
+            Middleware class for interfacing with the WebSocketHandler and WebSocketHttpServer class.
+            </summary>
+        </member>
+        <member name="F:SimpleWebSocketServerLibrary.SimpleWebSocketServer._WebsocketHandler">
+            <summary>
+            Interface for the WebSocketHandler class.
+            </summary>
+        </member>
+        <member name="F:SimpleWebSocketServerLibrary.SimpleWebSocketServer._WebSocketHttpServer">
+            <summary>
+            Interface for the WebSocketHttpServer class.
+            </summary>
+        </member>
+        <member name="E:SimpleWebSocketServerLibrary.SimpleWebSocketServer.WebsocketServerEvent">
+            <summary>
+            Eventhandler for when events such as receiving messages and errors from the websocket server happen.
+            </summary>
+        </member>
+        <member name="M:SimpleWebSocketServerLibrary.SimpleWebSocketServer.#ctor(SimpleWebSocketServerLibrary.SimpleWebSocketServerSettings)">
+            <summary>
+            Constructor for setting up the Library.
+            </summary>
+            <param name="settings">Settings with default values.</param>
+        </member>
+        <member name="M:SimpleWebSocketServerLibrary.SimpleWebSocketServer.#ctor">
+            <summary>
+            Overload constructor for setting up library with default values.
+            </summary>
+        </member>
+        <member name="M:SimpleWebSocketServerLibrary.SimpleWebSocketServer.OnWebsocketServerEvent(System.Object,SimpleWebSocketServerLibrary.WebSocketEventArg)">
+            <summary>
+            Event handler for receiving websocket messages from the websocket handler.
+            </summary>
+            <param name="sender">Instance of firing class.</param>
+            <param name="arg">Arguments for event.</param>
+        </member>
+        <member name="M:SimpleWebSocketServerLibrary.SimpleWebSocketServer.StartServerAsync">
+            <summary>
+            Starts running the server async.
+            </summary>
+        </member>
+        <member name="M:SimpleWebSocketServerLibrary.SimpleWebSocketServer.StartServer">
+            <summary>
+            Starts running the server async.
+            </summary>
+        </member>
+        <member name="M:SimpleWebSocketServerLibrary.SimpleWebSocketServer.SendTextMessageAsync(System.String,System.String)">
+            <summary>
+            Overload method for sending text messages to a specific client, using it's id, asynchronous.
+            </summary>
+            <param name="messageToSend"></param>
+            <param name="clientId"></param>
+            <returns>True when send succesfully.</returns>
+        </member>
+        <member name="M:SimpleWebSocketServerLibrary.SimpleWebSocketServer.SendTextMessage(System.String,System.String)">
+            <summary>
+            Overload method for sending text messages to a specific client, using it's id, synchronous.
+            </summary>
+            <param name="messageToSend"></param>
+            <param name="clientId"></param>
+            <returns>True when send succesfully.</returns>
+        </member>
+        <member name="M:SimpleWebSocketServerLibrary.SimpleWebSocketServer.SendBinaryMessageAsync(System.Byte[],System.String)">
+            <summary>
+            Sends a binary "message" to a specific client asynchronous.
+            </summary>
+            <param name="messageToSend">Message in binary format (byte array).</param>
+            <param name="clientId">Client to send to.</param>
+            <returns>True when succesfully send.</returns>
+        </member>
+        <member name="M:SimpleWebSocketServerLibrary.SimpleWebSocketServer.SendBinaryMessage(System.Byte[],System.String)">
+            <summary>
+            Sends a binary "message" to a specific client synchronous.
+            </summary>
+            <param name="messageToSend">Message in binary format (byte array).</param>
+            <param name="clientId">Client to send to.</param>
+            <returns>True when succesfully send.</returns>
+        </member>
+        <member name="M:SimpleWebSocketServerLibrary.SimpleWebSocketServer.SendPingMessageAsync(System.String,System.String)">
+            <summary>
+            Sends a ping message to all clients asynchronous, can have message.
+            </summary>
+            <param name="messageToSend">Possible extra message to send along ping.</param>
+            <param name="clientId">Set clientId in case you want to send to a specific client.</param>
+            <returns>True when succesfully send.</returns>
+        </member>
+        <member name="M:SimpleWebSocketServerLibrary.SimpleWebSocketServer.SendPingMessage(System.String,System.String)">
+            <summary>
+            Sends a ping message to all clients synchronous, can have message.
+            </summary>
+            <param name="messageToSend">Possible extra message to send along ping.</param>
+            <param name="clientId">Set clientId in case you want to send to a specific client.</param>
+            <returns>True when succesfully send.</returns>
+        </member>
+        <member name="M:SimpleWebSocketServerLibrary.SimpleWebSocketServer.SendPongMessageAsync(System.String,System.String)">
+            <summary>
+            Send pong message to all available clients asynchronous, can have message.
+            </summary>
+            <param name="messageToSend">Possible extra message to send along ping.</param>
+            <param name="clientId">Set clientId in case you want to send to a specific client.</param>
+            <returns>True when succesfully send.</returns>
+        </member>
+        <member name="M:SimpleWebSocketServerLibrary.SimpleWebSocketServer.SendPongMessage(System.String,System.String)">
+            <summary>
+            Send pong message to all available clients synchronous, can have message.
+            </summary>
+            <param name="messageToSend">Possible extra message to send along ping.</param>
+            <param name="clientId">Set clientId in case you want to send to a specific client.</param>
+            <returns>True when succesfully send.</returns>
+        </member>
+        <member name="M:SimpleWebSocketServerLibrary.SimpleWebSocketServer.StopClientAsync(System.String,System.String)">
+            <summary>
+            Stops a connection with a specific client asynchronous. Can provide reason.
+            </summary>
+            <param name="clientId">Specific client to close connection with.</param>
+            <param name="reason">Possible reason to close the connection.</param>
+            <returns>True when succesfully closed.</returns>
+        </member>
+        <member name="M:SimpleWebSocketServerLibrary.SimpleWebSocketServer.StopClient(System.String,System.String)">
+            <summary>
+            Stops a connection with a specific client synchronous. Can provide reason.
+            </summary>
+            <param name="clientId">Specific client to close connection with.</param>
+            <param name="reason">Possible reason to close the connection.</param>
+            <returns>True when succesfully closed.</returns>
+        </member>
+        <member name="M:SimpleWebSocketServerLibrary.SimpleWebSocketServer.StopAllAsync(System.String)">
+            <summary>
+            Stops all connections with all clients asynchronous. Can provide reason.
+            </summary>
+            <param name="reason">Possible reason to close the connection.</param>
+            <returns>True when succesfully closed.</returns>
+        </member>
+        <member name="M:SimpleWebSocketServerLibrary.SimpleWebSocketServer.StopAll(System.String)">
+            <summary>
+            Stops all connections with all clients synchronous. Can provide reason.
+            </summary>
+            <param name="reason">Possible reason to close the connection.</param>
+            <returns>True when succesfully closed.</returns>
+        </member>
+        <member name="T:SimpleWebSocketServerLibrary.SimpleWebSocketServerSettings">
+            <summary>
+            Provides settings and default values for the SimpleWebSocketServer Class.
+            </summary>
+        </member>
+        <member name="P:SimpleWebSocketServerLibrary.SimpleWebSocketServerSettings.baseUrls">
+            <summary>
+            List with url paths where the websocket server needs to listen to. Default = "";
+            </summary>
+        </member>
+        <member name="P:SimpleWebSocketServerLibrary.SimpleWebSocketServerSettings.port">
+            <summary>
+            Port where the server needs to listen to. Default = 80;
+            </summary>
+        </member>
+        <member name="P:SimpleWebSocketServerLibrary.SimpleWebSocketServerSettings.bufferSize">
+            <summary>
+            Buffer size for receiving messages. Default = 4096; (bytes)
+            </summary>
+        </member>
+        <member name="T:SimpleWebSocketServerLibrary.WebSocketClientInfo">
+            <summary>
+            Provides information about a connected client.
+            </summary>
+        </member>
+        <member name="P:SimpleWebSocketServerLibrary.WebSocketClientInfo.client">
+            <summary>
+            TcpClient containing the socket handler.
+            </summary>
+        </member>
+        <member name="P:SimpleWebSocketServerLibrary.WebSocketClientInfo.clientId">
+            <summary>
+            ClientID generated by the server or set by the client.
+            </summary>
+        </member>
+        <member name="P:SimpleWebSocketServerLibrary.WebSocketClientInfo.clientBaseUrl">
+            <summary>
+            BaseURL client used to connect to.
+            </summary>
+        </member>
+        <member name="T:SimpleWebSocketServerLibrary.WebSocketEventArg">
+            <summary>
+            Contains information about a occured event.
+            </summary>
+        </member>
+        <member name="P:SimpleWebSocketServerLibrary.WebSocketEventArg.isText">
+            <summary>
+            Is true when message is a text message.
+            </summary>
+        </member>
+        <member name="P:SimpleWebSocketServerLibrary.WebSocketEventArg.isBinary">
+            <summary>
+            Is true when message is a binairy message.
+            </summary>
+        </member>
+        <member name="P:SimpleWebSocketServerLibrary.WebSocketEventArg.isClosed">
+            <summary>
+            Is true when a client send a close message.
+            </summary>
+        </member>
+        <member name="P:SimpleWebSocketServerLibrary.WebSocketEventArg.isOpen">
+            <summary>
+            Is true when a client has connected
+            </summary>
+        </member>
+        <member name="P:SimpleWebSocketServerLibrary.WebSocketEventArg.isPing">
+            <summary>
+            Is true when message from client is a ping message.
+            </summary>
+        </member>
+        <member name="P:SimpleWebSocketServerLibrary.WebSocketEventArg.isPong">
+            <summary>
+            Is true when message from client is a pong message.
+            </summary>
+        </member>
+        <member name="P:SimpleWebSocketServerLibrary.WebSocketEventArg.data">
+            <summary>
+            Contains the extra data send by a client.
+            </summary>
+        </member>
+        <member name="P:SimpleWebSocketServerLibrary.WebSocketEventArg.messageLength">
+            <summary>
+            Message length in bytes.
+            </summary>
+        </member>
+        <member name="P:SimpleWebSocketServerLibrary.WebSocketEventArg.clientId">
+            <summary>
+            Client ID set by client or generated by server when connecting to websocket server.
+            </summary>
+        </member>
+        <member name="P:SimpleWebSocketServerLibrary.WebSocketEventArg.clientBaseUrl">
+            <summary>
+            Client baseurl used when connecting.
+            </summary>
+        </member>
+        <member name="P:SimpleWebSocketServerLibrary.WebSocketEventArg.errorMessage">
+            <summary>
+            Error message in case an error occurred.
+            </summary>
+        </member>
+        <member name="T:SimpleWebSocketServerLibrary.SimpleWebSocketHandler.IWebSocketHandler">
+            <summary>
+            Inteface for class: WebSocketHandler.
+            </summary>
+        </member>
+        <member name="E:SimpleWebSocketServerLibrary.SimpleWebSocketHandler.IWebSocketHandler.WebsocketEvent">
+            <summary>
+            Event handler for events such as messages and errors.
+            </summary>
+        </member>
+        <member name="M:SimpleWebSocketServerLibrary.SimpleWebSocketHandler.IWebSocketHandler.SendMessage(SimpleWebSocketServerLibrary.WebSocketMessageContainer,System.String)">
+            <summary>
+            Send a message to a specific client.
+            </summary>
+            <param name="message">Message container containing everything related to the message.</param>
+            <param name="clientId">Id of the client to send the message to.</param>
+            <returns>True on success.</returns>
+        </member>
+        <member name="M:SimpleWebSocketServerLibrary.SimpleWebSocketHandler.IWebSocketHandler.SendMessage(SimpleWebSocketServerLibrary.WebSocketMessageContainer)">
+            <summary>
+            Sends a message to all connected clients.
+            </summary>
+            <param name="message">Message container containing everything related to the message.</param>
+            <returns>True on success.</returns>
+        </member>
+        <member name="M:SimpleWebSocketServerLibrary.SimpleWebSocketHandler.IWebSocketHandler.StartConnection(System.Net.Sockets.TcpClient,System.String,System.String)">
+            <summary>
+            Starts a connection given the settings set by caller.
+            </summary>
+            <param name="client">TcpClient socket handler.</param>
+            <param name="stream">NetworkStream stream handler.</param>
+            <param name="clientId">Id of client.</param>
+            <param name="baseUrl">URL path used by client.</param>
+        </member>
+        <member name="M:SimpleWebSocketServerLibrary.SimpleWebSocketHandler.IWebSocketHandler.StopClient(System.String)">
+            <summary>
+            Stops a connection with a specific client.
+            </summary>
+            <param name="clientId">Id of client of which to stop the connection with.</param>
+            <returns>True on success.</returns>
+        </member>
+        <member name="M:SimpleWebSocketServerLibrary.SimpleWebSocketHandler.IWebSocketHandler.StopClient(System.String,System.String)">
+            <summary>
+            Stops a client while specifying a reason.
+            </summary>
+            <param name="clientId">Id of client of which to stop the connection with.</param>
+            <param name="reason">Reason to send to client.</param>
+            <returns>True on success.</returns>
+        </member>
+        <member name="M:SimpleWebSocketServerLibrary.SimpleWebSocketHandler.IWebSocketHandler.StopAll">
+            <summary>
+            Stops all connections.
+            </summary>
+            <returns>True on success.</returns>
+        </member>
+        <member name="M:SimpleWebSocketServerLibrary.SimpleWebSocketHandler.IWebSocketHandler.StopAll(System.String)">
+            <summary>
+            Stops all connections and provides a reason to the clients.
+            </summary>
+            <param name="reason">Reason for disconnect.</param>
+            <returns>True on success.</returns>
+        </member>
+        <member name="T:SimpleWebSocketServerLibrary.SimpleWebSocketHandler.WebSocketHandler">
+            <summary>
+            Class contains handler for handeling multiple websocket clients and hubs.
+            </summary>
+        </member>
+        <member name="M:SimpleWebSocketServerLibrary.SimpleWebSocketHandler.WebSocketHandler.#ctor(System.Int32)">
+            <summary>
+            Constructor for websocket handler for automatic control of the websocket server.
+            </summary>
+            <param name="bufferSize">Sets the receive buffer size, default = 4096 bytes (Messages received larger than buffer will be cut off/incomplete).</param>
+        </member>
+        <member name="M:SimpleWebSocketServerLibrary.SimpleWebSocketHandler.WebSocketHandler.StartConnection(System.Net.Sockets.TcpClient,System.String,System.String)">
+            <summary>
+            Starts a connection given the settings set by caller.
+            </summary>
+            <param name="client">TcpClient socket handler.</param>
+            <param name="stream">NetworkStream stream handler.</param>
+            <param name="clientId">Id of client.</param>
+            <param name="baseUrl">URL path used by client.</param>
+        </member>
+        <member name="M:SimpleWebSocketServerLibrary.SimpleWebSocketHandler.WebSocketHandler.StopClient(System.String)">
+            <summary>
+            Stops a connection with a specific client.
+            </summary>
+            <param name="clientId">Id of client of which to stop the connection with.</param>
+            <returns>True on success.</returns>
+        </member>
+        <member name="M:SimpleWebSocketServerLibrary.SimpleWebSocketHandler.WebSocketHandler.StopClient(System.String,System.String)">
+            <summary>
+            Stops a client while specifying a reason.
+            </summary>
+            <param name="clientId">Id of client of which to stop the connection with.</param>
+            <param name="reason">Reason to send to client.</param>
+            <returns>True on success.</returns>
+        </member>
+        <member name="M:SimpleWebSocketServerLibrary.SimpleWebSocketHandler.WebSocketHandler.StopAll">
+            <summary>
+            Stops all connections.
+            </summary>
+            <returns>True on success.</returns>
+        </member>
+        <member name="M:SimpleWebSocketServerLibrary.SimpleWebSocketHandler.WebSocketHandler.StopAll(System.String)">
+            <summary>
+            Stops all connections and provides a reason to the clients.
+            </summary>
+            <param name="reason">Reason for disconnect.</param>
+            <returns>True on success.</returns>
+        </member>
+        <member name="M:SimpleWebSocketServerLibrary.SimpleWebSocketHandler.WebSocketHandler.SendMessage(SimpleWebSocketServerLibrary.WebSocketMessageContainer,System.String)">
+            <summary>
+            Send a message to a specific client.
+            </summary>
+            <param name="message">Message container containing everything related to the message.</param>
+            <param name="clientId">Id of the client to send the message to.</param>
+            <returns>True on success.</returns>
+        </member>
+        <member name="M:SimpleWebSocketServerLibrary.SimpleWebSocketHandler.WebSocketHandler.SendMessage(SimpleWebSocketServerLibrary.WebSocketMessageContainer)">
+            <summary>
+            Sends a message to all connected clients.
+            </summary>
+            <param name="message">Message container containing everything related to the message.</param>
+            <returns>True on success.</returns>
+        </member>
+        <member name="M:SimpleWebSocketServerLibrary.SimpleWebSocketHandler.WebSocketHandler.OnWebsocketEvent(System.Object,SimpleWebSocketServerLibrary.WebSocketEventArg)">
+            <summary>
+            WebSocket Server event handler, fires the event.
+            </summary>
+            <param name="arg">Arguments containing event arguments.</param>
+        </member>
+        <member name="T:SimpleWebSocketServerLibrary.SimpleWebSocketHttpServer.IWebSocketHttpServer">
+            <summary>
+            Interface for WebSocketHttpServer class.
+            </summary>
+        </member>
+        <member name="M:SimpleWebSocketServerLibrary.SimpleWebSocketHttpServer.IWebSocketHttpServer.RunServer">
+            <summary>
+            Starts a server within a task.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:SimpleWebSocketServerLibrary.SimpleWebSocketHttpServer.IWebSocketHttpServer.Stop">
+            <summary>
+            Sets a global value within the class that tells the server to stop running.
+            </summary>
+        </member>
+        <member name="T:SimpleWebSocketServerLibrary.SimpleWebSocketHttpServer.WebSocketHttpServer">
+            <summary>
+            Runs the http server where a client needs to connect to.
+            </summary>
+        </member>
+        <member name="F:SimpleWebSocketServerLibrary.SimpleWebSocketHttpServer.WebSocketHttpServer._Port">
+            <summary>
+            Contains the port to listen to.
+            </summary>
+        </member>
+        <member name="F:SimpleWebSocketServerLibrary.SimpleWebSocketHttpServer.WebSocketHttpServer._WebsocketHandler">
+            <summary>
+            Contains the handler for websocket servers.
+            </summary>
+        </member>
+        <member name="F:SimpleWebSocketServerLibrary.SimpleWebSocketHttpServer.WebSocketHttpServer._BaseUrls">
+            <summary>
+            Contains the list with baseurl paths to listen to.
+            </summary>
+        </member>
+        <member name="F:SimpleWebSocketServerLibrary.SimpleWebSocketHttpServer.WebSocketHttpServer._Stop">
+            <summary>
+            Tells the server task to stop and disconnect.
+            </summary>
+        </member>
+        <member name="M:SimpleWebSocketServerLibrary.SimpleWebSocketHttpServer.WebSocketHttpServer.#ctor(SimpleWebSocketServerLibrary.SimpleWebSocketHandler.IWebSocketHandler,SimpleWebSocketServerLibrary.SimpleWebSocketServerSettings)">
+            <summary>
+            Base constructor for setting up a HttpServer to provide the endpoint to where a WebSocket can connect to.
+            </summary>
+            <param name="websocketHandler">WebSocket Handler instance.</param>
+            <param name="settings">Settings for the http server.</param>
+        </member>
+        <member name="M:SimpleWebSocketServerLibrary.SimpleWebSocketHttpServer.WebSocketHttpServer.CheckIfBaseUrl(System.String)">
+            <summary>
+            Checks if given url path is one of the base paths, it ignores it otherwise.
+            </summary>
+            <param name="toCheck">Path to check.</param>
+            <returns>String with the basepath if given string is the same, otherwise null.</returns>
+        </member>
+        <member name="M:SimpleWebSocketServerLibrary.SimpleWebSocketHttpServer.WebSocketHttpServer.CheckIfCustomIdIsSet(System.String,System.String)">
+            <summary>
+            Checks if the url used by the client contains more than the baseurl, which will be used as a customid.
+            </summary>
+            <param name="baseUrl"></param>
+            <param name="fullBaseUrl"></param>
+            <returns>string with id if there is one, else null</returns>
+        </member>
+        <member name="M:SimpleWebSocketServerLibrary.SimpleWebSocketHttpServer.WebSocketHttpServer.GenerateAcceptResponse(System.String)">
+            <summary>
+            Generates the response header for a websocket upgrade.
+            </summary>
+            <param name="webSocketKey">Key from client.</param>
+            <returns>Byte array with response header.</returns>
+        </member>
+        <member name="M:SimpleWebSocketServerLibrary.SimpleWebSocketHttpServer.WebSocketHttpServer.RunServer">
+            <summary>
+            Runs the http server inside a async task.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:SimpleWebSocketServerLibrary.SimpleWebSocketHttpServer.WebSocketHttpServer.Stop">
+            <summary>
+            Stops the http server.
+            </summary>
+        </member>
+        <member name="M:SimpleWebSocketServerLibrary.SimpleWebSocketHttpServer.WebSocketHttpServer.Hash(System.String)">
+            <summary>
+            Generates a hash used for generating the response header when accepting a websocket connection.
+            </summary>
+            <param name="input">String to hash.</param>
+            <returns>SHA1 hashed string.</returns>
+        </member>
+        <member name="T:SimpleWebSocketServerLibrary.WebSocketMessageContainer">
+            <summary>
+            Contains information about a websocket client message.
+            </summary>
+        </member>
+        <member name="P:SimpleWebSocketServerLibrary.WebSocketMessageContainer.isText">
+            <summary>
+            Is true when message is a text message.
+            </summary>
+        </member>
+        <member name="P:SimpleWebSocketServerLibrary.WebSocketMessageContainer.isBinary">
+            <summary>
+            Is true when message is a binairy message.
+            </summary>
+        </member>
+        <member name="P:SimpleWebSocketServerLibrary.WebSocketMessageContainer.isClosed">
+            <summary>
+            Is true when a client send a close message.
+            </summary>
+        </member>
+        <member name="P:SimpleWebSocketServerLibrary.WebSocketMessageContainer.isPing">
+            <summary>
+            Is true when message from client is a ping message.
+            </summary>
+        </member>
+        <member name="P:SimpleWebSocketServerLibrary.WebSocketMessageContainer.isPong">
+            <summary>
+            Is true when message from client is a pong message.
+            </summary>
+        </member>
+        <member name="P:SimpleWebSocketServerLibrary.WebSocketMessageContainer.data">
+            <summary>
+            Contains the extra data send by a client.
+            </summary>
+        </member>
+        <member name="T:SimpleWebSocketServerLibrary.WSocketServer.WebSocketServer">
+            <summary>
+            Runs the websocket server to communicate with a client.
+            </summary>
+        </member>
+        <member name="E:SimpleWebSocketServerLibrary.WSocketServer.WebSocketServer.WebSocketServerEvent">
+            <summary>
+            Event handler for firing on websocket server event such as receiving mesages or errors.
+            </summary>
+        </member>
+        <member name="F:SimpleWebSocketServerLibrary.WSocketServer.WebSocketServer._BufferSize">
+            <summary>
+            Global buffer size used.
+            </summary>
+        </member>
+        <member name="F:SimpleWebSocketServerLibrary.WSocketServer.WebSocketServer._ClientInfo">
+            <summary>
+            Global WebSocketClientInfo.
+            </summary>
+        </member>
+        <member name="M:SimpleWebSocketServerLibrary.WSocketServer.WebSocketServer.#ctor(SimpleWebSocketServerLibrary.WebSocketClientInfo,System.Int32)">
+            <summary>
+            Start a websocket server.
+            </summary>
+            <param name="bufferSize">Sets the receive buffer size, default = 4096</param>
+            <param name="clientInfo">Sets the client information.</param>
+            <param name="handler">Sets the websocket handler.</param>
+        </member>
+        <member name="M:SimpleWebSocketServerLibrary.WSocketServer.WebSocketServer.SendMessage(SimpleWebSocketServerLibrary.WebSocketMessageContainer)">
+            <summary>
+            Sends a websocket framed message to the client synchronous.
+            </summary>
+            <param name="message">Message container containing all the information needed for the message.</param>
+            <returns>True on success.</returns>
+        </member>
+        <member name="M:SimpleWebSocketServerLibrary.WSocketServer.WebSocketServer.SendMessageAsync(SimpleWebSocketServerLibrary.WebSocketMessageContainer)">
+            <summary>
+            Sends a websocket framed message to the client asynchronous.
+            </summary>
+            <param name="message">Message container containing all the information needed for the message.</param>
+            <returns>True on success.</returns>
+        </member>
+        <member name="M:SimpleWebSocketServerLibrary.WSocketServer.WebSocketServer.StopServer(System.String)">
+            <summary>
+            Stops the websocket server and sends over a reason synchronous.
+            </summary>
+            <param name="reason">Overload parameter for reason. </param>
+            <returns>True on success.</returns>
+        </member>
+        <member name="M:SimpleWebSocketServerLibrary.WSocketServer.WebSocketServer.StopServerAsync(System.String)">
+            <summary>
+            Stops the websocket server and sends over a reason asynchronous.
+            </summary>
+            <param name="reason">Overload parameter for reason. </param>
+            <returns>True on success.</returns>
+        </member>
+        <member name="M:SimpleWebSocketServerLibrary.WSocketServer.WebSocketServer.StartServerAsync">
+            <summary>
+            Starts the WebSocket server / connection with the client asynchronous. 
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:SimpleWebSocketServerLibrary.WSocketServer.WebSocketServer.StartServer">
+            <summary>
+            Starts the WebSocket server / connection with the client synchronous.
+            </summary>
+            <returns></returns>
+        </member>
+    </members>
+</doc>

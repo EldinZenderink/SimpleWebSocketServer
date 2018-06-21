@@ -1,0 +1,15 @@
+G:\Github Desktop\SimpleWebSocketServer\SimpleWebsocketServer\SimpleWebsocketServer\obj\Debug\net45\SimpleWebsocketServer.csproj.CoreCompileInputs.cache
+G:\Github Desktop\SimpleWebSocketServer\SimpleWebsocketServer\SimpleWebsocketServer\obj\Debug\net45\SimpleWebsocketServer.AssemblyInfoInputs.cache
+G:\Github Desktop\SimpleWebSocketServer\SimpleWebsocketServer\SimpleWebsocketServer\obj\Debug\net45\SimpleWebsocketServer.AssemblyInfo.cs
+G:\Github Desktop\SimpleWebSocketServer\SimpleWebsocketServer\SimpleWebsocketServer\bin\Debug\net45\SimpleWebsocketServer.dll
+G:\Github Desktop\SimpleWebSocketServer\SimpleWebsocketServer\SimpleWebsocketServer\bin\Debug\net45\SimpleWebsocketServer.pdb
+G:\Github Desktop\SimpleWebSocketServer\SimpleWebsocketServer\SimpleWebsocketServer\obj\Debug\net45\SimpleWebsocketServer.dll
+G:\Github Desktop\SimpleWebSocketServer\SimpleWebsocketServer\SimpleWebsocketServer\obj\Debug\net45\SimpleWebsocketServer.pdb
+G:\Github Desktop\SimpleWebSocketServer\SimpleWebsocketServer\obj\Debug\net45\SimpleWebsocketServer.csproj.CoreCompileInputs.cache
+G:\Github Desktop\SimpleWebSocketServer\SimpleWebsocketServer\obj\Debug\net45\SimpleWebsocketServer.AssemblyInfoInputs.cache
+G:\Github Desktop\SimpleWebSocketServer\SimpleWebsocketServer\obj\Debug\net45\SimpleWebsocketServer.AssemblyInfo.cs
+G:\Github Desktop\SimpleWebSocketServer\SimpleWebsocketServer\obj\Debug\net45\SimpleWebsocketServer.dll
+G:\Github Desktop\SimpleWebSocketServer\SimpleWebsocketServer\obj\Debug\net45\SimpleWebsocketServer.pdb
+G:\Github Desktop\SimpleWebSocketServer\SimpleWebsocketServer\bin\Debug\net45\SimpleWebsocketServer.dll
+G:\Github Desktop\SimpleWebSocketServer\SimpleWebsocketServer\bin\Debug\net45\SimpleWebsocketServer.pdb
+G:\Github Desktop\SimpleWebSocketServer\SimpleWebsocketServer\obj\Debug\net45\SimpleWebsocketServer.csprojAssemblyReference.cache

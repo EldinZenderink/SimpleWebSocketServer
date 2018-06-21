@@ -1,0 +1,4 @@
+G:\Github Desktop\SimpleWebSocketServer\SimpleWebsocketServer\SimpleWebsocketServer\obj\Debug\net461\SimpleWebsocketServer.csprojResolveAssemblyReference.cache
+G:\Github Desktop\SimpleWebSocketServer\SimpleWebsocketServer\SimpleWebsocketServer\obj\Debug\net461\SimpleWebsocketServer.csproj.CoreCompileInputs.cache
+G:\Github Desktop\SimpleWebSocketServer\SimpleWebsocketServer\SimpleWebsocketServer\obj\Debug\net461\SimpleWebsocketServer.AssemblyInfoInputs.cache
+G:\Github Desktop\SimpleWebSocketServer\SimpleWebsocketServer\SimpleWebsocketServer\obj\Debug\net461\SimpleWebsocketServer.AssemblyInfo.cs

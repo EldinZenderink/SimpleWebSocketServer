@@ -1,0 +1,16 @@
+G:\Github Desktop\SimpleWebSocketServer\SimpleWebsocketServer\SimpleWebsocketServer\obj\Debug\net46\SimpleWebsocketServer.csproj.CoreCompileInputs.cache
+G:\Github Desktop\SimpleWebSocketServer\SimpleWebsocketServer\SimpleWebsocketServer\obj\Debug\net46\SimpleWebsocketServer.AssemblyInfoInputs.cache
+G:\Github Desktop\SimpleWebSocketServer\SimpleWebsocketServer\SimpleWebsocketServer\obj\Debug\net46\SimpleWebsocketServer.AssemblyInfo.cs
+G:\Github Desktop\SimpleWebSocketServer\SimpleWebsocketServer\SimpleWebsocketServer\bin\Debug\net46\SimpleWebsocketServer.dll
+G:\Github Desktop\SimpleWebSocketServer\SimpleWebsocketServer\SimpleWebsocketServer\bin\Debug\net46\SimpleWebsocketServer.pdb
+G:\Github Desktop\SimpleWebSocketServer\SimpleWebsocketServer\SimpleWebsocketServer\obj\Debug\net46\SimpleWebsocketServer.dll
+G:\Github Desktop\SimpleWebSocketServer\SimpleWebsocketServer\SimpleWebsocketServer\obj\Debug\net46\SimpleWebsocketServer.pdb
+G:\Github Desktop\SimpleWebSocketServer\SimpleWebsocketServer\SimpleWebsocketServer\obj\Debug\net46\SimpleWebsocketServer.csprojResolveAssemblyReference.cache
+G:\Github Desktop\SimpleWebSocketServer\SimpleWebsocketServer\obj\Debug\net46\SimpleWebsocketServer.csproj.CoreCompileInputs.cache
+G:\Github Desktop\SimpleWebSocketServer\SimpleWebsocketServer\obj\Debug\net46\SimpleWebsocketServer.AssemblyInfoInputs.cache
+G:\Github Desktop\SimpleWebSocketServer\SimpleWebsocketServer\obj\Debug\net46\SimpleWebsocketServer.AssemblyInfo.cs
+G:\Github Desktop\SimpleWebSocketServer\SimpleWebsocketServer\obj\Debug\net46\SimpleWebsocketServer.dll
+G:\Github Desktop\SimpleWebSocketServer\SimpleWebsocketServer\obj\Debug\net46\SimpleWebsocketServer.pdb
+G:\Github Desktop\SimpleWebSocketServer\SimpleWebsocketServer\bin\Debug\net46\SimpleWebsocketServer.dll
+G:\Github Desktop\SimpleWebSocketServer\SimpleWebsocketServer\bin\Debug\net46\SimpleWebsocketServer.pdb
+G:\Github Desktop\SimpleWebSocketServer\SimpleWebsocketServer\obj\Debug\net46\SimpleWebsocketServer.csprojAssemblyReference.cache

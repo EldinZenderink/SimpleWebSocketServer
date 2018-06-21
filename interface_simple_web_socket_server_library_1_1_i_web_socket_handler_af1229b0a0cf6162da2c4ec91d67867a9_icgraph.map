@@ -1,4 +1,0 @@
-<map id="SimpleWebSocketServerLibrary.IWebSocketHandler.StopAll" name="SimpleWebSocketServerLibrary.IWebSocketHandler.StopAll">
-<area shape="rect" id="node2" href="$class_simple_web_socket_server_library_1_1_simple_web_socket_server.html#a1bb139b6266636ee732e584926844fdf" title="Stops all connections with all clients asynchronous. Can provide reason. " alt="" coords="263,5,512,47"/>
-<area shape="rect" id="node3" href="$class_simple_web_socket_server_library_1_1_simple_web_socket_server.html#ad80184887910735a4caa22b903ee5fd1" title="Stops all connections with all clients synchronous. Can provide reason. " alt="" coords="281,71,493,112"/>
-</map>

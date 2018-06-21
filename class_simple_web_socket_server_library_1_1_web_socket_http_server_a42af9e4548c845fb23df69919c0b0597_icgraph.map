@@ -1,4 +1,0 @@
-<map id="SimpleWebSocketServerLibrary.WebSocketHttpServer.Hash" name="SimpleWebSocketServerLibrary.WebSocketHttpServer.Hash">
-<area shape="rect" id="node2" href="$class_simple_web_socket_server_library_1_1_web_socket_http_server.html#aaddc48135437ff389dc811ddee477192" title="Generates the response header for a websocket upgrade. " alt="" coords="263,5,511,61"/>
-<area shape="rect" id="node3" href="$class_simple_web_socket_server_library_1_1_web_socket_http_server.html#a4c3e38a9fce017d222545c88c322e2ab" title="Runs the http server inside a async task. " alt="" coords="559,13,772,54"/>
-</map>

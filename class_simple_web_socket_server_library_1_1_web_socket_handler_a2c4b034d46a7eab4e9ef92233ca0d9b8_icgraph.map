@@ -1,4 +1,0 @@
-<map id="SimpleWebSocketServerLibrary.WebSocketHandler.OnWebsocketEvent" name="SimpleWebSocketServerLibrary.WebSocketHandler.OnWebsocketEvent">
-<area shape="rect" id="node2" href="$class_simple_web_socket_server_library_1_1_web_socket_server.html#a2b4e4221326fca7776fec8715b7b51a1" title="Starts the WebSocket server / connection with the client. " alt="" coords="307,5,516,47"/>
-<area shape="rect" id="node3" href="$class_simple_web_socket_server_library_1_1_web_socket_handler.html#af1639502a8f55f7de93d3faeadc23836" title="Starts a connection given the settings set by caller. " alt="" coords="564,5,795,47"/>
-</map>
