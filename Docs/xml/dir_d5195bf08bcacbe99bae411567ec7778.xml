@@ -1,0 +1,12 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="dir_d5195bf08bcacbe99bae411567ec7778" kind="dir">
+    <compoundname>obj/Debug/netcoreapp2.0</compoundname>
+    <innerfile refid="_debug_2netcoreapp2_80_2_simple_websocket_server_8_assembly_info_8cs">SimpleWebsocketServer.AssemblyInfo.cs</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="obj/Debug/netcoreapp2.0/"/>
+  </compounddef>
+</doxygen>

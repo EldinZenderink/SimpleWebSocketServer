@@ -1,0 +1,61 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="interface_simple_web_socket_server_library_1_1_simple_web_socket_http_server_1_1_i_web_socket_http_server" kind="interface" language="C#" prot="public">
+    <compoundname>SimpleWebSocketServerLibrary::SimpleWebSocketHttpServer::IWebSocketHttpServer</compoundname>
+    <derivedcompoundref refid="class_simple_web_socket_server_library_1_1_simple_web_socket_http_server_1_1_web_socket_http_server" prot="public" virt="non-virtual">SimpleWebSocketServerLibrary.SimpleWebSocketHttpServer.WebSocketHttpServer</derivedcompoundref>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="interface_simple_web_socket_server_library_1_1_simple_web_socket_http_server_1_1_i_web_socket_http_server_1ace7dda0ccffcbf99eb142e0b33ed3f54" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Task</type>
+        <definition>Task SimpleWebSocketServerLibrary.SimpleWebSocketHttpServer.IWebSocketHttpServer.RunServer</definition>
+        <argsstring>()</argsstring>
+        <name>RunServer</name>
+        <reimplementedby refid="class_simple_web_socket_server_library_1_1_simple_web_socket_http_server_1_1_web_socket_http_server_1a57b76afde46781493110c513b984417c">RunServer</reimplementedby>
+        <briefdescription>
+<para>Starts a server within a task. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para></para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="WebSocketHttpServer.cs" line="23" column="1"/>
+        <referencedby refid="class_simple_web_socket_server_library_1_1_simple_web_socket_server_1a14730d592f2fdd3278a8df1403ebd672" compoundref="_simple_websocket_server_8cs" startline="58" endline="61">SimpleWebSocketServerLibrary.SimpleWebSocketServer.StartServerAsync</referencedby>
+        <referencedby refid="class_simple_web_socket_server_library_1_1_simple_web_socket_server_1ad354c38a3f5583fe213ab913085c320a" compoundref="_simple_websocket_server_8cs" startline="66" endline="69">SimpleWebSocketServerLibrary.SimpleWebSocketServer.StartServer</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_simple_web_socket_server_library_1_1_simple_web_socket_http_server_1_1_i_web_socket_http_server_1a73208116838cad69e1a7198ccfc89bbf" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void SimpleWebSocketServerLibrary.SimpleWebSocketHttpServer.IWebSocketHttpServer.Stop</definition>
+        <argsstring>()</argsstring>
+        <name>Stop</name>
+        <reimplementedby refid="class_simple_web_socket_server_library_1_1_simple_web_socket_http_server_1_1_web_socket_http_server_1af61f4c057d2af50ed5b8942424dbf3ad">Stop</reimplementedby>
+        <briefdescription>
+<para>Sets a global value within the class that tells the server to stop running. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="WebSocketHttpServer.cs" line="28" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Interface for <ref refid="class_simple_web_socket_server_library_1_1_simple_web_socket_http_server_1_1_web_socket_http_server" kindref="compound">WebSocketHttpServer</ref> class. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="5">
+        <label>SimpleWebSocketServerLibrary.SimpleWebSocketHttpServer.IWebSocketHttpServer</label>
+        <link refid="interface_simple_web_socket_server_library_1_1_simple_web_socket_http_server_1_1_i_web_socket_http_server"/>
+      </node>
+      <node id="6">
+        <label>SimpleWebSocketServerLibrary.SimpleWebSocketHttpServer.WebSocketHttpServer</label>
+        <link refid="class_simple_web_socket_server_library_1_1_simple_web_socket_http_server_1_1_web_socket_http_server"/>
+        <childnode refid="5" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <location file="WebSocketHttpServer.cs" line="18" column="1" bodyfile="WebSocketHttpServer.cs" bodystart="17" bodyend="29"/>
+    <listofallmembers>
+      <member refid="interface_simple_web_socket_server_library_1_1_simple_web_socket_http_server_1_1_i_web_socket_http_server_1ace7dda0ccffcbf99eb142e0b33ed3f54" prot="public" virt="non-virtual"><scope>SimpleWebSocketServerLibrary::SimpleWebSocketHttpServer::IWebSocketHttpServer</scope><name>RunServer</name></member>
+      <member refid="interface_simple_web_socket_server_library_1_1_simple_web_socket_http_server_1_1_i_web_socket_http_server_1a73208116838cad69e1a7198ccfc89bbf" prot="public" virt="non-virtual"><scope>SimpleWebSocketServerLibrary::SimpleWebSocketHttpServer::IWebSocketHttpServer</scope><name>Stop</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

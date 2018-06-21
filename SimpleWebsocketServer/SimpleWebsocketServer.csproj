@@ -1,0 +1,24 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFrameworks>netcoreapp2.1;netcoreapp2.0;net47;net46;net45;</TargetFrameworks>
+    <Description>A simple to use websocket with a very easy way to get it to work, just requires four lines of code.</Description>
+    <Copyright>MIT</Copyright>
+    <PackageLicenseUrl>https://github.com/EldinZenderink/SimpleWebSocketServer/blob/master/LICENSE</PackageLicenseUrl>
+    <PackageProjectUrl>https://github.com/EldinZenderink/SimpleWebSocketServer/wiki</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/EldinZenderink/SimpleWebSocketServer</RepositoryUrl>
+    <RepositoryType>GitHub, GIT</RepositoryType>
+    <PackageTags>net45, net46, net47, netcoreapp20, netcoreapp21, websocket server, websocket, library</PackageTags>
+    <PackageReleaseNotes>-Fixed names
+-Removed some ugly cross calling between classes.
+-Added asynchronous and synchronous methods.</PackageReleaseNotes>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <Version>1.0.1</Version>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(TargetFramework)|$(Platform)'=='Release|netcoreapp2.0|AnyCPU'">
+    <DocumentationFile>bin\Release\netcoreapp2.1\SimpleWebsocketServer.xml</DocumentationFile>
+    <OutputPath>bin\Release\</OutputPath>
+  </PropertyGroup>
+
+</Project>

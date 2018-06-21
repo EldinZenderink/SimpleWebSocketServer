@@ -1,0 +1,19 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="namespace_simple_web_socket_server_library" kind="namespace" language="C#">
+    <compoundname>SimpleWebSocketServerLibrary</compoundname>
+    <innerclass refid="class_simple_web_socket_server_library_1_1_simple_web_socket_server" prot="public">SimpleWebSocketServerLibrary::SimpleWebSocketServer</innerclass>
+    <innerclass refid="class_simple_web_socket_server_library_1_1_simple_web_socket_server_settings" prot="public">SimpleWebSocketServerLibrary::SimpleWebSocketServerSettings</innerclass>
+    <innerclass refid="class_simple_web_socket_server_library_1_1_web_socket_client_info" prot="public">SimpleWebSocketServerLibrary::WebSocketClientInfo</innerclass>
+    <innerclass refid="class_simple_web_socket_server_library_1_1_web_socket_event_arg" prot="public">SimpleWebSocketServerLibrary::WebSocketEventArg</innerclass>
+    <innerclass refid="class_simple_web_socket_server_library_1_1_web_socket_message_container" prot="public">SimpleWebSocketServerLibrary::WebSocketMessageContainer</innerclass>
+    <innernamespace refid="namespace_simple_web_socket_server_library_1_1_simple_web_socket_handler">SimpleWebSocketServerLibrary::SimpleWebSocketHandler</innernamespace>
+    <innernamespace refid="namespace_simple_web_socket_server_library_1_1_simple_web_socket_http_server">SimpleWebSocketServerLibrary::SimpleWebSocketHttpServer</innernamespace>
+    <innernamespace refid="namespace_simple_web_socket_server_library_1_1_w_socket_server">SimpleWebSocketServerLibrary::WSocketServer</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="SimpleWebsocketServer.cs" line="8" column="1"/>
+  </compounddef>
+</doxygen>

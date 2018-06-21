@@ -1,0 +1,267 @@
+\hypertarget{class_simple_web_socket_server_library_1_1_w_socket_server_1_1_web_socket_server}{}\section{Simple\+Web\+Socket\+Server\+Library.\+W\+Socket\+Server.\+Web\+Socket\+Server Class Reference}
+\label{class_simple_web_socket_server_library_1_1_w_socket_server_1_1_web_socket_server}\index{Simple\+Web\+Socket\+Server\+Library.\+W\+Socket\+Server.\+Web\+Socket\+Server@{Simple\+Web\+Socket\+Server\+Library.\+W\+Socket\+Server.\+Web\+Socket\+Server}}
+
+
+Runs the websocket server to communicate with a client.  
+
+
+
+
+Collaboration diagram for Simple\+Web\+Socket\+Server\+Library.\+W\+Socket\+Server.\+Web\+Socket\+Server\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=245pt]{class_simple_web_socket_server_library_1_1_w_socket_server_1_1_web_socket_server__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_simple_web_socket_server_library_1_1_w_socket_server_1_1_web_socket_server_a4162571a5f4e62f103082ed52cba9566}{Web\+Socket\+Server}} (\mbox{\hyperlink{class_simple_web_socket_server_library_1_1_web_socket_client_info}{Web\+Socket\+Client\+Info}} client\+Info, int buffer\+Size=4096)
+\begin{DoxyCompactList}\small\item\em Start a websocket server. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_simple_web_socket_server_library_1_1_w_socket_server_1_1_web_socket_server_ab8f08517c5288c0ae1f18db7f12379c6}{Send\+Message}} (\mbox{\hyperlink{class_simple_web_socket_server_library_1_1_web_socket_message_container}{Web\+Socket\+Message\+Container}} message)
+\begin{DoxyCompactList}\small\item\em Sends a websocket framed message to the client synchronous. \end{DoxyCompactList}\item 
+async Task$<$ bool $>$ \mbox{\hyperlink{class_simple_web_socket_server_library_1_1_w_socket_server_1_1_web_socket_server_aee6acd7a909b4f9376cb3896484a24b5}{Send\+Message\+Async}} (\mbox{\hyperlink{class_simple_web_socket_server_library_1_1_web_socket_message_container}{Web\+Socket\+Message\+Container}} message)
+\begin{DoxyCompactList}\small\item\em Sends a websocket framed message to the client asynchronous. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_simple_web_socket_server_library_1_1_w_socket_server_1_1_web_socket_server_a20756f37e37a07b424764d14cfdd9f6b}{Stop\+Server}} (string reason=\char`\"{}Server closed connection.\char`\"{})
+\begin{DoxyCompactList}\small\item\em Stops the websocket server and sends over a reason synchronous. \end{DoxyCompactList}\item 
+async Task$<$ bool $>$ \mbox{\hyperlink{class_simple_web_socket_server_library_1_1_w_socket_server_1_1_web_socket_server_a8fc32773b77146e5380e4d932b5b3511}{Stop\+Server\+Async}} (string reason=\char`\"{}Server closed connection.\char`\"{})
+\begin{DoxyCompactList}\small\item\em Stops the websocket server and sends over a reason asynchronous. \end{DoxyCompactList}\item 
+async Task \mbox{\hyperlink{class_simple_web_socket_server_library_1_1_w_socket_server_1_1_web_socket_server_ade70132fb8fb9150d8366eec2b9831e4}{Start\+Server\+Async}} ()
+\begin{DoxyCompactList}\small\item\em Starts the Web\+Socket server / connection with the client asynchronous. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_simple_web_socket_server_library_1_1_w_socket_server_1_1_web_socket_server_a8fd29cfd7fd558b6f397c317385f6674}{Start\+Server}} ()
+\begin{DoxyCompactList}\small\item\em Starts the Web\+Socket server / connection with the client synchronous. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Events}
+\begin{DoxyCompactItemize}
+\item 
+Event\+Handler$<$ \mbox{\hyperlink{class_simple_web_socket_server_library_1_1_web_socket_event_arg}{Web\+Socket\+Event\+Arg}} $>$ \mbox{\hyperlink{class_simple_web_socket_server_library_1_1_w_socket_server_1_1_web_socket_server_a6fbda1ede55611bd2e293f27998b21c3}{Web\+Socket\+Server\+Event}}
+\begin{DoxyCompactList}\small\item\em Event handler for firing on websocket server event such as receiving mesages or errors. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+readonly int \mbox{\hyperlink{class_simple_web_socket_server_library_1_1_w_socket_server_1_1_web_socket_server_a6d5baef80e87cbb0f7b6588498ea33c0}{\+\_\+\+Buffer\+Size}}
+\begin{DoxyCompactList}\small\item\em Global buffer size used. \end{DoxyCompactList}\item 
+readonly \mbox{\hyperlink{class_simple_web_socket_server_library_1_1_web_socket_client_info}{Web\+Socket\+Client\+Info}} \mbox{\hyperlink{class_simple_web_socket_server_library_1_1_w_socket_server_1_1_web_socket_server_a43967b2701368bc8a17258f14e22707b}{\+\_\+\+Client\+Info}}
+\begin{DoxyCompactList}\small\item\em Global \mbox{\hyperlink{class_simple_web_socket_server_library_1_1_web_socket_client_info}{Web\+Socket\+Client\+Info}}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Runs the websocket server to communicate with a client. 
+
+
+
+Definition at line 15 of file Websocket\+Server.\+cs.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_simple_web_socket_server_library_1_1_w_socket_server_1_1_web_socket_server_a4162571a5f4e62f103082ed52cba9566}\label{class_simple_web_socket_server_library_1_1_w_socket_server_1_1_web_socket_server_a4162571a5f4e62f103082ed52cba9566}} 
+\index{Simple\+Web\+Socket\+Server\+Library\+::\+W\+Socket\+Server\+::\+Web\+Socket\+Server@{Simple\+Web\+Socket\+Server\+Library\+::\+W\+Socket\+Server\+::\+Web\+Socket\+Server}!Web\+Socket\+Server@{Web\+Socket\+Server}}
+\index{Web\+Socket\+Server@{Web\+Socket\+Server}!Simple\+Web\+Socket\+Server\+Library\+::\+W\+Socket\+Server\+::\+Web\+Socket\+Server@{Simple\+Web\+Socket\+Server\+Library\+::\+W\+Socket\+Server\+::\+Web\+Socket\+Server}}
+\subsubsection{\texorpdfstring{Web\+Socket\+Server()}{WebSocketServer()}}
+{\footnotesize\ttfamily Simple\+Web\+Socket\+Server\+Library.\+W\+Socket\+Server.\+Web\+Socket\+Server.\+Web\+Socket\+Server (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_simple_web_socket_server_library_1_1_web_socket_client_info}{Web\+Socket\+Client\+Info}}}]{client\+Info,  }\item[{int}]{buffer\+Size = {\ttfamily 4096} }\end{DoxyParamCaption})}
+
+
+
+Start a websocket server. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em buffer\+Size} & Sets the receive buffer size, default = 4096\\
+\hline
+{\em client\+Info} & Sets the client information.\\
+\hline
+{\em handler} & Sets the websocket handler.\\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 39 of file Websocket\+Server.\+cs.
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_simple_web_socket_server_library_1_1_w_socket_server_1_1_web_socket_server_ab8f08517c5288c0ae1f18db7f12379c6}\label{class_simple_web_socket_server_library_1_1_w_socket_server_1_1_web_socket_server_ab8f08517c5288c0ae1f18db7f12379c6}} 
+\index{Simple\+Web\+Socket\+Server\+Library\+::\+W\+Socket\+Server\+::\+Web\+Socket\+Server@{Simple\+Web\+Socket\+Server\+Library\+::\+W\+Socket\+Server\+::\+Web\+Socket\+Server}!Send\+Message@{Send\+Message}}
+\index{Send\+Message@{Send\+Message}!Simple\+Web\+Socket\+Server\+Library\+::\+W\+Socket\+Server\+::\+Web\+Socket\+Server@{Simple\+Web\+Socket\+Server\+Library\+::\+W\+Socket\+Server\+::\+Web\+Socket\+Server}}
+\subsubsection{\texorpdfstring{Send\+Message()}{SendMessage()}}
+{\footnotesize\ttfamily bool Simple\+Web\+Socket\+Server\+Library.\+W\+Socket\+Server.\+Web\+Socket\+Server.\+Send\+Message (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_simple_web_socket_server_library_1_1_web_socket_message_container}{Web\+Socket\+Message\+Container}}}]{message }\end{DoxyParamCaption})}
+
+
+
+Sends a websocket framed message to the client synchronous. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em message} & Message container containing all the information needed for the message.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True on success.
+\end{DoxyReturn}
+
+
+Definition at line 50 of file Websocket\+Server.\+cs.
+
+\mbox{\Hypertarget{class_simple_web_socket_server_library_1_1_w_socket_server_1_1_web_socket_server_aee6acd7a909b4f9376cb3896484a24b5}\label{class_simple_web_socket_server_library_1_1_w_socket_server_1_1_web_socket_server_aee6acd7a909b4f9376cb3896484a24b5}} 
+\index{Simple\+Web\+Socket\+Server\+Library\+::\+W\+Socket\+Server\+::\+Web\+Socket\+Server@{Simple\+Web\+Socket\+Server\+Library\+::\+W\+Socket\+Server\+::\+Web\+Socket\+Server}!Send\+Message\+Async@{Send\+Message\+Async}}
+\index{Send\+Message\+Async@{Send\+Message\+Async}!Simple\+Web\+Socket\+Server\+Library\+::\+W\+Socket\+Server\+::\+Web\+Socket\+Server@{Simple\+Web\+Socket\+Server\+Library\+::\+W\+Socket\+Server\+::\+Web\+Socket\+Server}}
+\subsubsection{\texorpdfstring{Send\+Message\+Async()}{SendMessageAsync()}}
+{\footnotesize\ttfamily async Task$<$bool$>$ Simple\+Web\+Socket\+Server\+Library.\+W\+Socket\+Server.\+Web\+Socket\+Server.\+Send\+Message\+Async (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_simple_web_socket_server_library_1_1_web_socket_message_container}{Web\+Socket\+Message\+Container}}}]{message }\end{DoxyParamCaption})}
+
+
+
+Sends a websocket framed message to the client asynchronous. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em message} & Message container containing all the information needed for the message.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True on success.
+\end{DoxyReturn}
+
+
+Definition at line 136 of file Websocket\+Server.\+cs.
+
+\mbox{\Hypertarget{class_simple_web_socket_server_library_1_1_w_socket_server_1_1_web_socket_server_a8fd29cfd7fd558b6f397c317385f6674}\label{class_simple_web_socket_server_library_1_1_w_socket_server_1_1_web_socket_server_a8fd29cfd7fd558b6f397c317385f6674}} 
+\index{Simple\+Web\+Socket\+Server\+Library\+::\+W\+Socket\+Server\+::\+Web\+Socket\+Server@{Simple\+Web\+Socket\+Server\+Library\+::\+W\+Socket\+Server\+::\+Web\+Socket\+Server}!Start\+Server@{Start\+Server}}
+\index{Start\+Server@{Start\+Server}!Simple\+Web\+Socket\+Server\+Library\+::\+W\+Socket\+Server\+::\+Web\+Socket\+Server@{Simple\+Web\+Socket\+Server\+Library\+::\+W\+Socket\+Server\+::\+Web\+Socket\+Server}}
+\subsubsection{\texorpdfstring{Start\+Server()}{StartServer()}}
+{\footnotesize\ttfamily void Simple\+Web\+Socket\+Server\+Library.\+W\+Socket\+Server.\+Web\+Socket\+Server.\+Start\+Server (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Starts the Web\+Socket server / connection with the client synchronous. 
+
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+
+
+Definition at line 443 of file Websocket\+Server.\+cs.
+
+\mbox{\Hypertarget{class_simple_web_socket_server_library_1_1_w_socket_server_1_1_web_socket_server_ade70132fb8fb9150d8366eec2b9831e4}\label{class_simple_web_socket_server_library_1_1_w_socket_server_1_1_web_socket_server_ade70132fb8fb9150d8366eec2b9831e4}} 
+\index{Simple\+Web\+Socket\+Server\+Library\+::\+W\+Socket\+Server\+::\+Web\+Socket\+Server@{Simple\+Web\+Socket\+Server\+Library\+::\+W\+Socket\+Server\+::\+Web\+Socket\+Server}!Start\+Server\+Async@{Start\+Server\+Async}}
+\index{Start\+Server\+Async@{Start\+Server\+Async}!Simple\+Web\+Socket\+Server\+Library\+::\+W\+Socket\+Server\+::\+Web\+Socket\+Server@{Simple\+Web\+Socket\+Server\+Library\+::\+W\+Socket\+Server\+::\+Web\+Socket\+Server}}
+\subsubsection{\texorpdfstring{Start\+Server\+Async()}{StartServerAsync()}}
+{\footnotesize\ttfamily async Task Simple\+Web\+Socket\+Server\+Library.\+W\+Socket\+Server.\+Web\+Socket\+Server.\+Start\+Server\+Async (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Starts the Web\+Socket server / connection with the client asynchronous. 
+
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+
+
+Definition at line 270 of file Websocket\+Server.\+cs.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_simple_web_socket_server_library_1_1_w_socket_server_1_1_web_socket_server_ade70132fb8fb9150d8366eec2b9831e4_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_simple_web_socket_server_library_1_1_w_socket_server_1_1_web_socket_server_a20756f37e37a07b424764d14cfdd9f6b}\label{class_simple_web_socket_server_library_1_1_w_socket_server_1_1_web_socket_server_a20756f37e37a07b424764d14cfdd9f6b}} 
+\index{Simple\+Web\+Socket\+Server\+Library\+::\+W\+Socket\+Server\+::\+Web\+Socket\+Server@{Simple\+Web\+Socket\+Server\+Library\+::\+W\+Socket\+Server\+::\+Web\+Socket\+Server}!Stop\+Server@{Stop\+Server}}
+\index{Stop\+Server@{Stop\+Server}!Simple\+Web\+Socket\+Server\+Library\+::\+W\+Socket\+Server\+::\+Web\+Socket\+Server@{Simple\+Web\+Socket\+Server\+Library\+::\+W\+Socket\+Server\+::\+Web\+Socket\+Server}}
+\subsubsection{\texorpdfstring{Stop\+Server()}{StopServer()}}
+{\footnotesize\ttfamily bool Simple\+Web\+Socket\+Server\+Library.\+W\+Socket\+Server.\+Web\+Socket\+Server.\+Stop\+Server (\begin{DoxyParamCaption}\item[{string}]{reason = {\ttfamily \char`\"{}Server~closed~connection.\char`\"{}} }\end{DoxyParamCaption})}
+
+
+
+Stops the websocket server and sends over a reason synchronous. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em reason} & Overload parameter for reason. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True on success.
+\end{DoxyReturn}
+
+
+Definition at line 221 of file Websocket\+Server.\+cs.
+
+\mbox{\Hypertarget{class_simple_web_socket_server_library_1_1_w_socket_server_1_1_web_socket_server_a8fc32773b77146e5380e4d932b5b3511}\label{class_simple_web_socket_server_library_1_1_w_socket_server_1_1_web_socket_server_a8fc32773b77146e5380e4d932b5b3511}} 
+\index{Simple\+Web\+Socket\+Server\+Library\+::\+W\+Socket\+Server\+::\+Web\+Socket\+Server@{Simple\+Web\+Socket\+Server\+Library\+::\+W\+Socket\+Server\+::\+Web\+Socket\+Server}!Stop\+Server\+Async@{Stop\+Server\+Async}}
+\index{Stop\+Server\+Async@{Stop\+Server\+Async}!Simple\+Web\+Socket\+Server\+Library\+::\+W\+Socket\+Server\+::\+Web\+Socket\+Server@{Simple\+Web\+Socket\+Server\+Library\+::\+W\+Socket\+Server\+::\+Web\+Socket\+Server}}
+\subsubsection{\texorpdfstring{Stop\+Server\+Async()}{StopServerAsync()}}
+{\footnotesize\ttfamily async Task$<$bool$>$ Simple\+Web\+Socket\+Server\+Library.\+W\+Socket\+Server.\+Web\+Socket\+Server.\+Stop\+Server\+Async (\begin{DoxyParamCaption}\item[{string}]{reason = {\ttfamily \char`\"{}Server~closed~connection.\char`\"{}} }\end{DoxyParamCaption})}
+
+
+
+Stops the websocket server and sends over a reason asynchronous. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em reason} & Overload parameter for reason. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True on success.
+\end{DoxyReturn}
+
+
+Definition at line 246 of file Websocket\+Server.\+cs.
+
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{class_simple_web_socket_server_library_1_1_w_socket_server_1_1_web_socket_server_a6d5baef80e87cbb0f7b6588498ea33c0}\label{class_simple_web_socket_server_library_1_1_w_socket_server_1_1_web_socket_server_a6d5baef80e87cbb0f7b6588498ea33c0}} 
+\index{Simple\+Web\+Socket\+Server\+Library\+::\+W\+Socket\+Server\+::\+Web\+Socket\+Server@{Simple\+Web\+Socket\+Server\+Library\+::\+W\+Socket\+Server\+::\+Web\+Socket\+Server}!\+\_\+\+Buffer\+Size@{\+\_\+\+Buffer\+Size}}
+\index{\+\_\+\+Buffer\+Size@{\+\_\+\+Buffer\+Size}!Simple\+Web\+Socket\+Server\+Library\+::\+W\+Socket\+Server\+::\+Web\+Socket\+Server@{Simple\+Web\+Socket\+Server\+Library\+::\+W\+Socket\+Server\+::\+Web\+Socket\+Server}}
+\subsubsection{\texorpdfstring{\+\_\+\+Buffer\+Size}{\_BufferSize}}
+{\footnotesize\ttfamily readonly int Simple\+Web\+Socket\+Server\+Library.\+W\+Socket\+Server.\+Web\+Socket\+Server.\+\_\+\+Buffer\+Size\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Global buffer size used. 
+
+
+
+Definition at line 26 of file Websocket\+Server.\+cs.
+
+\mbox{\Hypertarget{class_simple_web_socket_server_library_1_1_w_socket_server_1_1_web_socket_server_a43967b2701368bc8a17258f14e22707b}\label{class_simple_web_socket_server_library_1_1_w_socket_server_1_1_web_socket_server_a43967b2701368bc8a17258f14e22707b}} 
+\index{Simple\+Web\+Socket\+Server\+Library\+::\+W\+Socket\+Server\+::\+Web\+Socket\+Server@{Simple\+Web\+Socket\+Server\+Library\+::\+W\+Socket\+Server\+::\+Web\+Socket\+Server}!\+\_\+\+Client\+Info@{\+\_\+\+Client\+Info}}
+\index{\+\_\+\+Client\+Info@{\+\_\+\+Client\+Info}!Simple\+Web\+Socket\+Server\+Library\+::\+W\+Socket\+Server\+::\+Web\+Socket\+Server@{Simple\+Web\+Socket\+Server\+Library\+::\+W\+Socket\+Server\+::\+Web\+Socket\+Server}}
+\subsubsection{\texorpdfstring{\+\_\+\+Client\+Info}{\_ClientInfo}}
+{\footnotesize\ttfamily readonly \mbox{\hyperlink{class_simple_web_socket_server_library_1_1_web_socket_client_info}{Web\+Socket\+Client\+Info}} Simple\+Web\+Socket\+Server\+Library.\+W\+Socket\+Server.\+Web\+Socket\+Server.\+\_\+\+Client\+Info\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Global \mbox{\hyperlink{class_simple_web_socket_server_library_1_1_web_socket_client_info}{Web\+Socket\+Client\+Info}}. 
+
+
+
+Definition at line 31 of file Websocket\+Server.\+cs.
+
+
+
+\subsection{Event Documentation}
+\mbox{\Hypertarget{class_simple_web_socket_server_library_1_1_w_socket_server_1_1_web_socket_server_a6fbda1ede55611bd2e293f27998b21c3}\label{class_simple_web_socket_server_library_1_1_w_socket_server_1_1_web_socket_server_a6fbda1ede55611bd2e293f27998b21c3}} 
+\index{Simple\+Web\+Socket\+Server\+Library\+::\+W\+Socket\+Server\+::\+Web\+Socket\+Server@{Simple\+Web\+Socket\+Server\+Library\+::\+W\+Socket\+Server\+::\+Web\+Socket\+Server}!Web\+Socket\+Server\+Event@{Web\+Socket\+Server\+Event}}
+\index{Web\+Socket\+Server\+Event@{Web\+Socket\+Server\+Event}!Simple\+Web\+Socket\+Server\+Library\+::\+W\+Socket\+Server\+::\+Web\+Socket\+Server@{Simple\+Web\+Socket\+Server\+Library\+::\+W\+Socket\+Server\+::\+Web\+Socket\+Server}}
+\subsubsection{\texorpdfstring{Web\+Socket\+Server\+Event}{WebSocketServerEvent}}
+{\footnotesize\ttfamily Event\+Handler$<$\mbox{\hyperlink{class_simple_web_socket_server_library_1_1_web_socket_event_arg}{Web\+Socket\+Event\+Arg}}$>$ Simple\+Web\+Socket\+Server\+Library.\+W\+Socket\+Server.\+Web\+Socket\+Server.\+Web\+Socket\+Server\+Event}
+
+
+
+Event handler for firing on websocket server event such as receiving mesages or errors. 
+
+
+
+Definition at line 21 of file Websocket\+Server.\+cs.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{_websocket_server_8cs}{Websocket\+Server.\+cs}}\end{DoxyCompactItemize}
