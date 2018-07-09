@@ -282,7 +282,7 @@ namespace SimpleWebSocketServerLibrary.WSocketServer
 
             bool isConnected = false;
 
-            while (_ClientInfo.client.Connected && stream.CanRead)
+            while (_ClientInfo.client.Connected )
             {
                 messageArg = new WebSocketEventArg()
                 {
@@ -298,142 +298,158 @@ namespace SimpleWebSocketServerLibrary.WSocketServer
                     isConnected = true;
                     WebSocketServerEvent?.Invoke(this, messageArg);
                 }
-
-                int bytesRead = await stream.ReadAsync(buffer, 0, buffer.Length);
-                await stream.FlushAsync();
-                int opCode = buffer[0] & 0x0F;
-                bool finalMessage = ((buffer[0] & 0x80) == 0x80);
-                bool maskKey = ((buffer[1] & 0x80) == 0x80);
-                UInt64 payloadLength = 0;
-                int initialPayloadLength = buffer[1] & 0x7F;
-
-
-                switch (opCode)
+                if (stream.CanWrite && stream.CanRead)
                 {
-                    case 0x00:
-                        continuationFrame = true;
+
+                    int bytesRead = await stream.ReadAsync(buffer, 0, buffer.Length);
+                    await stream.FlushAsync();
+                    int opCode = buffer[0] & 0x0F;
+                    bool finalMessage = ((buffer[0] & 0x80) == 0x80);
+                    bool maskKey = ((buffer[1] & 0x80) == 0x80);
+                    UInt64 payloadLength = 0;
+                    int initialPayloadLength = buffer[1] & 0x7F;
+
+                    bool shouldClose = false;
+                    switch (opCode)
+                    {
+                        case 0x00:
+                            continuationFrame = true;
+                            break;
+                        case 0x01:
+                            continuationFrame = false;
+                            messageArg.isText = true;
+                            break;
+                        case 0x02:
+                            continuationFrame = false;
+                            messageArg.isBinary = true;
+                            break;
+                        case 0x08:
+                            continuationFrame = false;
+                            messageArg.isClosed = true;
+                            shouldClose = true;
+                            break;
+                        case 0x09:
+                            continuationFrame = false;
+                            messageArg.isPing = true;
+                            break;
+                        case 0x0A:
+                            continuationFrame = false;
+                            messageArg.isPong = true;
+                            break;
+                        default:
+                            stream.Close();
+                            _ClientInfo.client.Close();
+                            break;
+                    }
+
+
+                    byte[] payloadLengthBytes;
+                    byte[] maskKeyBytes = new byte[4];
+
+                    switch (initialPayloadLength)
+                    {
+                        case 126:
+                            payloadLengthBytes = new byte[2];
+                            Array.Copy(buffer, 2, payloadLengthBytes, 0, payloadLengthBytes.Length);
+                            payloadLength = BitConverter.ToUInt16(payloadLengthBytes.Reverse<byte>().ToArray(), 0);
+
+                            messageArg.messageLength = payloadLength;
+                            if (maskKey)
+                            {
+                                Array.Copy(buffer, 4, maskKeyBytes, 0, maskKeyBytes.Length);
+                                byte[] tempData = new byte[payloadLength];
+                                Array.Copy(buffer, 8, tempData, 0, tempData.Length);
+
+                                for (int i = 0; i < tempData.Length; i++)
+                                {
+                                    tempData[i] = (byte)(maskKeyBytes[i % 4] ^ tempData[i]);
+                                }
+
+                                data.AddRange(tempData);
+                            }
+                            else
+                            {
+                                byte[] tempData = new byte[payloadLength];
+                                Array.Copy(buffer, 4, tempData, 0, tempData.Length);
+                                data.AddRange(tempData);
+                            }
+
+                            break;
+                        case 127:
+                            payloadLengthBytes = new byte[8];
+                            Array.Copy(buffer, 2, payloadLengthBytes, 0, payloadLengthBytes.Length);
+                            payloadLength = BitConverter.ToUInt64(payloadLengthBytes.Reverse<byte>().ToArray(), 0);
+                            messageArg.messageLength = payloadLength;
+
+                            if (maskKey)
+                            {
+                                Array.Copy(buffer, 10, maskKeyBytes, 0, maskKeyBytes.Length);
+                                byte[] tempData = new byte[payloadLength];
+
+                                Array.Copy(buffer, 14, tempData, 0, tempData.Length);
+                                for (int i = 0; i < tempData.Length; i++)
+                                {
+                                    tempData[i] = (byte)(maskKeyBytes[i % 4] ^ tempData[i]);
+                                }
+                                data.AddRange(tempData);
+                            }
+                            else
+                            {
+                                byte[] tempData = new byte[payloadLength];
+
+                                Array.Copy(buffer, 10, tempData, 0, tempData.Length);
+                                data.AddRange(tempData);
+                            }
+                            break;
+                        default:
+                            payloadLength = (uint)initialPayloadLength;
+                            messageArg.messageLength = payloadLength;
+
+                            if (maskKey)
+                            {
+                                Array.Copy(buffer, 2, maskKeyBytes, 0, maskKeyBytes.Length);
+                                byte[] tempData = new byte[payloadLength];
+                                Array.Copy(buffer, 6, tempData, 0, tempData.Length);
+                                for (int i = 0; i < tempData.Length; i++)
+                                {
+                                    tempData[i] = (byte)(maskKeyBytes[i % 4] ^ tempData[i]);
+                                }
+                                data.AddRange(tempData);
+                            }
+                            else
+                            {
+                                byte[] tempData = new byte[(bytesRead - 2)];
+                                Array.Copy(buffer, 2, tempData, 0, tempData.Length);
+                                data.AddRange(tempData);
+                            }
+                            break;
+                    }
+
+
+                    if (!continuationFrame && finalMessage)
+                    {
+                        messageArg.data = data.ToArray();
+                        WebSocketServerEvent?.Invoke(this, messageArg);
+                        data.Clear();
+                        finalMessage = false;
+                    }
+
+                    if (shouldClose)
+                    {
                         break;
-                    case 0x01:
-                        continuationFrame = false;
-                        messageArg.isText = true;
-                        break;
-                    case 0x02:
-                        continuationFrame = false;
-                        messageArg.isBinary = true;
-                        break;
-                    case 0x08:
-                        continuationFrame = false;
-                        messageArg.isClosed = true;
-                        break;
-                    case 0x09:
-                        continuationFrame = false;
-                        messageArg.isPing = true;
-                        break;
-                    case 0x0A:
-                        continuationFrame = false;
-                        messageArg.isPong = true;
-                        break;
-                    default:
-                        stream.Close();
-                        _ClientInfo.client.Close();
-                        break;
+                    }
+                }
+                else
+                {
+                    break;
                 }
 
-
-                byte[] payloadLengthBytes;
-                byte[] maskKeyBytes = new byte[4];
-
-                switch (initialPayloadLength)
-                {
-                    case 126:
-                        payloadLengthBytes = new byte[2];
-                        Array.Copy(buffer, 2, payloadLengthBytes, 0, payloadLengthBytes.Length);
-                        payloadLength = BitConverter.ToUInt16(payloadLengthBytes.Reverse<byte>().ToArray(), 0);
-
-                        messageArg.messageLength = payloadLength;
-                        if (maskKey)
-                        {
-                            Array.Copy(buffer, 4, maskKeyBytes, 0, maskKeyBytes.Length);
-                            byte[] tempData = new byte[payloadLength];
-                            Array.Copy(buffer, 8, tempData, 0, tempData.Length);
-
-                            for (int i = 0; i < tempData.Length; i++)
-                            {
-                                tempData[i] = (byte)(maskKeyBytes[i % 4] ^ tempData[i]);
-                            }
-
-                            data.AddRange(tempData);
-                        }
-                        else
-                        {
-                            byte[] tempData = new byte[payloadLength];
-                            Array.Copy(buffer, 4, tempData, 0, tempData.Length);
-                            data.AddRange(tempData);
-                        }
-
-                        break;
-                    case 127:
-                        payloadLengthBytes = new byte[8];
-                        Array.Copy(buffer, 2, payloadLengthBytes, 0, payloadLengthBytes.Length);
-                        payloadLength = BitConverter.ToUInt64(payloadLengthBytes.Reverse<byte>().ToArray(), 0);
-                        messageArg.messageLength = payloadLength;
-
-                        if (maskKey)
-                        {
-                            Array.Copy(buffer,10, maskKeyBytes, 0, maskKeyBytes.Length );
-                            byte[] tempData = new byte[payloadLength];
-
-                            Array.Copy(buffer, 14, tempData, 0, tempData.Length);
-                            for (int i = 0; i < tempData.Length; i++)
-                            {
-                                tempData[i] = (byte)(maskKeyBytes[i % 4] ^ tempData[i]);
-                            }
-                            data.AddRange(tempData);
-                        }
-                        else
-                        {
-                            byte[] tempData = new byte[payloadLength];
-
-                            Array.Copy(buffer, 10, tempData, 0, tempData.Length);
-                            data.AddRange(tempData);
-                        }
-                        break;
-                    default:
-                        payloadLength = (uint)initialPayloadLength;
-                        messageArg.messageLength = payloadLength;
-
-                        if (maskKey)
-                        {
-                            Array.Copy(buffer, 2, maskKeyBytes, 0, maskKeyBytes.Length);
-                            byte[] tempData = new byte[payloadLength];
-                            Array.Copy(buffer, 6, tempData, 0, tempData.Length);
-                            for (int i = 0; i < tempData.Length; i++)
-                            {
-                                tempData[i] = (byte)(maskKeyBytes[i % 4] ^ tempData[i]);
-                            }
-                            data.AddRange(tempData);
-                        }
-                        else
-                        {
-                            byte[] tempData = new byte[(bytesRead - 2)];
-                            Array.Copy(buffer, 2, tempData, 0, tempData.Length);
-                            data.AddRange(tempData);
-                        }
-                        break;
-                }
-
-
-                if (!continuationFrame && finalMessage)
-                {
-                    messageArg.data = data.ToArray();
-                    WebSocketServerEvent?.Invoke(this, messageArg);
-                   
-                    data.Clear();
-                } 
+               
             }
 
             messageArg.isOpen = false;
             WebSocketServerEvent?.Invoke(this, messageArg);
+
         }
 
         /// <summary>

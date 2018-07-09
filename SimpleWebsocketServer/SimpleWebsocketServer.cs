@@ -63,9 +63,9 @@ namespace SimpleWebSocketServerLibrary
         /// <summary>
         /// Starts running the server async.
         /// </summary>
-        public void StartServer()
+        public  void StartServer()
         {
-            Task.Run(async()=> await _WebSocketHttpServer.RunServer());
+           Task.Run(async() => await _WebSocketHttpServer.RunServer());
         }
 
         /// <summary>

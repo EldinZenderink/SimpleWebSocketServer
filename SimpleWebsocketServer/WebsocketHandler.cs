@@ -113,13 +113,21 @@ namespace SimpleWebSocketServerLibrary.SimpleWebSocketHandler
         public async Task<bool> StopClient(string clientId)
         {
             bool succes = false;
+            WebSocketClientInfo key = null;
             foreach (var connection in _ListWithConnections)
             {
                 if (connection.Key.clientId == clientId)
                 {
                     succes = await connection.Value.StopServerAsync();
+                    key = connection.Key;
+                    break;
                 }
             }
+            if (succes)
+            {
+                _ListWithConnections.Remove(key);
+            }
+
             return succes;
         }
 
@@ -132,12 +140,20 @@ namespace SimpleWebSocketServerLibrary.SimpleWebSocketHandler
         public async Task<bool> StopClient(string clientId, string reason)
         {
             bool succes = false;
+            WebSocketClientInfo key = null;
             foreach (var connection in _ListWithConnections)
             {
                 if (connection.Key.clientId == clientId)
                 {
                     succes = await connection.Value.StopServerAsync(reason);
+                    key = connection.Key;
+                    break;
                 }
+            }
+
+            if (succes)
+            {
+                _ListWithConnections.Remove(key);
             }
 
             return succes;
@@ -152,7 +168,12 @@ namespace SimpleWebSocketServerLibrary.SimpleWebSocketHandler
             bool succes = false;
             foreach (var connection in _ListWithConnections)
             {
-                 succes = await connection.Value.StopServerAsync();
+                succes = await connection.Value.StopServerAsync();
+            }
+
+            if (succes)
+            {
+                _ListWithConnections.Clear();
             }
 
             return succes;
@@ -171,6 +192,10 @@ namespace SimpleWebSocketServerLibrary.SimpleWebSocketHandler
                 succes = await connection.Value.StopServerAsync();
             }
 
+            if (succes)
+            {
+                _ListWithConnections.Clear();
+            }
             return succes;
         }
 
@@ -216,6 +241,28 @@ namespace SimpleWebSocketServerLibrary.SimpleWebSocketHandler
         /// <param name="arg">Arguments containing event arguments.</param>
         public void OnWebsocketEvent(object sender, WebSocketEventArg arg)
         {
+
+            if (arg.isClosed)
+            {
+                WebSocketClientInfo key = null;
+                bool found = false;
+
+                foreach (var connection in _ListWithConnections)
+                {
+                    if (connection.Key.clientId == arg.clientId)
+                    {
+                        key = connection.Key;
+                        found = true;
+                        break;
+                    }
+                }
+                if (found)
+                {
+                    _ListWithConnections.Remove(key);
+                }
+            }
+           
+
             WebsocketEvent?.Invoke(this, arg);
         }
     }
