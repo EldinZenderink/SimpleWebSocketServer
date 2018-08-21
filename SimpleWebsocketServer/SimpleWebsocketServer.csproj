@@ -1,17 +1,17 @@
 <Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <TargetFrameworks>netcoreapp2.1;netcoreapp2.0;net47;net46;net45;</TargetFrameworks>
+    <TargetFramework>netstandard2.0</TargetFramework>
     <Description>A simple to use websocket with a very easy way to get it to work, just requires four lines of code.</Description>
     <Copyright>MIT</Copyright>
     <PackageLicenseUrl>https://github.com/EldinZenderink/SimpleWebSocketServer/blob/master/LICENSE</PackageLicenseUrl>
     <PackageProjectUrl>https://github.com/EldinZenderink/SimpleWebSocketServer/wiki</PackageProjectUrl>
     <RepositoryUrl>https://github.com/EldinZenderink/SimpleWebSocketServer</RepositoryUrl>
     <RepositoryType>GitHub, GIT</RepositoryType>
-    <PackageTags>net45, net46, net47, netcoreapp20, netcoreapp21, websocket server, websocket, library</PackageTags>
-    <PackageReleaseNotes>-Fixed bug where server thinks connection is open when unexpectedly closing the websocket connection (by closing or refreshing a webpage with a websocket client on chrome for example).</PackageReleaseNotes>
+    <PackageTags>netstandard2.0, websocket server, websocket, library</PackageTags>
+    <PackageReleaseNotes>-Moved from multiple targets to netstandard2.0</PackageReleaseNotes>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
-    <Version>1.0.2</Version>
+    <Version>1.1.0</Version>
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(TargetFramework)|$(Platform)'=='Release|netcoreapp2.0|AnyCPU'">
