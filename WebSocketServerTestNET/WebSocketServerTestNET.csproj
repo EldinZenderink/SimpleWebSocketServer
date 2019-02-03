@@ -32,9 +32,8 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="SimpleWebsocketServer, Version=1.0.1.0, Culture=neutral, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\SimpleWebsocketServer\bin\Release\net47\SimpleWebsocketServer.dll</HintPath>
+    <Reference Include="SimpleWebsocketServer">
+      <HintPath>..\SimpleWebsocketServer\bin\Debug\netstandard2.0\SimpleWebsocketServer.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />

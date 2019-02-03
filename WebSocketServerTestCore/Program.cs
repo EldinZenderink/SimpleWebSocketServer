@@ -1,11 +1,8 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using SimpleWebSocketServerLibrary;
+using System;
 using System.Text;
-using System.Threading.Tasks;
-using SimpleWebSocketServerLibrary;
-using SimpleWebSocketServerLibrary.WSocketServer;
 
-namespace WebsocketServerTest
+namespace WebSocketServerTestCore
 {
     class Program
     {
