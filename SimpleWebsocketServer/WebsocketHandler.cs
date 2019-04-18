@@ -102,7 +102,21 @@ namespace SimpleWebSocketServerLibrary.SimpleWebSocketHandler
             WebSocketServer newServer = new WebSocketServer(info, _BufferSize);
             newServer.WebSocketServerEvent += OnWebsocketEvent;
             _ListWithConnections.Add(info, newServer);
-            await newServer.StartServerAsync();
+            try
+            {
+                await newServer.StartServerAsync();
+            }
+            catch(Exception)
+            {
+                WebSocketEventArg args = new WebSocketEventArg()
+                {
+                    clientId = clientId,
+                    clientBaseUrl = baseUrl,
+                    errorMessage = "Client disconnected forcefully",
+                    isClosed = true
+                };
+                OnWebsocketEvent(this, args);
+            }
         }
 
         /// <summary>
@@ -186,17 +200,17 @@ namespace SimpleWebSocketServerLibrary.SimpleWebSocketHandler
         /// <returns>True on success.</returns>
         public async Task<bool> StopAll(string reason)
         {
-            bool succes = false;
+            bool success = false;
             foreach (var connection in _ListWithConnections)
             {
-                succes = await connection.Value.StopServerAsync();
+                success = await connection.Value.StopServerAsync();
             }
 
-            if (succes)
+            if (success)
             {
                 _ListWithConnections.Clear();
             }
-            return succes;
+            return success;
         }
 
         /// <summary>
@@ -241,7 +255,6 @@ namespace SimpleWebSocketServerLibrary.SimpleWebSocketHandler
         /// <param name="arg">Arguments containing event arguments.</param>
         public void OnWebsocketEvent(object sender, WebSocketEventArg arg)
         {
-
             if (arg.isClosed)
             {
                 WebSocketClientInfo key = null;
