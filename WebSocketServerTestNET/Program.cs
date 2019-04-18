@@ -81,7 +81,6 @@ namespace WebsocketServerTest
                 }
                 else
                 {
-                    string received = Encoding.UTF8.GetString(args.data);
                     Console.WriteLine("Client: " + args.clientId + " disconnected.");
                 }
             }
